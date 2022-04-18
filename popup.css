@@ -1,0 +1,41 @@
+body {
+  width: 400px;
+  height: 100%;
+}
+
+#events {
+  padding-left: 0px;
+  margin-left: 0;
+}
+
+li:hover {
+  background: lightgrey;
+}
+
+div.item {
+  margin-bottom: 5px;
+  padding: 2px;
+}
+
+#events span {
+  display:block;
+  padding-bottom: 2px;
+}
+
+span.title {
+  width: 100%;
+}
+span.bold {
+  font-weight: bold;
+}
+
+
+.spec {
+  background-color: aqua;
+}
+.svr {
+  background-color: lightyellow;
+}
+.tor {
+  background-color: lightcoral;
+}
