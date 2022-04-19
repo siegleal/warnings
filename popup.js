@@ -9,23 +9,31 @@ const FILTER = [
 let parseXML = function(xml) {
   xml = xml.replaceAll('cap:', "cap_")
   console.log(xml);
-  var xml =$( $.parseXML(xml) );
+  var xml = $( $.parseXML(xml) );
   xml.find("entry")
-    .filter( (index, element) => {
+    .filter( (_, element) => {
       return FILTER.includes($(element).find('cap_event').text());
     })
     .each(function() {
-    let title = $(this).find('title').text();
-    let summary = $(this).find('summary').text();
-    let capEvent = $(this).find('cap_event').text();
-    let newElem = $("<div></div>");
-    newElem.addClass('item');
-    newElem.addClass(getClass(capEvent));
-    let anchor = $('<a></a>').attr('href', $(this).find('id').text()).attr('target', "_blank");
-    newElem.append(anchor.append($('<span></span>').addClass('title').addClass('bold').text(capEvent)))
-    newElem.append($('<span></span>').text(summary))
-    $('#events').append(newElem)
-    
+      let summary = $(this).find('summary').text();
+      let capEvent = $(this).find('cap_event').text();
+      let effective = new Date($(this).find('cap_effective').text());
+      let expires = new Date($(this).find('cap_expires').text());
+      let urgency = $(this).find('cap_urgency').text();
+      let severity = $(this).find('cap_severity').text();
+      let certainty = $(this).find('cap_certainty').text();
+      let newElem = $("<div></div>");
+      newElem.addClass('item');
+      newElem.addClass(getClass(capEvent));
+      let anchor = $('<a></a>').attr('href', $(this).find('id').text()).attr('target', "_blank");
+      newElem.append(anchor.append($('<span></span>').addClass('title').addClass('bold').text(capEvent)))
+      newElem.append($('<span></span>').text('Effective: ' + effective.toLocaleString()))
+      newElem.append($('<span></span>').text('Expires: ' + expires.toLocaleString()))
+      newElem.append($('<span></span>').text('Urgency: ' + urgency));
+      newElem.append($('<span></span>').text('Severity: ' + severity));
+      newElem.append($('<span></span>').text('Certainty: ' + certainty));
+      newElem.append($('<span></span>').text(summary))
+      $('#events').append(newElem)
   })
 
 }
