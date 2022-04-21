@@ -1,5 +1,8 @@
 
-const ALERTS_URL = "https://api.weather.gov/alerts/active?status=actual"
+const ALERTS_URL = "https://api.weather.gov/alerts/active?status=actual&event=Tornado%20Warning,Severe%20Thunderstorm%20Warning,Special%20Weather%20Statement"
+// https://www.weather.gov/documentation/services-web-api#/default/alerts_active
+// https://alerts.weather.gov/cap/pdf/CAP%20v12%20guide%20web%2006052013.pdf
+
 const TOR = {
   priority: 0,
   text : "Tornado Warning",
@@ -70,12 +73,18 @@ class Feature {
   }
 }
 
+function filterFeatures(feat) {
+  if (feat.event === SWS.text) {
+    return feat.description.includes('thunderstorm')
+  }
+  return true;
+}
+
 function processFeatures(features) {
-  features.filter((e) => FILTER.includes(e.properties.event))
-    .map(f => new Feature(f))
+  features.map(f => new Feature(f))
+    .filter(filterFeatures)
     .sort((a,b) => a.priority - b.priority)
     .forEach(addCard)
-
 }
 
 let downloadAlertFeed = async function() {
@@ -86,6 +95,5 @@ let downloadAlertFeed = async function() {
 
 document.addEventListener("DOMContentLoaded", function() {
   console.log('downloading feed');
-  // downloadFeed();
   downloadAlertFeed();
 })
