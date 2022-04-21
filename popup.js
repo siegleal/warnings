@@ -1,75 +1,91 @@
 
-const URL = `https://alerts.weather.gov/cap/us.php?x=0`
-const FILTER = [
-  "Special Weather Statement",
-  "Tornado Warning",
-  "Severe Thunderstorm Warning"
-]
-
-let parseXML = function(xml) {
-  xml = xml.replaceAll('cap:', "cap_")
-  console.log(xml);
-  var xml = $( $.parseXML(xml) );
-  xml.find("entry")
-    .filter( (_, element) => {
-      return FILTER.includes($(element).find('cap_event').text());
-    })
-    .each(function() {
-      let summary = $(this).find('summary').text();
-      let capEvent = $(this).find('cap_event').text();
-      let effective = new Date($(this).find('cap_effective').text());
-      let expires = new Date($(this).find('cap_expires').text());
-      let urgency = $(this).find('cap_urgency').text();
-      let severity = $(this).find('cap_severity').text();
-      let certainty = $(this).find('cap_certainty').text();
-      let newElem = $("<div></div>");
-      newElem.addClass('item');
-      newElem.addClass(getClass(capEvent));
-      let anchor = $('<a></a>').attr('href', $(this).find('id').text()).attr('target', "_blank");
-      newElem.append(anchor.append($('<span></span>').addClass('title').addClass('bold').text(capEvent)))
-      newElem.append($('<span></span>').text('Effective: ' + effective.toLocaleString()))
-      newElem.append($('<span></span>').text('Expires: ' + expires.toLocaleString()))
-      newElem.append($('<span></span>').text('Urgency: ' + urgency));
-      newElem.append($('<span></span>').text('Severity: ' + severity));
-      newElem.append($('<span></span>').text('Certainty: ' + certainty));
-      newElem.append($('<span></span>').text(summary))
-      $('#events').append(newElem)
-  })
-
+const ALERTS_URL = "https://api.weather.gov/alerts/active?status=actual"
+const TOR = {
+  priority: 0,
+  text : "Tornado Warning",
+  class: "tor"
 }
+const SVR = {
+  priority : 1,
+  text : "Severe Thunderstorm Warning",
+  class: "svr"
+}
+const SWS = {
+  priority : 2,
+  text : "Special Weather Statement",
+  class: "spec"
+}
+const FILTER = [TOR, SVR, SWS].map(e => e.text)
 
 function getClass(event) {
   switch (event) {
-    case FILTER[0]:
-      return "spec";
-    case FILTER[1]:
+    case TOR.text:
       return "tor";
-    case FILTER[2]:
+    case SVR.text:
       return "svr"
+    case SWS.text:
+      return "spec";
     default:
       return ""
   }
 }
 
-let downloadFeed = async function(){
-  await fetch(URL)
-    .then(response => response.text())
-    .then(str => {
-      parseXML(str)
-    })
+function addCard(feature) {
+  let newElem = $("<div></div>");
+  newElem.addClass('item');
+  newElem.addClass(getClass(feature.event));
+  let anchor = $('<a></a>').attr('href', feature.link).attr('target', "_blank");
+  newElem.append(anchor.append($('<span></span>').addClass('title').addClass('bold').text(feature.event)))
+  newElem.append($('<span></span>').text('Area: ' + feature.areaDesc))
 
+  if (feature.hailSize > 0 || feature.windGust > 0) {
+    newElem.append($('<span></span>').text('Wind Gust: ' + feature.windGust + ' Hail size: ' + feature.hailSize))
+  }
+
+  newElem.append($('<span></span>').text('Effective: ' + feature.effective.toLocaleString()))
+  newElem.append($('<span></span>').text('Expires: ' + feature.expires.toLocaleString()))
+  newElem.append($('<span></span>').addClass('desc').text(feature.description))
+  $('#events').append(newElem)
+}
+
+class Feature {
+  constructor(feature) {
+    console.log(feature)
+    let props = feature.properties;
+    this.event = feature.properties.event;
+    this.description = feature.properties.description;
+    this.areaDesc = feature.properties.areaDesc;
+    this.effective = new Date(feature.properties.effective)
+    this.expires = new Date(feature.properties.expires)
+    this.windGust = 0;
+    if ('maxWindGust' in props.parameters) {
+      this.windGust = props.parameters.maxWindGust[0]
+    }
+    this.hailSize = 0;
+    if ('maxHailSize' in props.parameters) {
+      this.hailSize = props.parameters.maxHailSize[0]
+    }
+    this.sender = feature.properties.senderName
+    this.priority = FILTER.indexOf(this.event)
+  }
+}
+
+function processFeatures(features) {
+  features.filter((e) => FILTER.includes(e.properties.event))
+    .map(f => new Feature(f))
+    .sort((a,b) => a.priority - b.priority)
+    .forEach(addCard)
+
+}
+
+let downloadAlertFeed = async function() {
+  fetch(ALERTS_URL, {'method': 'GET', 'headers': {'Accept': 'application/geo+json'}})
+    .then(response => response.json())
+    .then( data => processFeatures(data.features))
 }
 
 document.addEventListener("DOMContentLoaded", function() {
   console.log('downloading feed');
-  downloadFeed();
-})
-
-chrome.runtime.onStartup.addListener(() => {
-  downloadFeed()
-})
-
-
-chrome.runtime.onInstalled.addListener(() => {
-  downloadFeed()
+  // downloadFeed();
+  downloadAlertFeed();
 })

@@ -29,12 +29,16 @@ span.bold {
   font-weight: bold;
 }
 
+span.desc {
+  white-space: pre-line;
+}
+
 
 .spec {
-  background-color: aqua;
+  background-color: #b1effc;
 }
 .svr {
-  background-color: lightyellow;
+  background-color: #f7ff63;
 }
 .tor {
   background-color: lightcoral;
