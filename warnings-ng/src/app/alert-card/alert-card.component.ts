@@ -8,7 +8,7 @@ import { Input } from '@angular/core';
   styleUrls: ['./alert-card.component.css']
 })
 export class AlertCardComponent implements OnInit {
-   @Input() alert: Alert;
+   @Input() alert?: Alert;
 
   ngOnInit(): void {
   }
