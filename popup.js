@@ -20,6 +20,13 @@ const SWS = {
 }
 const FILTER = [TOR, SVR, SWS].map(e => e.text)
 
+class Tag {
+  constructor(searchText, tagName){
+    this.searchText = searchText;
+    this.tag = tagName;
+  }
+}
+
 function getClass(event) {
   switch (event) {
     case TOR.text:
@@ -44,6 +51,7 @@ function addCard(feature) {
   if (feature.hailSize > 0 || feature.windGust > 0) {
     newElem.append($('<span></span>').text('Wind Gust: ' + feature.windGust + ' Hail size: ' + feature.hailSize))
   }
+  newElem.append($('<span></span>').text('Thunderstorm Damage: ' + feature.thunderstormDamageThreat))
 
   newElem.append($('<span></span>').text('Effective: ' + feature.effective.toLocaleString()))
   newElem.append($('<span></span>').text('Expires: ' + feature.expires.toLocaleString()))
@@ -60,6 +68,8 @@ class Feature {
     this.areaDesc = feature.properties.areaDesc;
     this.effective = new Date(feature.properties.effective)
     this.expires = new Date(feature.properties.expires)
+    this.sender = feature.properties.senderName
+    this.priority = FILTER.indexOf(this.event)
     this.windGust = 0;
     if ('maxWindGust' in props.parameters) {
       this.windGust = props.parameters.maxWindGust[0]
@@ -68,8 +78,14 @@ class Feature {
     if ('maxHailSize' in props.parameters) {
       this.hailSize = props.parameters.maxHailSize[0]
     }
-    this.sender = feature.properties.senderName
-    this.priority = FILTER.indexOf(this.event)
+    this.tornadoDetection = 'None'
+    if ('tornadoDetection' in props.parameters) {
+      this.tornadoDetection = props.parameters.tornadoDetection[0]
+    }
+    this.thunderstormDamageThreat = 'None'
+    if ('thunderstormDamageThreat' in props.parameters) {
+      this.thunderstormDamageThreat = props.parameters.thunderstormDamageThreat[0]
+    }
   }
 }
 

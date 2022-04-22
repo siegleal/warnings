@@ -1,0 +1,872 @@
+{
+    "@context": [
+        "https://geojson.org/geojson-ld/geojson-context.jsonld",
+        {
+            "@version": "1.1",
+            "wx": "https://api.weather.gov/ontology#",
+            "@vocab": "https://api.weather.gov/ontology#"
+        }
+    ],
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4ba1c1a25683a9ef299bbdc8d747eecbdd5673c9.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -99.650000000000006,
+                            37.719999999999999
+                        ],
+                        [
+                            -99.52000000000001,
+                            37.960000000000001
+                        ],
+                        [
+                            -99.340000000000003,
+                            37.890000000000001
+                        ],
+                        [
+                            -99.5,
+                            37.729999900000003
+                        ],
+                        [
+                            -99.560000000000002,
+                            37.729999900000003
+                        ],
+                        [
+                            -99.560000000000002,
+                            37.700000000000003
+                        ],
+                        [
+                            -99.650000000000006,
+                            37.719999999999999
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4ba1c1a25683a9ef299bbdc8d747eecbdd5673c9.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.4ba1c1a25683a9ef299bbdc8d747eecbdd5673c9.001.1",
+                "areaDesc": "Edwards, KS; Ford, KS",
+                "geocode": {
+                    "SAME": [
+                        "020047",
+                        "020057"
+                    ],
+                    "UGC": [
+                        "KSC047",
+                        "KSC057"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/KSC047",
+                    "https://api.weather.gov/zones/county/KSC057"
+                ],
+                "references": [],
+                "sent": "2022-04-21T20:16:00-05:00",
+                "effective": "2022-04-21T20:16:00-05:00",
+                "onset": "2022-04-21T20:16:00-05:00",
+                "expires": "2022-04-21T21:00:00-05:00",
+                "ends": "2022-04-21T21:00:00-05:00",
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Extreme",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Tornado Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Dodge City KS",
+                "headline": "Tornado Warning issued April 21 at 8:16PM CDT until April 21 at 9:00PM CDT by NWS Dodge City KS",
+                "description": "The National Weather Service in Dodge City has issued a\n\n* Tornado Warning for...\nEast central Ford County in southwestern Kansas...\nSouthwestern Edwards County in south central Kansas...\n\n* Until 900 PM CDT.\n\n* At 816 PM CDT, a severe thunderstorm capable of producing a tornado\nwas located near Windhorst, moving northeast at 25 mph.\n\nHAZARD...Tornado and tennis ball size hail.\n\nSOURCE...Radar indicated rotation.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed.\nDamage to roofs, windows, and vehicles will occur.  Tree\ndamage is likely.\n\n* Locations impacted include...\nOfferle and Kinsley.",
+                "instruction": "TAKE COVER NOW! Move to a basement or an interior room on the lowest\nfloor of a sturdy building. Avoid windows. If you are outdoors, in a\nmobile home, or in a vehicle, move to the closest substantial shelter\nand protect yourself from flying debris.",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "TORDDC"
+                    ],
+                    "WMOidentifier": [
+                        "WFUS53 KDDC 220116"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-22T01:16:00-00:00...storm...214DEG...21KT...37.74,-99.58"
+                    ],
+                    "maxHailSize": [
+                        "2.50"
+                    ],
+                    "tornadoDetection": [
+                        "RADAR INDICATED"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.NEW.KDDC.TO.W.0001.220422T0116Z-220422T0200Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-22T02:00:00+00:00"
+                    ],
+                    "WEAHandling": [
+                        "Imminent Threat"
+                    ],
+                    "CMAMtext": [
+                        "NWS: TORNADO WARNING in this area til 9:00 PM CDT. Take shelter now. Check media."
+                    ],
+                    "CMAMlongtext": [
+                        "National Weather Service: TORNADO WARNING in this area until 9:00 PM CDT. Take shelter now in a basement or an interior room on the lowest floor of a sturdy building. If you are outdoors, in a mobile home, or in a vehicle, move to the closest substantial shelter and protect yourself from flying debris. Check media."
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0883818eeed771d713c6a444731c71e313f82092.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -99.030000000000001,
+                            38.600000000000001
+                        ],
+                        [
+                            -98.670000000000002,
+                            38.460000000000001
+                        ],
+                        [
+                            -98.810000000000002,
+                            38.259999999999998
+                        ],
+                        [
+                            -99.030000000000001,
+                            38.259999999999998
+                        ],
+                        [
+                            -99.030000000000001,
+                            38.600000000000001
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0883818eeed771d713c6a444731c71e313f82092.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.0883818eeed771d713c6a444731c71e313f82092.001.1",
+                "areaDesc": "Barton, KS",
+                "geocode": {
+                    "SAME": [
+                        "020009"
+                    ],
+                    "UGC": [
+                        "KSC009"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/KSC009"
+                ],
+                "references": [],
+                "sent": "2022-04-21T20:13:00-05:00",
+                "effective": "2022-04-21T20:13:00-05:00",
+                "onset": "2022-04-21T20:13:00-05:00",
+                "expires": "2022-04-21T21:30:00-05:00",
+                "ends": "2022-04-21T21:30:00-05:00",
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Severe",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Severe Thunderstorm Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Wichita KS",
+                "headline": "Severe Thunderstorm Warning issued April 21 at 8:13PM CDT until April 21 at 9:30PM CDT by NWS Wichita KS",
+                "description": "The National Weather Service in Wichita has issued a\n\n* Severe Thunderstorm Warning for...\nSouthwestern Barton County in central Kansas...\n\n* Until 930 PM CDT.\n\n* At 813 PM CDT, a severe thunderstorm was located near Larned,\nmoving northeast at 25 mph.\n\nHAZARD...60 mph wind gusts and half dollar size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Hail damage to vehicles is expected. Expect wind damage\nto roofs, siding, and trees.\n\n* Locations impacted include...\nGreat Bend, Pawnee Rock, Albert, Olmitz, Great Bend Airport and\nCheyenne Bottoms.",
+                "instruction": "A Tornado Watch remains in effect until 1100 PM CDT for central\nKansas.\n\nFor your protection move to an interior room on the lowest floor of a\nbuilding.\n\nA Tornado Watch remains in effect until 1100 PM CDT for central\nKansas.",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVRICT"
+                    ],
+                    "WMOidentifier": [
+                        "WUUS53 KICT 220113"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-22T01:13:00-00:00...storm...212DEG...20KT...38.23,-99.09"
+                    ],
+                    "windThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxWindGust": [
+                        "60 MPH"
+                    ],
+                    "hailThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxHailSize": [
+                        "1.25"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.NEW.KICT.SV.W.0021.220422T0113Z-220422T0230Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-22T02:30:00+00:00"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.63fda1185a3af3d8308b1eb239896cd5887db4ea.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -99.489999999999995,
+                            37.630000000000003
+                        ],
+                        [
+                            -99.7099999,
+                            37.729999900000003
+                        ],
+                        [
+                            -99.609999999999999,
+                            37.909999900000003
+                        ],
+                        [
+                            -99.569999899999999,
+                            37.920000000000002
+                        ],
+                        [
+                            -99.569999899999999,
+                            37.979999900000003
+                        ],
+                        [
+                            -99.450000000000003,
+                            38.190000000000005
+                        ],
+                        [
+                            -99.030000000000001,
+                            38.000000000000007
+                        ],
+                        [
+                            -99.489999999999995,
+                            37.630000000000003
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.63fda1185a3af3d8308b1eb239896cd5887db4ea.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.63fda1185a3af3d8308b1eb239896cd5887db4ea.001.1",
+                "areaDesc": "Edwards, KS; Ford, KS; Kiowa, KS; Pawnee, KS",
+                "geocode": {
+                    "SAME": [
+                        "020047",
+                        "020057",
+                        "020097",
+                        "020145"
+                    ],
+                    "UGC": [
+                        "KSC047",
+                        "KSC057",
+                        "KSC097",
+                        "KSC145"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/KSC047",
+                    "https://api.weather.gov/zones/county/KSC057",
+                    "https://api.weather.gov/zones/county/KSC097",
+                    "https://api.weather.gov/zones/county/KSC145"
+                ],
+                "references": [
+                    {
+                        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6766fc0050979565c564aefd07e225e7894565db.001.1",
+                        "identifier": "urn:oid:2.49.0.1.840.0.6766fc0050979565c564aefd07e225e7894565db.001.1",
+                        "sender": "w-nws.webmaster@noaa.gov",
+                        "sent": "2022-04-21T19:55:00-05:00"
+                    }
+                ],
+                "sent": "2022-04-21T20:11:00-05:00",
+                "effective": "2022-04-21T20:11:00-05:00",
+                "onset": "2022-04-21T20:11:00-05:00",
+                "expires": "2022-04-21T20:45:00-05:00",
+                "ends": "2022-04-21T20:45:00-05:00",
+                "status": "Actual",
+                "messageType": "Update",
+                "category": "Met",
+                "severity": "Severe",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Severe Thunderstorm Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Dodge City KS",
+                "headline": "Severe Thunderstorm Warning issued April 21 at 8:11PM CDT until April 21 at 8:45PM CDT by NWS Dodge City KS",
+                "description": "At 810 PM CDT, a severe thunderstorm was located near Windhorst,\nmoving northeast at 30 mph.  A second severe thunderstorm is located\n4 miles north of Kinsley moving northeast at 30 mph.\n\nHAZARD...Two inch hail.\n\nSOURCE...Trained weather spotters.\n\nIMPACT...People and animals outdoors will be injured. Expect damage\nto roofs, siding, windows, and vehicles.\n\nLocations impacted include...\nOfferle, Kinsley and Garfield.",
+                "instruction": "A Tornado Watch remains in effect until 1100 PM CDT for south central\nand southwestern Kansas.\n\nFor your protection move to an interior room on the lowest floor of a\nbuilding.",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVSDDC"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS53 KDDC 220111"
+                    ],
+                    "NWSheadline": [
+                        "A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 845 PM CDT FOR NORTHEASTERN FORD...NORTHWESTERN KIOWA...SOUTHWESTERN PAWNEE AND EDWARDS COUNTIES"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-22T01:10:00-00:00...storm...210DEG...25KT...37.78,-99.54"
+                    ],
+                    "windThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxWindGust": [
+                        "Up to 50 MPH"
+                    ],
+                    "hailThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxHailSize": [
+                        "2.00"
+                    ],
+                    "thunderstormDamageThreat": [
+                        "CONSIDERABLE"
+                    ],
+                    "tornadoDetection": [
+                        "POSSIBLE"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.CON.KDDC.SV.W.0007.000000T0000Z-220422T0145Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-22T01:45:00+00:00"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bbeec47aa8d8d35f3ee7bbb0952e88bd18eac3dc.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -98.680000000000007,
+                            38.240000000000002
+                        ],
+                        [
+                            -99.100000000000009,
+                            38.090000000000003
+                        ],
+                        [
+                            -99.240000000000009,
+                            38.210000000000001
+                        ],
+                        [
+                            -99.030000000000015,
+                            38.350000000000001
+                        ],
+                        [
+                            -99.030000000000015,
+                            38.259999999999998
+                        ],
+                        [
+                            -98.700000000000017,
+                            38.259999999999998
+                        ],
+                        [
+                            -98.680000000000007,
+                            38.240000000000002
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bbeec47aa8d8d35f3ee7bbb0952e88bd18eac3dc.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.bbeec47aa8d8d35f3ee7bbb0952e88bd18eac3dc.001.1",
+                "areaDesc": "Pawnee, KS; Stafford, KS",
+                "geocode": {
+                    "SAME": [
+                        "020145",
+                        "020185"
+                    ],
+                    "UGC": [
+                        "KSC145",
+                        "KSC185"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/KSC145",
+                    "https://api.weather.gov/zones/county/KSC185"
+                ],
+                "references": [],
+                "sent": "2022-04-21T20:07:00-05:00",
+                "effective": "2022-04-21T20:07:00-05:00",
+                "onset": "2022-04-21T20:07:00-05:00",
+                "expires": "2022-04-21T20:45:00-05:00",
+                "ends": "2022-04-21T20:45:00-05:00",
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Severe",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Severe Thunderstorm Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Dodge City KS",
+                "headline": "Severe Thunderstorm Warning issued April 21 at 8:07PM CDT until April 21 at 8:45PM CDT by NWS Dodge City KS",
+                "description": "The National Weather Service in Dodge City has issued a\n\n* Severe Thunderstorm Warning for...\nNortheastern Pawnee County in south central Kansas...\nNorthwestern Stafford County in south central Kansas...\n\n* Until 845 PM CDT.\n\n* At 806 PM CDT, a severe thunderstorm was located very near Larned,\nmoving northeast at 20 mph.\n\nHAZARD...Two inch hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...People and animals outdoors will be injured. Expect\ndamage to roofs, siding, windows, and vehicles.\n\n* This severe thunderstorm will be near...\nLarned around 815 PM CDT.\n\nOther locations in the path of this severe thunderstorm include\nRadium.",
+                "instruction": "A Tornado Watch remains in effect until 1100 PM CDT for south central\nKansas.\n\nFor your protection move to an interior room on the lowest floor of a\nbuilding.\n\nA Tornado Watch remains in effect until 1100 PM CDT for south central\nKansas.",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVRDDC"
+                    ],
+                    "WMOidentifier": [
+                        "WUUS53 KDDC 220107"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-22T01:06:00-00:00...storm...236DEG...18KT...38.18,-99.12"
+                    ],
+                    "windThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxWindGust": [
+                        "Up to 50 MPH"
+                    ],
+                    "hailThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxHailSize": [
+                        "2.00"
+                    ],
+                    "thunderstormDamageThreat": [
+                        "CONSIDERABLE"
+                    ],
+                    "tornadoDetection": [
+                        "POSSIBLE"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.NEW.KDDC.SV.W.0009.220422T0107Z-220422T0145Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-22T01:45:00+00:00"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a79deca20c21a5965017920230c9b92d7252bede.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -99.030000000000001,
+                            38.329999999999998
+                        ],
+                        [
+                            -99.519999999999996,
+                            38.309999999999995
+                        ],
+                        [
+                            -99.560000000000002,
+                            38.559999999999995
+                        ],
+                        [
+                            -99.030000000000001,
+                            38.589999999999996
+                        ],
+                        [
+                            -99.030000000000001,
+                            38.329999999999998
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a79deca20c21a5965017920230c9b92d7252bede.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.a79deca20c21a5965017920230c9b92d7252bede.001.1",
+                "areaDesc": "Pawnee, KS; Rush, KS",
+                "geocode": {
+                    "SAME": [
+                        "020145",
+                        "020165"
+                    ],
+                    "UGC": [
+                        "KSC145",
+                        "KSC165"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/KSC145",
+                    "https://api.weather.gov/zones/county/KSC165"
+                ],
+                "references": [],
+                "sent": "2022-04-21T19:57:00-05:00",
+                "effective": "2022-04-21T19:57:00-05:00",
+                "onset": "2022-04-21T19:57:00-05:00",
+                "expires": "2022-04-21T20:45:00-05:00",
+                "ends": "2022-04-21T20:45:00-05:00",
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Severe",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Severe Thunderstorm Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Dodge City KS",
+                "headline": "Severe Thunderstorm Warning issued April 21 at 7:57PM CDT until April 21 at 8:45PM CDT by NWS Dodge City KS",
+                "description": "The National Weather Service in Dodge City has issued a\n\n* Severe Thunderstorm Warning for...\nNorthwestern Pawnee County in south central Kansas...\nSouthern Rush County in central Kansas...\n\n* Until 845 PM CDT.\n\n* At 756 PM CDT, a severe thunderstorm was located near Nekoma,\nmoving east at 30 mph.\n\nTHIS IS A DESTRUCTIVE STORM FOR Nekoma.\n\nHAZARD...Baseball size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...People and animals outdoors will be severely injured.\nExpect shattered windows, extensive damage to roofs,\nsiding, and vehicles.\n\n* This severe thunderstorm will be near...\nLa Crosse and Rush Center around 810 PM CDT.\n\nOther locations in the path of this severe thunderstorm include\nBison, Timken, Otis and Shaffer.",
+                "instruction": "A Tornado Watch remains in effect until 1100 PM CDT for south central\nand central Kansas.\n\nFor your protection move to an interior room on the lowest floor of a\nbuilding.\n\nA Tornado Watch remains in effect until 1100 PM CDT for south central\nand central Kansas.",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVRDDC"
+                    ],
+                    "WMOidentifier": [
+                        "WUUS53 KDDC 220057"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-22T00:56:00-00:00...storm...269DEG...27KT...38.42,-99.43"
+                    ],
+                    "windThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxWindGust": [
+                        "Up to 50 MPH"
+                    ],
+                    "hailThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxHailSize": [
+                        "2.75"
+                    ],
+                    "thunderstormDamageThreat": [
+                        "DESTRUCTIVE"
+                    ],
+                    "tornadoDetection": [
+                        "POSSIBLE"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.NEW.KDDC.SV.W.0008.220422T0057Z-220422T0145Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-22T01:45:00+00:00"
+                    ],
+                    "WEAHandling": [
+                        "Imminent Threat"
+                    ],
+                    "CMAMtext": [
+                        "NWS:DESTRUCTIVE HAIL STORM in this area til 845 PM CDT. Take shelter now. Check media."
+                    ],
+                    "CMAMlongtext": [
+                        "National Weather Service: SEVERE THUNDERSTORM WARNING in effect for this area until 8:45 PM CDT for DESTRUCTIVE baseball size hail. Take shelter in a sturdy building, away from windows. People and animals outdoors will be severely injured."
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3bec79dc1e9350382433d07a04d86bdc5039204f.003.1",
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3bec79dc1e9350382433d07a04d86bdc5039204f.003.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.3bec79dc1e9350382433d07a04d86bdc5039204f.003.1",
+                "areaDesc": "Green Mountains and Rattlesnake Range; Natrona County Lower Elevations; Casper Mountain",
+                "geocode": {
+                    "SAME": [
+                        "056013",
+                        "056025",
+                        "056037"
+                    ],
+                    "UGC": [
+                        "WYZ019",
+                        "WYZ020",
+                        "WYZ022"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/WYZ019",
+                    "https://api.weather.gov/zones/forecast/WYZ020",
+                    "https://api.weather.gov/zones/forecast/WYZ022"
+                ],
+                "references": [],
+                "sent": "2022-04-21T15:11:00-06:00",
+                "effective": "2022-04-21T15:11:00-06:00",
+                "onset": "2022-04-21T15:11:00-06:00",
+                "expires": "2022-04-21T23:00:00-06:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Riverton WY",
+                "headline": "Special Weather Statement issued April 21 at 3:11PM MDT by NWS Riverton WY",
+                "description": "This is a special weather statement from the National Weather\nService Office in Riverton.\n\n* WHAT...North to northwest winds, with gusts of 35 to 45 mph.\nSnowfall accumulations of 2 to 4 inches expected, with locally\nhigher amounts up to 8 inches possible near Midwest/Edgerton. 6\nto 12 inches expected over Casper Mountain.\n\n* WHERE...Natrona County, including Casper Mountain and the Green\nMountains/Rattlesnake Range.\n\n* WHEN...Friday Night through Saturday.\n\n* ADDITIONAL DETAILS...Rain will change over to snow early\nSaturday morning toward sunrise. Exercise caution when driving,\nas visibility could drop quickly with snow covered roads.",
+                "instruction": null,
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSRIW"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS85 KRIW 212111"
+                    ],
+                    "NWSheadline": [
+                        "Snow/Blowing Snow Friday Night into Saturday"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3bec79dc1e9350382433d07a04d86bdc5039204f.002.1",
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3bec79dc1e9350382433d07a04d86bdc5039204f.002.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.3bec79dc1e9350382433d07a04d86bdc5039204f.002.1",
+                "areaDesc": "Wind River Basin",
+                "geocode": {
+                    "SAME": [
+                        "056013"
+                    ],
+                    "UGC": [
+                        "WYZ017"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/WYZ017"
+                ],
+                "references": [],
+                "sent": "2022-04-21T15:11:00-06:00",
+                "effective": "2022-04-21T15:11:00-06:00",
+                "onset": "2022-04-21T15:11:00-06:00",
+                "expires": "2022-04-21T23:00:00-06:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Riverton WY",
+                "headline": "Special Weather Statement issued April 21 at 3:11PM MDT by NWS Riverton WY",
+                "description": "This is a special weather statement from the National Weather\nService Office in Riverton.\n\n* WHAT...North winds, with gusts of 35 to 45 mph. Snowfall amounts\nwill be under an inch for much of the basin. 1 to 3 inches are\nexpected from Shoshoni to the Fremont/Natrona County line.\n\n* WHERE...The Wind River Basin.\n\n* WHEN...Friday Night through Saturday.\n\n* ADDITIONAL DETAILS...Rain will change over to snow late Friday\nnight. Reductions in visibility are expected due to the blowing snow,\ndespite the lack of accumulation.",
+                "instruction": null,
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSRIW"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS85 KRIW 212111"
+                    ],
+                    "NWSheadline": [
+                        "Snow/Blowing Snow Friday Night into Saturday"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3bec79dc1e9350382433d07a04d86bdc5039204f.001.1",
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3bec79dc1e9350382433d07a04d86bdc5039204f.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.3bec79dc1e9350382433d07a04d86bdc5039204f.001.1",
+                "areaDesc": "North Big Horn Basin; Southwest Big Horn Basin; Southeast Big Horn Basin",
+                "geocode": {
+                    "SAME": [
+                        "056003",
+                        "056029",
+                        "056017",
+                        "056043"
+                    ],
+                    "UGC": [
+                        "WYZ004",
+                        "WYZ005",
+                        "WYZ006"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/WYZ004",
+                    "https://api.weather.gov/zones/forecast/WYZ005",
+                    "https://api.weather.gov/zones/forecast/WYZ006"
+                ],
+                "references": [],
+                "sent": "2022-04-21T15:11:00-06:00",
+                "effective": "2022-04-21T15:11:00-06:00",
+                "onset": "2022-04-21T15:11:00-06:00",
+                "expires": "2022-04-21T23:00:00-06:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Riverton WY",
+                "headline": "Special Weather Statement issued April 21 at 3:11PM MDT by NWS Riverton WY",
+                "description": "This is a special weather statement from the National Weather\nService Office in Riverton.\n\n* WHAT...Northwest winds, with gusts of 35 to 45 mph. Snowfall\namounts will be under an inch. Locally higher amounts up to 4\ninches possible near Powell.\n\n* WHERE...The Bighorn Basin, excluding the Cody Foothills.\n\n* WHEN...Friday Night through Saturday.\n\n* ADDITIONAL DETAILS...Rain will change over to snow late Friday\nnight. Reductions in visibility are expected due to the blowing snow,\ndespite the lack of accumulation.",
+                "instruction": null,
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSRIW"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS85 KRIW 212111"
+                    ],
+                    "NWSheadline": [
+                        "Snow/Blowing Snow Friday Night into Saturday"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3bec79dc1e9350382433d07a04d86bdc5039204f.004.1",
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3bec79dc1e9350382433d07a04d86bdc5039204f.004.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.3bec79dc1e9350382433d07a04d86bdc5039204f.004.1",
+                "areaDesc": "East Sweetwater County",
+                "geocode": {
+                    "SAME": [
+                        "056037"
+                    ],
+                    "UGC": [
+                        "WYZ030"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/WYZ030"
+                ],
+                "references": [],
+                "sent": "2022-04-21T15:11:00-06:00",
+                "effective": "2022-04-21T15:11:00-06:00",
+                "onset": "2022-04-21T15:11:00-06:00",
+                "expires": "2022-04-21T23:00:00-06:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Riverton WY",
+                "headline": "Special Weather Statement issued April 21 at 3:11PM MDT by NWS Riverton WY",
+                "description": "This is a special weather statement from the National Weather\nService Office in Riverton.\n\n* WHAT...West to northwest winds, with gusts of 30 to 35 mph.\nSnowfall accumulations of 1 to 2 inches.\n\n* WHERE...Eastern portions of Sweetwater County.\n\n* WHEN...Friday Night through Saturday.\n\n* ADDITIONAL DETAILS...Rain will change over to snow late Friday\nnight toward sunrise. Exercise caution when driving, as\nvisibility could drop quickly with snow covered roads.",
+                "instruction": null,
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSRIW"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS85 KRIW 212111"
+                    ],
+                    "NWSheadline": [
+                        "Snow/Blowing Snow Friday Night into Saturday"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        }
+    ],
+    "title": "current watches, warnings, and advisories",
+    "updated": "2022-04-22T01:17:13+00:00"
+}
