@@ -1,3 +1,6 @@
-<div *ngIf="alert" >
-  {{ alert.event }}
+<div *ngIf="alert" class="{{alert.eventType.cssClass}} alert-card-container" >
+  <div class="title">{{ alert.event }}</div>
+  <div>{{ alert.effective.toLocaleString() }}</div>
+  <div>{{ alert.expires.toLocaleString() }}</div>
+  <div class="desc">{{ alert.description }}</div>
 </div>

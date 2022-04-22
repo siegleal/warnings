@@ -1,0 +1,18 @@
+.spec {
+  background-color: #b1effc;
+}
+.svr {
+  background-color: #f7ff63;
+}
+.tor {
+  background-color: lightcoral;
+}
+
+.desc {
+  white-space: pre-line;
+}
+
+.alert-card-container {
+  margin-bottom: 5px;
+  padding: 2px;
+}
