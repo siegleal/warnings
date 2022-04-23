@@ -1,7 +1,9 @@
 import { HttpClient } from '@angular/common/http';
+import { SelectorMatcher } from '@angular/compiler';
 import { Injectable } from '@angular/core';
-import { Observable, map } from 'rxjs';
-import { Alert } from '../utils';
+import { Observable, from } from 'rxjs';
+import { map, filter, tap, switchMap } from 'rxjs/operators'
+import { Alert, AlertsApi, EventType, Feature } from '../utils';
 
 @Injectable({
   providedIn: 'root'
@@ -12,8 +14,22 @@ export class CapService {
   constructor(private httpClient: HttpClient) { }
 
   getAlerts(): Observable<Alert[]> {
-    return this.httpClient.get(this.ALERTS_URL)
+    return this.httpClient.get<AlertsApi>(this.ALERTS_URL)
       .pipe(
-        map((res: any) => res.features.map((feature: any) => new Alert(feature))))
+        map((res:AlertsApi) => res.features.map(feature => new Alert(feature))
+        // switchMap<Feature[], Observable<Feature>>(featuresArray => from(featuresArray)),
+        // map((feature: Feature) => new Alert(feature)),
+        .filter((alert, _) => {
+          if (alert.eventType === EventType.TOR || alert.eventType === EventType.SVR) {
+            return true;
+          }
+          if (alert.eventType == EventType.SWS && alert.description.includes('thunderstorm')) {
+            return true;
+          }
+          return false;
+        })))
+        // )
   }
 }
+
+

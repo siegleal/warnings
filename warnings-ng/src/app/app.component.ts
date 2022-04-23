@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CapService } from './cap.service';
 import { Alert } from '../utils';
+import { map } from "rxjs/operators"
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,10 @@ export class AppComponent {
     this.alerts = []
   }
 
+
   ngOnInit(): void {
-    this.capService.getAlerts().subscribe(alertArr => this.alerts = alertArr)
+    this.capService.getAlerts()
+      .pipe(map(alerts => alerts.sort((a,b) => b.priority() - a.priority())))
+      .subscribe(alerts => this.alerts = alerts)
   }
 }

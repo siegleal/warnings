@@ -1,3 +1,4 @@
 <div id="container">
+  <div class="loading" *ngIf="alerts.length == 0">Loading...</div>
 <app-alert-card *ngFor="let alert of alerts" [alert]="alert" ></app-alert-card>
 </div>
