@@ -5,8 +5,8 @@
   <div>Expires: {{ alert.expires.toLocaleString() }}</div>
   </div>
   <div class="hazards" *ngIf="shouldDisplayHazards()">
-  <div class="left" *ngIf="alert.hailSize > 0">Hail: {{alert.hailSize}} in</div>
-  <div class="right" *ngIf="alert.windGust > 0">Wind gusts: {{alert.windGust}} MPH</div>
+  <div class="left hazard-item" *ngIf="alert.hailSize > 0">Hail: {{alert.hailSize}} in</div>
+  <div class="right hazard-item" *ngIf="alert.windGust > 0">Wind gusts: {{alert.windGust}} MPH</div>
   </div>
   <div class="svrHazards" *ngIf="shouldDisplaySvrHazards()">
     <div *ngIf="alert.thunderstormDamageThreat">T-Storm Damage: {{alert.thunderstormDamageThreat}}</div>
