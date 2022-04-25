@@ -1,8 +1,11 @@
-<div *ngIf="alert" class="{{alert.eventType.cssClass}} alert-card-container" (click)="toggleDescription()" >
+<div *ngIf="alert" class="{{ getClass() }} alert-card-container" (click)="toggleDescription()" >
+  <div class="header">
   <div class="title">{{ alert.event }}</div>
-  <div class="timing">
-  <div>Effective: {{ alert.effective.toLocaleString() }}</div>
-  <div>Expires: {{ alert.expires.toLocaleString() }}</div>
+  <div class="subtitle">
+  <div>From: {{alert.sender}}</div>
+  <div>{{alert.areaDesc}}</div>
+  <div>Expires in: {{alert.timeUntilExpiration()}} minutes</div>
+  </div>
   </div>
   <div class="hazards" *ngIf="shouldDisplayHazards()">
   <div class="left hazard-item" *ngIf="alert.hailSize > 0">Hail: {{alert.hailSize}} in</div>
@@ -12,8 +15,16 @@
     <div *ngIf="alert.thunderstormDamageThreat">T-Storm Damage: {{alert.thunderstormDamageThreat}}</div>
   </div>
   <div class="torHazards" *ngIf="shouldDisplayTorHazards()">
-    <div class="{{ getTorDetectionClass() }}" *ngIf="alert.tornadoDetection">Tornado: {{alert.tornadoDetection}}</div>
+    <div *ngIf="alert.tornadoDetection">
+      <span  class="{{ getTorDetectionClass() }}" >
+        Tornado: {{alert.tornadoDetection}}
+      </span></div>
     <div *ngIf="alert.tornadoDamageThreat">Tornado damage: {{alert.tornadoDamageThreat}}</div>
   </div>
-  <div #desc class="desc hidden">{{ alert.description }}</div>
+    <div *ngIf="alert.polygon" class="polygon">
+      <canvas #poly width="50px" height="50px" id="polygon"></canvas>
+    </div>
+  <div #hiddencontainer class="hidden">
+    <div class="desc">{{ alert.description }}</div>
+  </div>
 </div>

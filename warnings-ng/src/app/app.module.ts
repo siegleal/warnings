@@ -4,11 +4,13 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AlertCardComponent } from './alert-card/alert-card.component';
+import { CountCardComponent } from './count-card/count-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AlertCardComponent
+    AlertCardComponent,
+    CountCardComponent,
   ],
   imports: [
     BrowserModule,

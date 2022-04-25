@@ -2,6 +2,46 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[2]!./src/styles.css ***!
   \********************************************************************************************************************************************************************************************************/
 /* You can add global styles to this file, and also import other style files */
-
+.sws {
+  background-color: rgb(53, 255, 255);
+}
+.svr {
+  background-color: #f7ff63;
+}
+.svr-considerable {
+  background-color: #fcdb03;
+}
+.svr-destructive {
+  background-color: #fcba03;
+}
+.tor-radar {
+  background-color: lightcoral;
+}
+.tor-observed {
+  background-color: rgb(242, 106, 106);
+}
+.tor-considerable {
+  background-color: rgb(255, 0, 0);
+}
+.tor-catastrophic {
+  background-color: rgb(182, 4, 4);
+  color: white;
+}
+.tor-pds {
+  background-color: rgb(217, 6, 217);
+}
+.tor-emergency {
+  background-color: purple;
+  color: white;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.hidden {
+  display: none;
+}
 
 /*# sourceMappingURL=styles.css.map*/

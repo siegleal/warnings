@@ -6,3 +6,24 @@
   text-align: center;
   font-size: larger;
 }
+
+.counts-header {
+  font-size: large;
+  text-align: center;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.counts-container {
+  border: 1px solid black;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.icon {
+  font-size: medium;
+  position:absolute;
+  right: 20px;
+}

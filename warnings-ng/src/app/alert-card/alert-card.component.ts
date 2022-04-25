@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { Alert, EventType } from '../../utils';
+import { Alert, EventType, Point } from '../../utils';
 import { Input, ElementRef } from '@angular/core';
 
 @Component({
@@ -9,15 +9,47 @@ import { Input, ElementRef } from '@angular/core';
 })
 export class AlertCardComponent implements OnInit {
    @Input() alert!: Alert;
-   @ViewChild('desc') descDiv!: ElementRef<HTMLDivElement>;
+   @ViewChild('hiddencontainer') hiddenContainer!: ElementRef<HTMLDivElement>;
+   @ViewChild('poly') polyCanvas!: ElementRef<HTMLCanvasElement>;
 
+
+  ngAfterViewInit(): void {
+    this.drawCanvas()
+  }
   ngOnInit(): void {
-    console.log(this.alert)
+    
+  }
+
+  drawCanvas(): void {
+    let ctx: CanvasRenderingContext2D | null = this.polyCanvas.nativeElement.getContext('2d');
+    if (ctx === null){
+      return
+    }
+    console.log('Drawing')
+    console.log('Polygon: ' + JSON.stringify(this.alert.polygon))
+    let adjusted = Point.adjustArray(this.alert.polygon);
+    console.log(adjusted)
+    // ctx.fillStyle = 'blue';
+    // ctx.fillRect(0,0,this.polyCanvas.nativeElement.width, this.polyCanvas.nativeElement.height)
+    // ctx.fillStyle = '#f00';
+    ctx.strokeStyle = '#000';
+    ctx.lineWidth = 1;
+    ctx.transform(1, 0, 0, -1, 0, this.polyCanvas.nativeElement.height)
+    ctx.beginPath();
+    let current: Point = adjusted[0]
+    ctx.moveTo(current.x, current.y)
+    for(let index = 1; index < adjusted.length; index++){
+      current = adjusted[index]
+      ctx.lineTo(current.x, current.y);
+    }
+    ctx.closePath();
+    // ctx.fill();
+    ctx.stroke();
   }
 
   shouldDisplayHazards(): boolean {
     return (this.alert !== undefined &&
-      (this.alert.windGust > 0 || 
+      (this.alert.windGust > 0 ||
         this.alert.hailSize > 0))
   }
 
@@ -32,12 +64,15 @@ export class AlertCardComponent implements OnInit {
   }
 
   toggleDescription(): void {
-    if (this.descDiv.nativeElement.classList.contains('hidden')) {
-      this.descDiv.nativeElement.classList.remove('hidden')
+    if (this.hiddenContainer.nativeElement.classList.contains('hidden')) {
+      this.hiddenContainer.nativeElement.classList.remove('hidden')
     } else {
-      this.descDiv.nativeElement.classList.add('hidden')
+      this.hiddenContainer.nativeElement.classList.add('hidden')
     }
+  }
 
+  getClass(): string {
+    return this.alert.getClass()
   }
 
   getTorDetectionClass(): string {

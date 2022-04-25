@@ -17,8 +17,6 @@ export class CapService {
     return this.httpClient.get<AlertsApi>(this.ALERTS_URL)
       .pipe(
         map((res:AlertsApi) => res.features.map(feature => new Alert(feature))
-        // switchMap<Feature[], Observable<Feature>>(featuresArray => from(featuresArray)),
-        // map((feature: Feature) => new Alert(feature)),
         .filter((alert, _) => {
           if (alert.eventType === EventType.TOR || alert.eventType === EventType.SVR) {
             return true;
@@ -28,7 +26,6 @@ export class CapService {
           }
           return false;
         })))
-        // )
   }
 }
 
