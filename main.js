@@ -409,10 +409,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "CapService": () => (/* binding */ CapService)
 /* harmony export */ });
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs/operators */ 635);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ 833);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ 635);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils */ 6748);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 3184);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ 8784);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 3184);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common/http */ 8784);
+
 
 
 
@@ -421,23 +423,49 @@ class CapService {
     constructor(httpClient) {
         this.httpClient = httpClient;
         this.ALERTS_URL = "https://api.weather.gov/alerts/active?status=actual&event=Tornado%20Warning,Severe%20Thunderstorm%20Warning,Special%20Weather%20Statement";
+        this.TORNADOS_ONLY = "https://api.weather.gov/alerts?event=Tornado%20Warning";
     }
     getAlerts() {
-        return this.httpClient.get(this.ALERTS_URL)
-            .pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_1__.map)((res) => res.features.map(feature => new _utils__WEBPACK_IMPORTED_MODULE_0__.Alert(feature))
-            .filter((alert, _) => {
-            if (alert.eventType === _utils__WEBPACK_IMPORTED_MODULE_0__.EventType.TOR || alert.eventType === _utils__WEBPACK_IMPORTED_MODULE_0__.EventType.SVR) {
-                return true;
-            }
-            if (alert.eventType == _utils__WEBPACK_IMPORTED_MODULE_0__.EventType.SWS && alert.description.includes('thunderstorm')) {
-                return true;
-            }
-            return false;
-        })));
+        return new rxjs__WEBPACK_IMPORTED_MODULE_1__.Observable((subscriber) => {
+            let source = this.ALERTS_URL;
+            chrome.storage.local.get(['source'], (result) => {
+                console.log('Source is ' + result['source']);
+                if (result['source'] === 'tornadoes') {
+                    source = this.TORNADOS_ONLY;
+                }
+                this.httpClient.get(source)
+                    .pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_2__.map)((res) => res.features.map(feature => new _utils__WEBPACK_IMPORTED_MODULE_0__.Alert(feature))
+                    .filter((alert, _) => {
+                    if (alert.eventType === _utils__WEBPACK_IMPORTED_MODULE_0__.EventType.TOR || alert.eventType === _utils__WEBPACK_IMPORTED_MODULE_0__.EventType.SVR) {
+                        return true;
+                    }
+                    if (alert.eventType == _utils__WEBPACK_IMPORTED_MODULE_0__.EventType.SWS && alert.description.includes('thunderstorm')) {
+                        return true;
+                    }
+                    return false;
+                }))).subscribe((alerts) => {
+                    console.log('alerts: ' + JSON.stringify(alerts));
+                    subscriber.next(alerts);
+                    subscriber.complete();
+                });
+            });
+        });
+        // return this.httpClient.get<AlertsApi>(this.ALERTS_URL)
+        //   .pipe(
+        //     map((res: AlertsApi) => res.features.map(feature => new Alert(feature))
+        //       .filter((alert, _) => {
+        //         if (alert.eventType === EventType.TOR || alert.eventType === EventType.SVR) {
+        //           return true;
+        //         }
+        //         if (alert.eventType == EventType.SWS && alert.description.includes('thunderstorm')) {
+        //           return true;
+        //         }
+        //         return false;
+        //       })))
     }
 }
-CapService.ɵfac = function CapService_Factory(t) { return new (t || CapService)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpClient)); };
-CapService.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({ token: CapService, factory: CapService.ɵfac, providedIn: 'root' });
+CapService.ɵfac = function CapService_Factory(t) { return new (t || CapService)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_4__.HttpClient)); };
+CapService.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjectable"]({ token: CapService, factory: CapService.ɵfac, providedIn: 'root' });
 
 
 /***/ }),
@@ -651,7 +679,12 @@ class Alert {
                         return "svr";
                 }
             case EventType.TOR:
-                //PDS and emergency TBD
+                if (this.description.toLowerCase().includes('tornado emergency')) {
+                    return "tor-emergency";
+                }
+                if (this.description.toLowerCase().includes('particularly dangerous situation')) {
+                    return "tor-pds";
+                }
                 if (this.tornadoDamageThreat === "CATASTROPHIC") {
                     return "tor-catastrophic";
                 }
