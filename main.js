@@ -241,13 +241,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "AppComponent": () => (/* binding */ AppComponent)
 /* harmony export */ });
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils */ 6748);
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/operators */ 635);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ 3184);
 /* harmony import */ var _cap_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./cap.service */ 6935);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ 6362);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common */ 6362);
 /* harmony import */ var _count_card_count_card_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./count-card/count-card.component */ 8275);
 /* harmony import */ var _alert_card_alert_card_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./alert-card/alert-card.component */ 6562);
-
 
 
 
@@ -317,8 +315,7 @@ class AppComponent {
     }
     ngOnInit() {
         this.capService.getAlerts()
-            .pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(alerts => alerts.sort((a, b) => b.priority() - a.priority())))
-            .subscribe(alerts => this.alerts = alerts);
+            .then((alerts) => this.alerts = alerts);
     }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_cap_service__WEBPACK_IMPORTED_MODULE_1__.CapService)); };
@@ -356,7 +353,7 @@ AppComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_4__["�
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", ctx.alerts.length == 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngForOf", ctx.alerts);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_6__.NgForOf, _count_card_count_card_component__WEBPACK_IMPORTED_MODULE_2__.CountCardComponent, _angular_common__WEBPACK_IMPORTED_MODULE_6__.NgIf, _alert_card_alert_card_component__WEBPACK_IMPORTED_MODULE_3__.AlertCardComponent], styles: ["#container[_ngcontent-%COMP%] {\n  width: 400px;\n}\n\n.loading[_ngcontent-%COMP%] {\n  text-align: center;\n  font-size: larger;\n}\n\n.counts-header[_ngcontent-%COMP%] {\n  font-size: large;\n  text-align: center;\n  display: inline-flex;\n  width: 100%;\n  justify-content: center;\n}\n\n.counts-container[_ngcontent-%COMP%] {\n  border: 1px solid black;\n  margin-bottom: 5px;\n  border-radius: 10px;\n  overflow: hidden;\n}\n\n.icon[_ngcontent-%COMP%] {\n  font-size: medium;\n  position:absolute;\n  right: 20px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsWUFBWTtBQUNkOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLFdBQVc7RUFDWCx1QkFBdUI7QUFDekI7O0FBRUE7RUFDRSx1QkFBdUI7RUFDdkIsa0JBQWtCO0VBQ2xCLG1CQUFtQjtFQUNuQixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxpQkFBaUI7RUFDakIsaUJBQWlCO0VBQ2pCLFdBQVc7QUFDYiIsImZpbGUiOiJhcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiNjb250YWluZXIge1xuICB3aWR0aDogNDAwcHg7XG59XG5cbi5sb2FkaW5nIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LXNpemU6IGxhcmdlcjtcbn1cblxuLmNvdW50cy1oZWFkZXIge1xuICBmb250LXNpemU6IGxhcmdlO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGRpc3BsYXk6IGlubGluZS1mbGV4O1xuICB3aWR0aDogMTAwJTtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbi5jb3VudHMtY29udGFpbmVyIHtcbiAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7XG4gIG1hcmdpbi1ib3R0b206IDVweDtcbiAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbn1cblxuLmljb24ge1xuICBmb250LXNpemU6IG1lZGl1bTtcbiAgcG9zaXRpb246YWJzb2x1dGU7XG4gIHJpZ2h0OiAyMHB4O1xufVxuIl19 */"] });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_5__.NgForOf, _count_card_count_card_component__WEBPACK_IMPORTED_MODULE_2__.CountCardComponent, _angular_common__WEBPACK_IMPORTED_MODULE_5__.NgIf, _alert_card_alert_card_component__WEBPACK_IMPORTED_MODULE_3__.AlertCardComponent], styles: ["#container[_ngcontent-%COMP%] {\n  width: 400px;\n}\n\n.loading[_ngcontent-%COMP%] {\n  text-align: center;\n  font-size: larger;\n}\n\n.counts-header[_ngcontent-%COMP%] {\n  font-size: large;\n  text-align: center;\n  display: inline-flex;\n  width: 100%;\n  justify-content: center;\n}\n\n.counts-container[_ngcontent-%COMP%] {\n  border: 1px solid black;\n  margin-bottom: 5px;\n  border-radius: 10px;\n  overflow: hidden;\n}\n\n.icon[_ngcontent-%COMP%] {\n  font-size: medium;\n  position:absolute;\n  right: 20px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsWUFBWTtBQUNkOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLFdBQVc7RUFDWCx1QkFBdUI7QUFDekI7O0FBRUE7RUFDRSx1QkFBdUI7RUFDdkIsa0JBQWtCO0VBQ2xCLG1CQUFtQjtFQUNuQixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxpQkFBaUI7RUFDakIsaUJBQWlCO0VBQ2pCLFdBQVc7QUFDYiIsImZpbGUiOiJhcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiNjb250YWluZXIge1xuICB3aWR0aDogNDAwcHg7XG59XG5cbi5sb2FkaW5nIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LXNpemU6IGxhcmdlcjtcbn1cblxuLmNvdW50cy1oZWFkZXIge1xuICBmb250LXNpemU6IGxhcmdlO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGRpc3BsYXk6IGlubGluZS1mbGV4O1xuICB3aWR0aDogMTAwJTtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbi5jb3VudHMtY29udGFpbmVyIHtcbiAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7XG4gIG1hcmdpbi1ib3R0b206IDVweDtcbiAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbn1cblxuLmljb24ge1xuICBmb250LXNpemU6IG1lZGl1bTtcbiAgcG9zaXRpb246YWJzb2x1dGU7XG4gIHJpZ2h0OiAyMHB4O1xufVxuIl19 */"] });
 
 
 /***/ }),
@@ -409,67 +406,73 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "CapService": () => (/* binding */ CapService)
 /* harmony export */ });
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rxjs */ 745);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils */ 6748);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 3184);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ 8784);
 
 
 
 class CapService {
-    constructor(httpClient) {
-        this.httpClient = httpClient;
-        this.ALERTS_URL = "https://api.weather.gov/alerts/active?status=actual&event=Tornado%20Warning,Severe%20Thunderstorm%20Warning,Special%20Weather%20Statement";
-        this.TORNADOS_ONLY = "https://api.weather.gov/alerts?event=Tornado%20Warning";
-    }
-    getAlerts() {
-        console.log('loading...');
-        chrome.storage.local.get(['source'])
-            .then((result) => {
-            console.log(result['source']);
-        });
-        return (0,rxjs__WEBPACK_IMPORTED_MODULE_0__.of)();
-        // return new Observable<Alert[]>((subscriber) => {
-        //   let source = this.ALERTS_URL;
-        //   chrome.storage.local.get(['source'], (result: any) => {
-        //     console.log('Source is ' + result['source'])
-        //     if (result['source'] === 'tornadoes') {
-        //       source = this.TORNADOS_ONLY
-        //     }
-        //     this.httpClient.get<AlertsApi>(source)
-        //       .pipe(
-        //         map((res: AlertsApi) => res.features.map(feature => new Alert(feature))
-        //           .filter((alert, _) => {
-        //             if (alert.eventType === EventType.TOR || alert.eventType === EventType.SVR) {
-        //               return true;
-        //             }
-        //             if (alert.eventType == EventType.SWS && alert.description.includes('thunderstorm')) {
-        //               return true;
-        //             }
-        //             return false;
-        //           }))).subscribe((alerts) => {
-        //             console.log('alerts: ' + JSON.stringify(alerts));
-        //             subscriber.next(alerts);
-        //             subscriber.complete();
-        //           })
-        //   })
-        // })
-        // return this.httpClient.get<AlertsApi>(this.ALERTS_URL)
-        //   .pipe(
-        //     map((res: AlertsApi) => res.features.map(feature => new Alert(feature))
-        //       .filter((alert, _) => {
-        //         if (alert.eventType === EventType.TOR || alert.eventType === EventType.SVR) {
-        //           return true;
-        //         }
-        //         if (alert.eventType == EventType.SWS && alert.description.includes('thunderstorm')) {
-        //           return true;
-        //         }
-        //         return false;
-        //       })))
-    }
-}
-CapService.ɵfac = function CapService_Factory(t) { return new (t || CapService)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_2__.HttpClient)); };
-CapService.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: CapService, factory: CapService.ɵfac, providedIn: 'root' });
+  constructor(httpClient) {
+    this.httpClient = httpClient;
+    this.URLS = {
+      "alerts": "http://api.weather.gov/alerts/active?status=actual&event=Tornado%20Warning,Severe%20Thunderstorm%20Warning,Special%20Weather%20Statement",
+      "tornadoes": "http://api.weather.gov/alerts?event=Tornado%20Warning"
+    };
+  } // function filterFeatures(feat) {
+  //   if (feat.event === SWS.text) {
+  //     return feat.description.includes('thunderstorm')
+  //   }
+  //   return true;
+  // }
+  // function processFeatures(features) {
+  //   features.map(f => new Feature(f))
+  //     .filter(filterFeatures)
+  //     .sort((a,b) => a.priority - b.priority)
+  //     .forEach(addCard)
+  // }
+  // let downloadAlertFeed = async function() {
+  //   fetch(ALERTS_URL, {'method': 'GET', 'headers': {'Accept': 'application/geo+json'}})
+  //     .then(response => response.json())
+  //     .then( data => processFeatures(data.features))
+  // }
 
+
+  getAlerts() {
+    console.log('loading...');
+    return new Promise((resolve, reject) => {
+      chrome.storage.local.get(['source']).then(result => {
+        console.log("Current source is: " + result['source']);
+        fetch(this.URLS[result['source']], {
+          'method': 'GET',
+          'headers': {
+            'Accept': 'application/geo+json'
+          }
+        }).then(response => response.json()).then(data => {
+          let features = data.features;
+          resolve(features.filter(elem => {
+            if (elem.properties.event === 'Special Weather Statement') {
+              return elem.properties.description.includes('thunderstorm');
+            }
+
+            return true;
+          }).map(f => new _utils__WEBPACK_IMPORTED_MODULE_0__.Alert(f)).sort((a, b) => a.priority() - b.priority()));
+        });
+      });
+    });
+  }
+
+}
+
+CapService.ɵfac = function CapService_Factory(t) {
+  return new (t || CapService)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_2__.HttpClient));
+};
+
+CapService.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
+  token: CapService,
+  factory: CapService.ɵfac,
+  providedIn: 'root'
+});
 
 /***/ }),
 

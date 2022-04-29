@@ -94,7 +94,7 @@ export class Alert {
   eventType: EventType
   polygon: Point[]
 
-  constructor(feature: any) {
+  constructor(feature: Feature) {
     let props = feature.properties;
     this.event = props.event;
     this.eventType = EventType.fromCaps(feature)
