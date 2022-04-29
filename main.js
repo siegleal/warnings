@@ -369,12 +369,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "AppModule": () => (/* binding */ AppModule)
 /* harmony export */ });
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/platform-browser */ 318);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common/http */ 8784);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.component */ 5041);
 /* harmony import */ var _alert_card_alert_card_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./alert-card/alert-card.component */ 6562);
 /* harmony import */ var _count_card_count_card_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./count-card/count-card.component */ 8275);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 3184);
-
 
 
 
@@ -386,12 +384,10 @@ AppModule.ɵfac = function AppModule_Factory(t) { return new (t || AppModule)();
 AppModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent] });
 AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjector"]({ providers: [], imports: [[
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__.BrowserModule,
-            _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpClientModule
         ]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent,
         _alert_card_alert_card_component__WEBPACK_IMPORTED_MODULE_1__.AlertCardComponent,
-        _count_card_count_card_component__WEBPACK_IMPORTED_MODULE_2__.CountCardComponent], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__.BrowserModule,
-        _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpClientModule] }); })();
+        _count_card_count_card_component__WEBPACK_IMPORTED_MODULE_2__.CountCardComponent], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__.BrowserModule] }); })();
 
 
 /***/ }),
@@ -408,71 +404,46 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils */ 6748);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 3184);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ 8784);
-
 
 
 class CapService {
-  constructor(httpClient) {
-    this.httpClient = httpClient;
-    this.URLS = {
-      "alerts": "http://api.weather.gov/alerts/active?status=actual&event=Tornado%20Warning,Severe%20Thunderstorm%20Warning,Special%20Weather%20Statement",
-      "tornadoes": "http://api.weather.gov/alerts?event=Tornado%20Warning"
-    };
-  } // function filterFeatures(feat) {
-  //   if (feat.event === SWS.text) {
-  //     return feat.description.includes('thunderstorm')
-  //   }
-  //   return true;
-  // }
-  // function processFeatures(features) {
-  //   features.map(f => new Feature(f))
-  //     .filter(filterFeatures)
-  //     .sort((a,b) => a.priority - b.priority)
-  //     .forEach(addCard)
-  // }
-  // let downloadAlertFeed = async function() {
-  //   fetch(ALERTS_URL, {'method': 'GET', 'headers': {'Accept': 'application/geo+json'}})
-  //     .then(response => response.json())
-  //     .then( data => processFeatures(data.features))
-  // }
-
-
-  getAlerts() {
-    console.log('loading...');
-    return new Promise((resolve, reject) => {
-      chrome.storage.local.get(['source']).then(result => {
-        console.log("Current source is: " + result['source']);
-        fetch(this.URLS[result['source']], {
-          'method': 'GET',
-          'headers': {
-            'Accept': 'application/geo+json'
-          }
-        }).then(response => response.json()).then(data => {
-          let features = data.features;
-          resolve(features.filter(elem => {
-            if (elem.properties.event === 'Special Weather Statement') {
-              return elem.properties.description.includes('thunderstorm');
-            }
-
-            return true;
-          }).map(f => new _utils__WEBPACK_IMPORTED_MODULE_0__.Alert(f)).sort((a, b) => a.priority() - b.priority()));
+    constructor() {
+        this.URLS = {
+            "active": "http://api.weather.gov/alerts/active?status=actual&event=Tornado%20Warning,Severe%20Thunderstorm%20Warning,Special%20Weather%20Statement",
+            "tornadoes": "http://api.weather.gov/alerts?event=Tornado%20Warning"
+        };
+    }
+    getAlerts() {
+        console.log('loading...');
+        return new Promise((resolve, reject) => {
+            chrome.storage.local.get(['source'])
+                .then((result) => {
+                console.log("Current source is: " + result['source']);
+                const url = this.URLS[result['source']];
+                const headers = { 'method': 'GET', 'headers': { 'Accept': 'application/geo+json' } };
+                console.log('URL: ', url);
+                console.log('HEADERS: ', headers);
+                fetch(url, headers)
+                    .then(response => response.json())
+                    .then((data) => {
+                    let features = data.features;
+                    resolve(features
+                        .filter(elem => {
+                        if (elem.properties.event === 'Special Weather Statement') {
+                            return elem.properties.description.includes('thunderstorm');
+                        }
+                        return true;
+                    })
+                        .map(f => new _utils__WEBPACK_IMPORTED_MODULE_0__.Alert(f))
+                        .sort((a, b) => b.priority() - a.priority()));
+                });
+            });
         });
-      });
-    });
-  }
-
+    }
 }
+CapService.ɵfac = function CapService_Factory(t) { return new (t || CapService)(); };
+CapService.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: CapService, factory: CapService.ɵfac, providedIn: 'root' });
 
-CapService.ɵfac = function CapService_Factory(t) {
-  return new (t || CapService)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_2__.HttpClient));
-};
-
-CapService.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
-  token: CapService,
-  factory: CapService.ɵfac,
-  providedIn: 'root'
-});
 
 /***/ }),
 
@@ -685,10 +656,10 @@ class Alert {
                         return "svr";
                 }
             case EventType.TOR:
-                if (this.description.toLowerCase().includes('tornado emergency')) {
+                if (this.description && this.description.toLowerCase().includes('tornado emergency')) {
                     return "tor-emergency";
                 }
-                if (this.description.toLowerCase().includes('particularly dangerous situation')) {
+                if (this.description && this.description.toLowerCase().includes('particularly dangerous situation')) {
                     return "tor-pds";
                 }
                 if (this.tornadoDamageThreat === "CATASTROPHIC") {

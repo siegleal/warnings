@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, from, of } from 'rxjs';
 import { map } from 'rxjs/operators'
@@ -9,30 +8,11 @@ import { Alert, AlertsApi, EventType, Feature } from '../utils';
 })
 export class CapService {
   URLS: {[key: string]: string} = {
-    "alerts":"http://api.weather.gov/alerts/active?status=actual&event=Tornado%20Warning,Severe%20Thunderstorm%20Warning,Special%20Weather%20Statement", 
+    "active":"http://api.weather.gov/alerts/active?status=actual&event=Tornado%20Warning,Severe%20Thunderstorm%20Warning,Special%20Weather%20Statement", 
     "tornadoes":"http://api.weather.gov/alerts?event=Tornado%20Warning"
   }
 
-  constructor(private httpClient: HttpClient) { }
-// function filterFeatures(feat) {
-//   if (feat.event === SWS.text) {
-//     return feat.description.includes('thunderstorm')
-//   }
-//   return true;
-// }
-
-// function processFeatures(features) {
-//   features.map(f => new Feature(f))
-//     .filter(filterFeatures)
-//     .sort((a,b) => a.priority - b.priority)
-//     .forEach(addCard)
-// }
-
-// let downloadAlertFeed = async function() {
-//   fetch(ALERTS_URL, {'method': 'GET', 'headers': {'Accept': 'application/geo+json'}})
-//     .then(response => response.json())
-//     .then( data => processFeatures(data.features))
-// }
+  constructor() { }
 
   getAlerts(): Promise<Alert[]> {
 
@@ -41,8 +21,13 @@ export class CapService {
         chrome.storage.local.get(['source'])
           .then((result: { [key: string]: string }) => {
             console.log("Current source is: " + result['source'])
+            const url = this.URLS[result['source']];
+            const headers = { 'method': 'GET', 'headers': { 'Accept': 'application/geo+json' } }
 
-            fetch(this.URLS[result['source']], { 'method': 'GET', 'headers': { 'Accept': 'application/geo+json' } })
+            console.log('URL: ', url);
+            console.log('HEADERS: ', headers);
+
+            fetch(url, headers)
               .then(response => response.json())
               .then((data: AlertsApi) => {
                 let features: Feature[] = data.features;
@@ -55,7 +40,7 @@ export class CapService {
                     return true;
                   })
                   .map(f => new Alert(f))
-                  .sort((a,b) => a.priority() - b.priority())
+                  .sort((a,b) => b.priority() - a.priority())
                 )
 
               })
