@@ -1,0 +1,1951 @@
+{
+    "@context": [
+        "https://geojson.org/geojson-ld/geojson-context.jsonld",
+        {
+            "@version": "1.1",
+            "wx": "https://api.weather.gov/ontology#",
+            "@vocab": "https://api.weather.gov/ontology#"
+        }
+    ],
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.152ef8562f03ef161bb14d6d0eed725a19e46511.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -97.390000000000001,
+                            37.539999999999999
+                        ],
+                        [
+                            -97.310000000000002,
+                            37.740000000000002
+                        ],
+                        [
+                            -96.659999999999997,
+                            37.969999999999999
+                        ],
+                        [
+                            -96.599999999999994,
+                            37.509999999999998
+                        ],
+                        [
+                            -97.390000000000001,
+                            37.539999999999999
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.152ef8562f03ef161bb14d6d0eed725a19e46511.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.152ef8562f03ef161bb14d6d0eed725a19e46511.001.1",
+                "areaDesc": "Butler, KS; Sedgwick, KS",
+                "geocode": {
+                    "SAME": [
+                        "020015",
+                        "020173"
+                    ],
+                    "UGC": [
+                        "KSC015",
+                        "KSC173"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/KSC015",
+                    "https://api.weather.gov/zones/county/KSC173"
+                ],
+                "references": [],
+                "sent": "2022-04-29T21:36:00-05:00",
+                "effective": "2022-04-29T21:36:00-05:00",
+                "onset": "2022-04-29T21:36:00-05:00",
+                "expires": "2022-04-29T22:30:00-05:00",
+                "ends": "2022-04-29T22:30:00-05:00",
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Severe",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Severe Thunderstorm Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Wichita KS",
+                "headline": "Severe Thunderstorm Warning issued April 29 at 9:36PM CDT until April 29 at 10:30PM CDT by NWS Wichita KS",
+                "description": "The National Weather Service in Wichita has issued a\n\n* Severe Thunderstorm Warning for...\nSoutheastern Sedgwick County in south central Kansas...\nButler County in south central Kansas...\n\n* Until 1030 PM CDT.\n\n* At 936 PM CDT, a severe thunderstorm was located near East Wichita,\nor near Andover, moving east at 30 mph.\n\nHAZARD...Two inch hail and 60 mph wind gusts.\n\nSOURCE...Trained weather spotters.\n\nIMPACT...People and animals outdoors will be injured. Expect hail\ndamage to roofs, siding, windows, and vehicles. Expect\nwind damage to roofs, siding, and trees.\n\n* Locations impacted include...\nWichita, Derby, El Dorado, Andover, Haysville, Augusta, Bel Aire,\nRose Hill, Towanda, Benton, Leon, Eastborough, Latham, East\nWichita, Northeast Wichita, Mcconnell Air Force Base, South\nWichita, Santa Fe Lake, El Dorado State Park and Augusta Municipal\nAirport.\n\nThis includes the following highways...\nInterstate 135 between Mile Markers 0 and 8.\nInterstate 35 between Mile Markers 38 and 80.",
+                "instruction": "A Tornado Watch remains in effect until 1100 PM CDT for south central\nKansas.\n\nFor your protection move to an interior room on the lowest floor of a\nbuilding.\n\nA Tornado Watch remains in effect until 1100 PM CDT for south central\nKansas.",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVRICT"
+                    ],
+                    "WMOidentifier": [
+                        "WUUS53 KICT 300236"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-30T02:36:00-00:00...storm...264DEG...24KT...37.66,-97.21"
+                    ],
+                    "windThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxWindGust": [
+                        "60 MPH"
+                    ],
+                    "hailThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxHailSize": [
+                        "2.00"
+                    ],
+                    "thunderstormDamageThreat": [
+                        "CONSIDERABLE"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.NEW.KICT.SV.W.0041.220430T0236Z-220430T0330Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-30T03:30:00+00:00"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d19b21f157bda5e0f290ede06d2b44e4dfc70844.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -95.129999999999995,
+                            39.490000000000002
+                        ],
+                        [
+                            -95.11999999999999,
+                            39.649999999999999
+                        ],
+                        [
+                            -94.899999999999991,
+                            39.710000000000001
+                        ],
+                        [
+                            -94.799999999999997,
+                            39.659999900000003
+                        ],
+                        [
+                            -94.849999999999994,
+                            39.510000000000005
+                        ],
+                        [
+                            -95.129999999999995,
+                            39.490000000000002
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d19b21f157bda5e0f290ede06d2b44e4dfc70844.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.d19b21f157bda5e0f290ede06d2b44e4dfc70844.001.1",
+                "areaDesc": "Atchison, KS; Doniphan, KS; Buchanan, MO; Platte, MO",
+                "geocode": {
+                    "SAME": [
+                        "020005",
+                        "020043",
+                        "029021",
+                        "029165"
+                    ],
+                    "UGC": [
+                        "KSC005",
+                        "KSC043",
+                        "MOC021",
+                        "MOC165"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/KSC005",
+                    "https://api.weather.gov/zones/county/KSC043",
+                    "https://api.weather.gov/zones/county/MOC021",
+                    "https://api.weather.gov/zones/county/MOC165"
+                ],
+                "references": [
+                    {
+                        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7e9191abbf5a2e16d570150301a26181430698c3.001.1",
+                        "identifier": "urn:oid:2.49.0.1.840.0.7e9191abbf5a2e16d570150301a26181430698c3.001.1",
+                        "sender": "w-nws.webmaster@noaa.gov",
+                        "sent": "2022-04-29T21:29:00-05:00"
+                    }
+                ],
+                "sent": "2022-04-29T21:36:00-05:00",
+                "effective": "2022-04-29T21:36:00-05:00",
+                "onset": "2022-04-29T21:36:00-05:00",
+                "expires": "2022-04-29T22:00:00-05:00",
+                "ends": "2022-04-29T22:00:00-05:00",
+                "status": "Actual",
+                "messageType": "Update",
+                "category": "Met",
+                "severity": "Extreme",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Tornado Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Kansas City/Pleasant Hill MO",
+                "headline": "Tornado Warning issued April 29 at 9:36PM CDT until April 29 at 10:00PM CDT by NWS Kansas City/Pleasant Hill MO",
+                "description": "At 936 PM CDT, a severe thunderstorm capable of producing a tornado\nwas located over Rushville, or near Atchison, moving east at 45 mph.\n\nHAZARD...Tornado and quarter size hail.\n\nSOURCE...Radar indicated rotation.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed. Damage\nto roofs, windows, and vehicles will occur.  Tree damage is\nlikely.\n\nLocations impacted include...\nAtchison, Rushville, Lewis And Clark Village, Doniphan, De Kalb and\nLewis And Clark Vi.",
+                "instruction": "TAKE COVER NOW! Move to a basement or an interior room on the lowest\nfloor of a sturdy building. Avoid windows. If you are outdoors, in a\nmobile home, or in a vehicle, move to the closest substantial shelter\nand protect yourself from flying debris.\n\nTornadoes are extremely difficult to see and confirm at night. Do not\nwait to see or hear the tornado. TAKE COVER NOW!",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVSEAX"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS53 KEAX 300236"
+                    ],
+                    "NWSheadline": [
+                        "A TORNADO WARNING REMAINS IN EFFECT UNTIL 1000 PM CDT FOR SOUTH CENTRAL DONIPHAN...NORTHEASTERN ATCHISON...SOUTHWESTERN BUCHANAN AND NORTHWESTERN PLATTE COUNTIES"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-30T02:36:00-00:00...storm...254DEG...37KT...39.58,-95.06"
+                    ],
+                    "maxHailSize": [
+                        "1.00"
+                    ],
+                    "tornadoDetection": [
+                        "RADAR INDICATED"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.CON.KEAX.TO.W.0014.000000T0000Z-220430T0300Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-30T03:00:00+00:00"
+                    ],
+                    "expiredReferences": [
+                        "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.291f6b2f57a38c7982c4617259c7dbc14e0203a6.001.1,2021-06-25T17:10:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.1ee9a4f20618ca38a692162d471cc15e71e3cea6.001.1,2021-06-25T16:52:00-05:00"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.76277f906ff188970092dd7a26e3013ac41dc1bf.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -96.530000000000001,
+                            37.729999900000003
+                        ],
+                        [
+                            -96.629999999999995,
+                            37.810000000000002
+                        ],
+                        [
+                            -96.399999999999991,
+                            37.909999900000003
+                        ],
+                        [
+                            -96.389999999999986,
+                            37.780000000000001
+                        ],
+                        [
+                            -96.530000000000001,
+                            37.729999900000003
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.76277f906ff188970092dd7a26e3013ac41dc1bf.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.76277f906ff188970092dd7a26e3013ac41dc1bf.001.1",
+                "areaDesc": "Butler, KS; Greenwood, KS",
+                "geocode": {
+                    "SAME": [
+                        "020015",
+                        "020073"
+                    ],
+                    "UGC": [
+                        "KSC015",
+                        "KSC073"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/KSC015",
+                    "https://api.weather.gov/zones/county/KSC073"
+                ],
+                "references": [
+                    {
+                        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.db82ba57d792b4fafc1c7f7a081281c7cf8f1096.001.1",
+                        "identifier": "urn:oid:2.49.0.1.840.0.db82ba57d792b4fafc1c7f7a081281c7cf8f1096.001.1",
+                        "sender": "w-nws.webmaster@noaa.gov",
+                        "sent": "2022-04-29T21:11:00-05:00"
+                    }
+                ],
+                "sent": "2022-04-29T21:34:00-05:00",
+                "effective": "2022-04-29T21:34:00-05:00",
+                "onset": "2022-04-29T21:34:00-05:00",
+                "expires": "2022-04-29T22:00:00-05:00",
+                "ends": "2022-04-29T22:00:00-05:00",
+                "status": "Actual",
+                "messageType": "Update",
+                "category": "Met",
+                "severity": "Extreme",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Tornado Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Wichita KS",
+                "headline": "Tornado Warning issued April 29 at 9:34PM CDT until April 29 at 10:00PM CDT by NWS Wichita KS",
+                "description": "At 934 PM CDT, a severe thunderstorm capable of producing a tornado\nwas located 11 miles west of Eureka, moving northeast at 25 mph.\n\nHAZARD...Tornado and half dollar size hail.\n\nSOURCE...Radar indicated rotation.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed. Damage\nto roofs, windows, and vehicles will occur.  Tree damage is\nlikely.\n\nThis tornadic thunderstorm will remain over mainly rural areas of\neast central Butler and west central Greenwood Counties.",
+                "instruction": "Tornadoes are extremely difficult to see and confirm at night. Do not\nwait to see or hear the tornado. TAKE COVER NOW!",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVSICT"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS53 KICT 300234"
+                    ],
+                    "NWSheadline": [
+                        "A TORNADO WARNING REMAINS IN EFFECT UNTIL 1000 PM CDT FOR EAST CENTRAL BUTLER AND WEST CENTRAL GREENWOOD COUNTIES"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-30T02:34:00-00:00...storm...240DEG...22KT...37.84,-96.49"
+                    ],
+                    "maxHailSize": [
+                        "1.25"
+                    ],
+                    "tornadoDetection": [
+                        "RADAR INDICATED"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.CON.KICT.TO.W.0006.000000T0000Z-220430T0300Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-30T03:00:00+00:00"
+                    ],
+                    "expiredReferences": [
+                        "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.006667d94d8b6dae0b0d03728e40557bfea297fa.002.1,2021-05-26T17:14:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e776d525e80b4d37045374cea896c94c39a35096.001.1,2021-05-26T17:04:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.56c96164a44ec4bfdf6156a2c4770ffd04e20ae9.001.1,2021-05-26T16:44:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.08dcae8d841440f19cb038b75d19f05e6b58f578.001.1,2021-05-26T16:54:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.006667d94d8b6dae0b0d03728e40557bfea297fa.001.1,2021-05-26T17:14:00-05:00"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4c0e86563d9f37b4dd23c6103a7b5d1ce2f6ddea.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -97.400000000000006,
+                            37.68
+                        ],
+                        [
+                            -97.180000000000007,
+                            37.909999900000003
+                        ],
+                        [
+                            -96.810000000000002,
+                            37.93
+                        ],
+                        [
+                            -96.769999999999996,
+                            37.740000000000002
+                        ],
+                        [
+                            -96.950000000000003,
+                            37.580000000000005
+                        ],
+                        [
+                            -97.420000000000002,
+                            37.550000000000004
+                        ],
+                        [
+                            -97.400000000000006,
+                            37.68
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4c0e86563d9f37b4dd23c6103a7b5d1ce2f6ddea.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.4c0e86563d9f37b4dd23c6103a7b5d1ce2f6ddea.001.1",
+                "areaDesc": "Butler, KS; Sedgwick, KS",
+                "geocode": {
+                    "SAME": [
+                        "020015",
+                        "020173"
+                    ],
+                    "UGC": [
+                        "KSC015",
+                        "KSC173"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/KSC015",
+                    "https://api.weather.gov/zones/county/KSC173"
+                ],
+                "references": [
+                    {
+                        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71e2b341fdb98dbe666cac829e6e28622ac77dda.001.1",
+                        "identifier": "urn:oid:2.49.0.1.840.0.71e2b341fdb98dbe666cac829e6e28622ac77dda.001.1",
+                        "sender": "w-nws.webmaster@noaa.gov",
+                        "sent": "2022-04-29T21:15:00-05:00"
+                    }
+                ],
+                "sent": "2022-04-29T21:32:00-05:00",
+                "effective": "2022-04-29T21:32:00-05:00",
+                "onset": "2022-04-29T21:32:00-05:00",
+                "expires": "2022-04-29T21:45:00-05:00",
+                "ends": "2022-04-29T21:45:00-05:00",
+                "status": "Actual",
+                "messageType": "Update",
+                "category": "Met",
+                "severity": "Severe",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Severe Thunderstorm Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Wichita KS",
+                "headline": "Severe Thunderstorm Warning issued April 29 at 9:32PM CDT until April 29 at 9:45PM CDT by NWS Wichita KS",
+                "description": "At 932 PM CDT, a severe thunderstorm was located near East Wichita,\nor near Andover, moving east at 30 mph.\n\nHAZARD...60 mph wind gusts and quarter size hail.\n\nSOURCE...Trained weather spotters.\n\nIMPACT...Hail damage to vehicles is expected. Expect wind damage to\nroofs, siding, and trees.\n\nLocations impacted include...\nWichita, Derby, El Dorado, Andover, Haysville, Augusta, Bel Aire,\nRose Hill, Towanda, Benton, Downtown Wichita, Kechi, Eastborough,\nEast Wichita, Northeast Wichita, Mcconnell Air Force Base, South\nWichita, Santa Fe Lake, Augusta Municipal Airport and Oaklawn.",
+                "instruction": "A Tornado Watch remains in effect until 1100 PM CDT for south central\nKansas.\n\nFor your protection move to an interior room on the lowest floor of a\nbuilding.",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVSICT"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS53 KICT 300232"
+                    ],
+                    "NWSheadline": [
+                        "A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 945 PM CDT FOR EASTERN SEDGWICK AND SOUTHWESTERN BUTLER COUNTIES"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-30T02:32:00-00:00...storm...265DEG...24KT...37.65,-97.21"
+                    ],
+                    "windThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxWindGust": [
+                        "60 MPH"
+                    ],
+                    "hailThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxHailSize": [
+                        "1.00"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.CON.KICT.SV.W.0040.000000T0000Z-220430T0245Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-30T02:45:00+00:00"
+                    ],
+                    "expiredReferences": [
+                        "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.63366f345dae973364c7cb6accd4700b735d1db4.001.1,2021-05-25T17:51:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.356038428bfdcbd2296ba032365311fa77c349b5.001.1,2021-05-25T17:14:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.444a3a155156a5583fa905fb69dad1836f9de027.001.1,2021-05-25T17:30:00-05:00"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.85daa02b6626922c4cacf2a0ce23d6da6b67c8da.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -96.680000000000007,
+                            37.939999999999998
+                        ],
+                        [
+                            -96.620000000000005,
+                            37.960000000000001
+                        ],
+                        [
+                            -96.52000000000001,
+                            37.859999999999999
+                        ],
+                        [
+                            -96.530000000000015,
+                            37.850000000000001
+                        ],
+                        [
+                            -96.620000000000019,
+                            37.810000000000002
+                        ],
+                        [
+                            -96.680000000000007,
+                            37.939999999999998
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.85daa02b6626922c4cacf2a0ce23d6da6b67c8da.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.85daa02b6626922c4cacf2a0ce23d6da6b67c8da.001.1",
+                "areaDesc": "Butler, KS",
+                "geocode": {
+                    "SAME": [
+                        "020015"
+                    ],
+                    "UGC": [
+                        "KSC015"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/KSC015"
+                ],
+                "references": [
+                    {
+                        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e827161985bb11f72299d64c6ce3604ab9d408e3.001.1",
+                        "identifier": "urn:oid:2.49.0.1.840.0.e827161985bb11f72299d64c6ce3604ab9d408e3.001.1",
+                        "sender": "w-nws.webmaster@noaa.gov",
+                        "sent": "2022-04-29T20:51:00-05:00"
+                    },
+                    {
+                        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.55220434726fdd553065ccbdd5269ece708211c8.001.1",
+                        "identifier": "urn:oid:2.49.0.1.840.0.55220434726fdd553065ccbdd5269ece708211c8.001.1",
+                        "sender": "w-nws.webmaster@noaa.gov",
+                        "sent": "2022-04-29T21:05:00-05:00"
+                    },
+                    {
+                        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.27cbe7ae189d4010c3bf32cb3193659a8b4e78d8.001.1",
+                        "identifier": "urn:oid:2.49.0.1.840.0.27cbe7ae189d4010c3bf32cb3193659a8b4e78d8.001.1",
+                        "sender": "w-nws.webmaster@noaa.gov",
+                        "sent": "2022-04-29T21:14:00-05:00"
+                    },
+                    {
+                        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7fac3c3c0634fe201373ce53e5f51ef0f42c8767.001.1",
+                        "identifier": "urn:oid:2.49.0.1.840.0.7fac3c3c0634fe201373ce53e5f51ef0f42c8767.001.1",
+                        "sender": "w-nws.webmaster@noaa.gov",
+                        "sent": "2022-04-29T21:19:00-05:00"
+                    }
+                ],
+                "sent": "2022-04-29T21:32:00-05:00",
+                "effective": "2022-04-29T21:32:00-05:00",
+                "onset": "2022-04-29T21:32:00-05:00",
+                "expires": "2022-04-29T21:45:00-05:00",
+                "ends": "2022-04-29T21:45:00-05:00",
+                "status": "Actual",
+                "messageType": "Update",
+                "category": "Met",
+                "severity": "Extreme",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Tornado Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Wichita KS",
+                "headline": "Tornado Warning issued April 29 at 9:32PM CDT until April 29 at 9:45PM CDT by NWS Wichita KS",
+                "description": "RRA\n\nAt 932 PM CDT, a confirmed large and extremely dangerous tornado was\nlocated 15 miles west of Eureka, moving northeast at 20 mph.\n\nThis is a PARTICULARLY DANGEROUS SITUATION. TAKE COVER NOW!\n\nHAZARD...Damaging tornado.\n\nSOURCE...Radar confirmed tornado.\n\nIMPACT...You are in a life-threatening situation. Flying debris may\nbe deadly to those caught without shelter. Mobile homes\nwill be destroyed. Considerable damage to homes,\nbusinesses, and vehicles is likely and complete destruction\nis possible.\n\nLocations impacted include...\nRosalia.",
+                "instruction": "Tornadoes are extremely difficult to see and confirm at night. Do not\nwait to see or hear the tornado. TAKE COVER NOW!",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVSICT"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS53 KICT 300232 RRA"
+                    ],
+                    "NWSheadline": [
+                        "A TORNADO WARNING REMAINS IN EFFECT UNTIL 945 PM CDT FOR EAST CENTRAL BUTLER COUNTY"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-30T02:32:00-00:00...storm...229DEG...19KT...37.85,-96.57"
+                    ],
+                    "maxHailSize": [
+                        "1.75"
+                    ],
+                    "tornadoDetection": [
+                        "OBSERVED"
+                    ],
+                    "tornadoDamageThreat": [
+                        "CONSIDERABLE"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.CON.KICT.TO.W.0005.000000T0000Z-220430T0245Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-30T02:45:00+00:00"
+                    ],
+                    "expiredReferences": [
+                        "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.ceb17eb35f2416cbb6fd35a1d5343de031bee884.001.1,2021-05-26T16:25:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.78674bf282bfbaba1f9f6f423f447ab469bf02b9.001.1,2021-05-26T16:11:00-05:00"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bd5d2120ffa71c135ac07fa1d8e680b22e0de438.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -96.609999999999999,
+                            37.799999999999997
+                        ],
+                        [
+                            -96.679999999999993,
+                            37.93
+                        ],
+                        [
+                            -96.339999999999989,
+                            38.089999999999996
+                        ],
+                        [
+                            -96.329999999999984,
+                            37.919999999999995
+                        ],
+                        [
+                            -96.609999999999999,
+                            37.799999999999997
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bd5d2120ffa71c135ac07fa1d8e680b22e0de438.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.bd5d2120ffa71c135ac07fa1d8e680b22e0de438.001.1",
+                "areaDesc": "Butler, KS; Greenwood, KS",
+                "geocode": {
+                    "SAME": [
+                        "020015",
+                        "020073"
+                    ],
+                    "UGC": [
+                        "KSC015",
+                        "KSC073"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/KSC015",
+                    "https://api.weather.gov/zones/county/KSC073"
+                ],
+                "references": [],
+                "sent": "2022-04-29T21:30:00-05:00",
+                "effective": "2022-04-29T21:30:00-05:00",
+                "onset": "2022-04-29T21:30:00-05:00",
+                "expires": "2022-04-29T22:15:00-05:00",
+                "ends": "2022-04-29T22:15:00-05:00",
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Extreme",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Tornado Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Wichita KS",
+                "headline": "Tornado Warning issued April 29 at 9:30PM CDT until April 29 at 10:15PM CDT by NWS Wichita KS",
+                "description": "The National Weather Service in Wichita has issued a\n\n* Tornado Warning for...\nEast central Butler County in south central Kansas...\nNorthwestern Greenwood County in southeastern Kansas...\n\n* Until 1015 PM CDT.\n\n* At 930 PM CDT, a confirmed large and extremely dangerous tornado\nwas located 15 miles east of El Dorado, moving northeast at 25 mph.\n\nThis is a PARTICULARLY DANGEROUS SITUATION. TAKE COVER NOW!\n\nHAZARD...Damaging tornado.\n\nSOURCE...Weather spotters confirmed tornado.\n\nIMPACT...You are in a life-threatening situation. Flying debris\nmay be deadly to those caught without shelter. Mobile\nhomes will be destroyed. Considerable damage to homes,\nbusinesses, and vehicles is likely and complete\ndestruction is possible.\n\n* This tornadic thunderstorm will remain over mainly rural areas of\neast central Butler and northwestern Greenwood Counties, including\nthe following locations... Rosalia.",
+                "instruction": "Tornadoes are extremely difficult to see and confirm at night. Do not\nwait to see or hear the tornado. TAKE COVER NOW!",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "TORICT"
+                    ],
+                    "WMOidentifier": [
+                        "WFUS53 KICT 300230"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-30T02:30:00-00:00...storm...233DEG...22KT...37.86,-96.58"
+                    ],
+                    "maxHailSize": [
+                        "1.50"
+                    ],
+                    "tornadoDetection": [
+                        "OBSERVED"
+                    ],
+                    "tornadoDamageThreat": [
+                        "CONSIDERABLE"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.NEW.KICT.TO.W.0007.220430T0230Z-220430T0315Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-30T03:15:00+00:00"
+                    ],
+                    "WEAHandling": [
+                        "Imminent Threat"
+                    ],
+                    "CMAMtext": [
+                        "NWS: TORNADO WARNING in this area til 10:15 PM CDT. Take shelter now. Check media."
+                    ],
+                    "CMAMlongtext": [
+                        "National Weather Service: TORNADO WARNING in this area until 10:15 PM CDT. Take shelter now in a basement or an interior room on the lowest floor of a sturdy building. If you are outdoors, in a mobile home, or in a vehicle, move to the closest substantial shelter and protect yourself from flying debris. Check media."
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3811efaafb95bf1b149550a93df1079545e059e3.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -94.609999999999999,
+                            40.280000000000001
+                        ],
+                        [
+                            -94.609999999999999,
+                            39.829999999999998
+                        ],
+                        [
+                            -94.829999999999998,
+                            39.449999999999996
+                        ],
+                        [
+                            -95.409999999999997,
+                            39.419999999999995
+                        ],
+                        [
+                            -95.22999999999999,
+                            39.729999899999996
+                        ],
+                        [
+                            -95.299999999999983,
+                            40.049999999999997
+                        ],
+                        [
+                            -94.609999999999999,
+                            40.280000000000001
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3811efaafb95bf1b149550a93df1079545e059e3.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.3811efaafb95bf1b149550a93df1079545e059e3.001.1",
+                "areaDesc": "Atchison, KS; Doniphan, KS; Andrew, MO; Buchanan, MO; Holt, MO; Nodaway, MO; Platte, MO",
+                "geocode": {
+                    "SAME": [
+                        "020005",
+                        "020043",
+                        "029003",
+                        "029021",
+                        "029087",
+                        "029147",
+                        "029165"
+                    ],
+                    "UGC": [
+                        "KSC005",
+                        "KSC043",
+                        "MOC003",
+                        "MOC021",
+                        "MOC087",
+                        "MOC147",
+                        "MOC165"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/KSC005",
+                    "https://api.weather.gov/zones/county/KSC043",
+                    "https://api.weather.gov/zones/county/MOC003",
+                    "https://api.weather.gov/zones/county/MOC021",
+                    "https://api.weather.gov/zones/county/MOC087",
+                    "https://api.weather.gov/zones/county/MOC147",
+                    "https://api.weather.gov/zones/county/MOC165"
+                ],
+                "references": [],
+                "sent": "2022-04-29T21:24:00-05:00",
+                "effective": "2022-04-29T21:24:00-05:00",
+                "onset": "2022-04-29T21:24:00-05:00",
+                "expires": "2022-04-29T22:15:00-05:00",
+                "ends": "2022-04-29T22:15:00-05:00",
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Severe",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Severe Thunderstorm Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Kansas City/Pleasant Hill MO",
+                "headline": "Severe Thunderstorm Warning issued April 29 at 9:24PM CDT until April 29 at 10:15PM CDT by NWS Kansas City/Pleasant Hill MO",
+                "description": "The National Weather Service in Pleasant Hill has issued a\n\n* Severe Thunderstorm Warning for...\nDoniphan County in northeastern Kansas...\nCentral Atchison County in northeastern Kansas...\nBuchanan County in northwestern Missouri...\nSoutheastern Holt County in northwestern Missouri...\nSoutheastern Nodaway County in northwestern Missouri...\nNorthwestern Platte County in west central Missouri...\nAndrew County in northwestern Missouri...\n\n* Until 1015 PM CDT.\n\n* At 923 PM CDT, severe thunderstorms were located along a line\nextending from near White Cloud to near Denton to near Nortonville,\nmoving east at 35 mph.\n\nHAZARD...60 mph wind gusts and quarter size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Hail damage to vehicles is expected. Expect wind damage\nto roofs, siding, and trees.\n\n* Locations impacted include...\nSt. Joseph, Atchison, Savannah, Wathena, Elwood, Highland, Troy,\nCountry Club Villa, Country Club, Oregon, Agency, Amazonia,\nRushville, Lancaster, Forest City, Fillmore, Lewis And Clark\nVillage, Doniphan, Barnard and De Kalb.\n\nThis includes the following highways...\nInterstate 29 between mile markers 31 and 79.\nInterstate 229 between mile markers 0 and 14.",
+                "instruction": "For your protection move to an interior room on the lowest floor of a\nbuilding.",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVREAX"
+                    ],
+                    "WMOidentifier": [
+                        "WUUS53 KEAX 300224"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-30T02:23:00-00:00...storm...254DEG...32KT...40.0,-95.25 39.74,-95.19 39.41,-95.38"
+                    ],
+                    "windThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxWindGust": [
+                        "60 MPH"
+                    ],
+                    "hailThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxHailSize": [
+                        "1.00"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.NEW.KEAX.SV.W.0039.220430T0224Z-220430T0315Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-30T03:15:00+00:00"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b39278ff50b04dc7a9786b14ffcb86f9cdfe3d02.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -95.549999999999997,
+                            38.710000000000001
+                        ],
+                        [
+                            -95.950000000000003,
+                            38.719999999999999
+                        ],
+                        [
+                            -95.950000000000003,
+                            38.869999999999997
+                        ],
+                        [
+                            -95.909999999999997,
+                            38.93
+                        ],
+                        [
+                            -95.969999999999999,
+                            39.18
+                        ],
+                        [
+                            -95.560000000000002,
+                            39.390000000000001
+                        ],
+                        [
+                            -95.469999999999999,
+                            39.420000000000002
+                        ],
+                        [
+                            -95.390000000000001,
+                            39.050000000000004
+                        ],
+                        [
+                            -95.549999999999997,
+                            38.710000000000001
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b39278ff50b04dc7a9786b14ffcb86f9cdfe3d02.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.b39278ff50b04dc7a9786b14ffcb86f9cdfe3d02.001.1",
+                "areaDesc": "Douglas, KS; Jackson, KS; Jefferson, KS; Osage, KS; Shawnee, KS",
+                "geocode": {
+                    "SAME": [
+                        "020045",
+                        "020085",
+                        "020087",
+                        "020139",
+                        "020177"
+                    ],
+                    "UGC": [
+                        "KSC045",
+                        "KSC085",
+                        "KSC087",
+                        "KSC139",
+                        "KSC177"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/KSC045",
+                    "https://api.weather.gov/zones/county/KSC085",
+                    "https://api.weather.gov/zones/county/KSC087",
+                    "https://api.weather.gov/zones/county/KSC139",
+                    "https://api.weather.gov/zones/county/KSC177"
+                ],
+                "references": [],
+                "sent": "2022-04-29T21:24:00-05:00",
+                "effective": "2022-04-29T21:24:00-05:00",
+                "onset": "2022-04-29T21:24:00-05:00",
+                "expires": "2022-04-29T22:00:00-05:00",
+                "ends": "2022-04-29T22:00:00-05:00",
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Severe",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Severe Thunderstorm Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Topeka KS",
+                "headline": "Severe Thunderstorm Warning issued April 29 at 9:24PM CDT until April 29 at 10:00PM CDT by NWS Topeka KS",
+                "description": "The National Weather Service in Topeka has issued a\n\n* Severe Thunderstorm Warning for...\nWestern Jefferson County in northeastern Kansas...\nShawnee County in east central Kansas...\nNorthwestern Douglas County in east central Kansas...\nNorthern Osage County in east central Kansas...\nSoutheastern Jackson County in northeastern Kansas...\n\n* Until 1000 PM CDT.\n\n* At 923 PM CDT, severe thunderstorms were located along a line\nextending from 4 miles northeast of Rossville to near Auburn to\nnear Harveyville, moving east at 40 mph.\n\nHAZARD...60 mph wind gusts and nickel size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Expect damage to roofs, siding, and trees.\n\n* Locations impacted include...\nTopeka, Carbondale, Valley Falls, Rossville, Tecumseh, Richland,\nSilver Lake, Auburn, Overbrook, Burlingame, Perry, Meriden,\nScranton, Hoyt, Ozawkie, Lecompton, Willard, Pauline, Perry Lake\nand Grantville.\n\nThis includes the following highways...\nInterstate 70 between mile markers 347 and 355.\nKansas Turnpike between mile markers 155 and 193.",
+                "instruction": "A Tornado Watch remains in effect until 1100 PM CDT for northeastern\nand east central Kansas.\n\nFor your protection move to an interior room on the lowest floor of a\nbuilding.\n\nA Tornado Watch remains in effect until 1100 PM CDT for northeastern\nand east central Kansas.",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVRTOP"
+                    ],
+                    "WMOidentifier": [
+                        "WUUS53 KTOP 300224"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-30T02:23:00-00:00...storm...250DEG...35KT...39.18,-95.89 38.94,-95.82 38.75,-95.94"
+                    ],
+                    "windThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxWindGust": [
+                        "60 MPH"
+                    ],
+                    "hailThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxHailSize": [
+                        "0.88"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.NEW.KTOP.SV.W.0054.220430T0224Z-220430T0300Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-30T03:00:00+00:00"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b7fc4b0b472cdeee33213d6b303a62b9560cdcc9.002.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -96.349999999999994,
+                            38.359999999999999
+                        ],
+                        [
+                            -96.599999999999994,
+                            37.990000000000002
+                        ],
+                        [
+                            -96.789999999999992,
+                            37.920000000000002
+                        ],
+                        [
+                            -97.149999999999991,
+                            37.920000000000002
+                        ],
+                        [
+                            -97.149999999999991,
+                            37.940000000000005
+                        ],
+                        [
+                            -97.009999999999991,
+                            38.070000000000007
+                        ],
+                        [
+                            -96.769999999999996,
+                            38.350000000000009
+                        ],
+                        [
+                            -96.689999999999998,
+                            38.52000000000001
+                        ],
+                        [
+                            -96.349999999999994,
+                            38.52000000000001
+                        ],
+                        [
+                            -96.349999999999994,
+                            38.359999999999999
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b7fc4b0b472cdeee33213d6b303a62b9560cdcc9.002.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.b7fc4b0b472cdeee33213d6b303a62b9560cdcc9.002.1",
+                "areaDesc": "Butler, KS; Chase, KS; Marion, KS",
+                "geocode": {
+                    "SAME": [
+                        "020015",
+                        "020017",
+                        "020115"
+                    ],
+                    "UGC": [
+                        "KSC015",
+                        "KSC017",
+                        "KSC115"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/KSC015",
+                    "https://api.weather.gov/zones/county/KSC017",
+                    "https://api.weather.gov/zones/county/KSC115"
+                ],
+                "references": [
+                    {
+                        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5262c007262fdf0d0af8d4623e4ce952107abc74.001.1",
+                        "identifier": "urn:oid:2.49.0.1.840.0.5262c007262fdf0d0af8d4623e4ce952107abc74.001.1",
+                        "sender": "w-nws.webmaster@noaa.gov",
+                        "sent": "2022-04-29T20:53:00-05:00"
+                    }
+                ],
+                "sent": "2022-04-29T21:19:00-05:00",
+                "effective": "2022-04-29T21:19:00-05:00",
+                "onset": "2022-04-29T21:19:00-05:00",
+                "expires": "2022-04-29T21:45:00-05:00",
+                "ends": "2022-04-29T21:45:00-05:00",
+                "status": "Actual",
+                "messageType": "Update",
+                "category": "Met",
+                "severity": "Severe",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Severe Thunderstorm Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Wichita KS",
+                "headline": "Severe Thunderstorm Warning issued April 29 at 9:19PM CDT until April 29 at 9:45PM CDT by NWS Wichita KS",
+                "description": "RRA\n\nAt 918 PM CDT, severe thunderstorms were located along a line\nextending from Strong City to near El Dorado, moving east at 30 mph.\n\nHAZARD...60 mph wind gusts and penny size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Expect damage to roofs, siding, and trees.\n\nLocations impacted include...\nCottonwood Falls, Strong City, Potwin, Burns, Cassoday, Bazaar,\nElmdale, Matfield Green, Cedar Point, Hymer, Wonsevu, Tallgrass\nPrairie, Saffordville and Tallgrass Prairie Preserve.",
+                "instruction": "A Tornado Watch remains in effect until 1100 PM CDT for south\ncentral, central and east central Kansas.\n\nFor your protection move to an interior room on the lowest floor of a\nbuilding.",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVSICT"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS53 KICT 300219 RRA"
+                    ],
+                    "NWSheadline": [
+                        "A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 945 PM CDT FOR CHASE...NORTHERN BUTLER AND SOUTHEASTERN MARION COUNTIES"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-30T02:18:00-00:00...storm...292DEG...26KT...38.42,-96.53 37.87,-96.83"
+                    ],
+                    "windThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxWindGust": [
+                        "60 MPH"
+                    ],
+                    "hailThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxHailSize": [
+                        "0.75"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.CON.KICT.SV.W.0039.000000T0000Z-220430T0245Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-30T02:45:00+00:00"
+                    ],
+                    "expiredReferences": [
+                        "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.27608f965c3b8b115fab452549c4bcc4daf0afd5.002.1,2021-05-25T17:12:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.8086a2106196516889083a68ac3118f1b94f6ce0.001.1,2021-05-25T17:08:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c4906986979e7ec8d4334e5ddc1d2640e4c8add2.001.1,2021-05-25T16:58:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.4c0bed92647d8521e5e67b3fbabdb27628130f51.001.1,2021-05-25T16:42:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.27608f965c3b8b115fab452549c4bcc4daf0afd5.001.1,2021-05-25T17:12:00-05:00"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cf76691d0829cef34a2d925b316d949f2df16c31.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -95.700000000000003,
+                            38.289999999999999
+                        ],
+                        [
+                            -95.450000000000003,
+                            38.460000000000001
+                        ],
+                        [
+                            -95.409999999999997,
+                            38.409999900000003
+                        ],
+                        [
+                            -95.069999899999999,
+                            38.609999999999999
+                        ],
+                        [
+                            -95.079999999999998,
+                            38.18
+                        ],
+                        [
+                            -95.480000000000004,
+                            38.039999999999999
+                        ],
+                        [
+                            -95.540000000000006,
+                            38.039999999999999
+                        ],
+                        [
+                            -95.700000000000003,
+                            38.289999999999999
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cf76691d0829cef34a2d925b316d949f2df16c31.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.cf76691d0829cef34a2d925b316d949f2df16c31.001.1",
+                "areaDesc": "Franklin; Coffey; Anderson",
+                "geocode": {
+                    "SAME": [
+                        "020059",
+                        "020031",
+                        "020003"
+                    ],
+                    "UGC": [
+                        "KSZ056",
+                        "KSZ058",
+                        "KSZ059"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/KSZ056",
+                    "https://api.weather.gov/zones/forecast/KSZ058",
+                    "https://api.weather.gov/zones/forecast/KSZ059"
+                ],
+                "references": [],
+                "sent": "2022-04-29T21:19:00-05:00",
+                "effective": "2022-04-29T21:19:00-05:00",
+                "onset": "2022-04-29T21:19:00-05:00",
+                "expires": "2022-04-29T21:45:00-05:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Topeka KS",
+                "headline": "Special Weather Statement issued April 29 at 9:19PM CDT by NWS Topeka KS",
+                "description": "At 919 PM CDT, Doppler radar was tracking a strong thunderstorm near\nHarris, moving northeast at 45 mph.\n\nHAZARD...Wind gusts up to 50 mph and penny size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Gusty winds could knock down tree limbs and blow around\nunsecured objects. Minor damage to outdoor objects is\npossible.\n\nLocations impacted include...\nGarnett, Richmond, Greeley, Princeton, Lane, Rantoul, Westphalia and\nHarris.",
+                "instruction": "If outdoors, consider seeking shelter inside a building.\n\nA Tornado Watch remains in effect until 1100 PM CDT for east central\nKansas.",
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSTOP"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS83 KTOP 300219"
+                    ],
+                    "NWSheadline": [
+                        "A strong thunderstorm will impact portions of southern Franklin, Anderson and eastern Coffey Counties through 945 PM CDT"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-30T02:19:00-00:00...storm...224DEG...37KT...38.3,-95.37"
+                    ],
+                    "maxWindGust": [
+                        "50 MPH"
+                    ],
+                    "maxHailSize": [
+                        "0.75"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.550c024621ed2527858f7a8b66a55e5a31b04fa2.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -95.060000000000002,
+                            38.979999900000003
+                        ],
+                        [
+                            -95.079999999999998,
+                            38.990000000000002
+                        ],
+                        [
+                            -95.079999999999998,
+                            38.960000000000001
+                        ],
+                        [
+                            -95.090000000000003,
+                            38.960000000000001
+                        ],
+                        [
+                            -95.109999999999999,
+                            38.969999999999999
+                        ],
+                        [
+                            -95.109999999999999,
+                            39.009999999999998
+                        ],
+                        [
+                            -94.909999999999997,
+                            39.019999999999996
+                        ],
+                        [
+                            -94.909999999999997,
+                            38.989999999999995
+                        ],
+                        [
+                            -94.890000000000001,
+                            39.029999999999994
+                        ],
+                        [
+                            -94.680000000000007,
+                            39.039999999999992
+                        ],
+                        [
+                            -94.670000000000002,
+                            38.509999999999991
+                        ],
+                        [
+                            -95.060000000000002,
+                            38.389999999999993
+                        ],
+                        [
+                            -95.060000000000002,
+                            38.979999900000003
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.550c024621ed2527858f7a8b66a55e5a31b04fa2.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.550c024621ed2527858f7a8b66a55e5a31b04fa2.001.1",
+                "areaDesc": "Miami; Leavenworth; Johnson",
+                "geocode": {
+                    "SAME": [
+                        "020121",
+                        "020103",
+                        "020091"
+                    ],
+                    "UGC": [
+                        "KSZ057",
+                        "KSZ103",
+                        "KSZ105"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/KSZ057",
+                    "https://api.weather.gov/zones/forecast/KSZ103",
+                    "https://api.weather.gov/zones/forecast/KSZ105"
+                ],
+                "references": [],
+                "sent": "2022-04-29T21:18:00-05:00",
+                "effective": "2022-04-29T21:18:00-05:00",
+                "onset": "2022-04-29T21:18:00-05:00",
+                "expires": "2022-04-29T21:45:00-05:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Kansas City/Pleasant Hill MO",
+                "headline": "Special Weather Statement issued April 29 at 9:18PM CDT by NWS Kansas City/Pleasant Hill MO",
+                "description": "At 917 PM CDT, Doppler radar was tracking a strong thunderstorm over\nWellsville, or near Edgerton, moving northeast at 45 mph.\n\nHAZARD...Wind gusts up to 50 mph and nickel size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Gusty winds could knock down tree limbs and blow around\nunsecured objects. Minor damage to outdoor objects is\npossible.\n\nLocations impacted include...\nOverland Park, Olathe, Shawnee, Lenexa, Gardner, Merriam, De Soto,\nPaola, Spring Hill, Osawatomie, Louisburg, Edgerton, Lake Quivira,\nLinwood, Hillsdale, Chiles, Clare, Bucyrus, Lackmans and Clearview\nCity.\n\nThis includes the following highways...\nInterstate 35 in Kansas between mile markers 200 and 230.\nInterstate 435 between mile markers 0 and 7, and between mile\nmarkers 80 and 83.",
+                "instruction": "If outdoors, consider seeking shelter inside a building.\n\nA Severe Thunderstorm Watch remains in effect until 400 AM CDT for\nnortheastern and east central Kansas.",
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSEAX"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS83 KEAX 300218"
+                    ],
+                    "NWSheadline": [
+                        "A strong thunderstorm will impact portions of Miami, south central Leavenworth and Johnson Counties through 945 PM CDT"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-30T02:17:00-00:00...storm...246DEG...38KT...38.76,-95.09"
+                    ],
+                    "maxWindGust": [
+                        "50 MPH"
+                    ],
+                    "maxHailSize": [
+                        "0.88"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.130288e2d20d5d1a9c32b6c886dcc59d66c7a84d.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -95.9599999,
+                            38.170000000000002
+                        ],
+                        [
+                            -95.689999999999998,
+                            38.300000000000004
+                        ],
+                        [
+                            -95.539999999999992,
+                            38.040000000000006
+                        ],
+                        [
+                            -95.959999899999985,
+                            38.040000000000006
+                        ],
+                        [
+                            -95.9599999,
+                            38.170000000000002
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.130288e2d20d5d1a9c32b6c886dcc59d66c7a84d.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.130288e2d20d5d1a9c32b6c886dcc59d66c7a84d.001.1",
+                "areaDesc": "Coffey",
+                "geocode": {
+                    "SAME": [
+                        "020031"
+                    ],
+                    "UGC": [
+                        "KSZ058"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/KSZ058"
+                ],
+                "references": [],
+                "sent": "2022-04-29T21:17:00-05:00",
+                "effective": "2022-04-29T21:17:00-05:00",
+                "onset": "2022-04-29T21:17:00-05:00",
+                "expires": "2022-04-29T21:45:00-05:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Topeka KS",
+                "headline": "Special Weather Statement issued April 29 at 9:17PM CDT by NWS Topeka KS",
+                "description": "At 917 PM CDT, Doppler radar was tracking a strong thunderstorm 6\nmiles south of Gridley, moving northeast at 35 mph.\n\nHAZARD...Wind gusts up to 50 mph and penny size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Gusty winds could knock down tree limbs and blow around\nunsecured objects. Minor damage to outdoor objects is\npossible.\n\nLocations impacted include...\nBurlington, New Strawn, Gridley, Le Roy and John Redmond Reservoir.",
+                "instruction": "If outdoors, consider seeking shelter inside a building.\n\nA Tornado Watch remains in effect until 1100 PM CDT for east central\nKansas.",
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSTOP"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS83 KTOP 300217"
+                    ],
+                    "NWSheadline": [
+                        "A strong thunderstorm will impact portions of southern Coffey County through 945 PM CDT"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-30T02:17:00-00:00...storm...241DEG...29KT...38.01,-95.9"
+                    ],
+                    "maxWindGust": [
+                        "50 MPH"
+                    ],
+                    "maxHailSize": [
+                        "0.75"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4f705ffccc17e085972b88e49108541b352fc53f.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -101.52,
+                            39.670000000000002
+                        ],
+                        [
+                            -101.92999999999999,
+                            39.32
+                        ],
+                        [
+                            -102.59999999999999,
+                            39.649999999999999
+                        ],
+                        [
+                            -102.00999999999999,
+                            40
+                        ],
+                        [
+                            -101.98999999999999,
+                            40
+                        ],
+                        [
+                            -101.52,
+                            39.670000000000002
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4f705ffccc17e085972b88e49108541b352fc53f.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.4f705ffccc17e085972b88e49108541b352fc53f.001.1",
+                "areaDesc": "Yuma County; Kit Carson County; Cheyenne; Sherman",
+                "geocode": {
+                    "SAME": [
+                        "008125",
+                        "008063",
+                        "020023",
+                        "020181"
+                    ],
+                    "UGC": [
+                        "COZ090",
+                        "COZ091",
+                        "KSZ001",
+                        "KSZ013"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/COZ090",
+                    "https://api.weather.gov/zones/forecast/COZ091",
+                    "https://api.weather.gov/zones/forecast/KSZ001",
+                    "https://api.weather.gov/zones/forecast/KSZ013"
+                ],
+                "references": [],
+                "sent": "2022-04-29T19:59:00-06:00",
+                "effective": "2022-04-29T19:59:00-06:00",
+                "onset": "2022-04-29T19:59:00-06:00",
+                "expires": "2022-04-29T20:45:00-06:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Goodland KS",
+                "headline": "Special Weather Statement issued April 29 at 7:59PM MDT by NWS Goodland KS",
+                "description": "At 754 PM MDT/854 PM CDT/, Doppler radar was tracking a strong\nthunderstorm 20 miles northeast of Cope, or 22 miles northwest of\nBonny Reservoir, moving southeast at 40 mph. Other showers and\nstorms across Yuma County moving into Northwest Kansas and Kit\nCarson County may be capable of downburst winds up to 55 mph.\n\nHAZARD...Wind gusts of 50 to 55 mph.\n\nSOURCE...Radar indicated.\n\nIMPACT...Gusty winds could knock down tree limbs and blow around\nunsecured objects.\n\nLocations impacted include...\nBonny Reservoir.\n\nThis includes the following highways...\nInterstate 70 in Kansas near mile marker 6.\nHighway 385 between mile markers 201 and 227.",
+                "instruction": "If outdoors, consider seeking shelter inside a building.",
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSGLD"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS83 KGLD 300159"
+                    ],
+                    "NWSheadline": [
+                        "A strong thunderstorm will impact portions of southeastern Yuma County in northeastern Colorado, northeastern Kit Carson County in east central Colorado, southwestern Cheyenne and northwestern Sherman Counties in northwestern Kansas through 845 PM MDT/945 PM CDT/"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-30T01:54:00-00:00...storm...311DEG...37KT...39.8,-102.51"
+                    ],
+                    "maxWindGust": [
+                        "55 MPH"
+                    ],
+                    "maxHailSize": [
+                        "0.00"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.338f0e35491a8400889b747278651913692a1ce5.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -101.52,
+                            39.670000000000002
+                        ],
+                        [
+                            -101.92999999999999,
+                            39.32
+                        ],
+                        [
+                            -102.59999999999999,
+                            39.649999999999999
+                        ],
+                        [
+                            -102.00999999999999,
+                            40
+                        ],
+                        [
+                            -101.98999999999999,
+                            40
+                        ],
+                        [
+                            -101.52,
+                            39.670000000000002
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.338f0e35491a8400889b747278651913692a1ce5.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.338f0e35491a8400889b747278651913692a1ce5.001.1",
+                "areaDesc": "Yuma County; Kit Carson County; Cheyenne; Sherman",
+                "geocode": {
+                    "SAME": [
+                        "008125",
+                        "008063",
+                        "020023",
+                        "020181"
+                    ],
+                    "UGC": [
+                        "COZ090",
+                        "COZ091",
+                        "KSZ001",
+                        "KSZ013"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/COZ090",
+                    "https://api.weather.gov/zones/forecast/COZ091",
+                    "https://api.weather.gov/zones/forecast/KSZ001",
+                    "https://api.weather.gov/zones/forecast/KSZ013"
+                ],
+                "references": [],
+                "sent": "2022-04-29T19:55:00-06:00",
+                "effective": "2022-04-29T19:55:00-06:00",
+                "onset": "2022-04-29T19:55:00-06:00",
+                "expires": "2022-04-29T20:45:00-06:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Goodland KS",
+                "headline": "Special Weather Statement issued April 29 at 7:55PM MDT by NWS Goodland KS",
+                "description": "At 754 PM MDT/854 PM CDT/, Doppler radar was tracking a strong\nthunderstorm 20 miles northeast of Cope, or 22 miles northwest of\nBonny Reservoir, moving southeast at 40 mph. Other showers and\nstorms across Yuma County moving into Northwest Kansas and Kit\nCarson County Colorado may be capable of producing strong downburst\nwinds up to 55 mph.\n\nHAZARD...Wind gusts of 50 to 55 mph.\n\nSOURCE...Radar indicated.\n\nIMPACT...Gusty winds could knock down tree limbs and blow around\nunsecured objects.\n\nLocations impacted include...\nBonny Reservoir.\n\nThis includes the following highways...\nInterstate 70 in Kansas near mile marker 6.\nHighway 385 between mile markers 201 and 227.",
+                "instruction": "If outdoors, consider seeking shelter inside a building.",
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSGLD"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS83 KGLD 300155"
+                    ],
+                    "NWSheadline": [
+                        "A strong thunderstorm will impact portions of southeastern Yuma County in northeastern Colorado, northeastern Kit Carson County in east central Colorado, southwestern Cheyenne and northwestern Sherman Counties in northwestern Kansas through 845 PM MDT/945 PM CDT/"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-30T01:54:00-00:00...storm...311DEG...37KT...39.8,-102.51"
+                    ],
+                    "maxWindGust": [
+                        "55 MPH"
+                    ],
+                    "maxHailSize": [
+                        "0.00"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d79ba7f35f82698db4e6bd27edf74efc089f886f.001.1",
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d79ba7f35f82698db4e6bd27edf74efc089f886f.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.d79ba7f35f82698db4e6bd27edf74efc089f886f.001.1",
+                "areaDesc": "Surprise Valley California; Lassen-Eastern Plumas-Eastern Sierra Counties; Greater Lake Tahoe Area; Mono; Mineral and Southern Lyon Counties; Greater Lake Tahoe Area; Greater Reno-Carson City-Minden Area; Western Nevada Basin and Range including Pyramid Lake; Northern Washoe County",
+                "geocode": {
+                    "SAME": [
+                        "006049",
+                        "006035",
+                        "006063",
+                        "006091",
+                        "006003",
+                        "006017",
+                        "006057",
+                        "006061",
+                        "006051",
+                        "032019",
+                        "032021",
+                        "032005",
+                        "032031",
+                        "032510",
+                        "032029",
+                        "032001",
+                        "032027"
+                    ],
+                    "UGC": [
+                        "CAZ070",
+                        "CAZ071",
+                        "CAZ072",
+                        "CAZ073",
+                        "NVZ001",
+                        "NVZ002",
+                        "NVZ003",
+                        "NVZ004",
+                        "NVZ005"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/CAZ070",
+                    "https://api.weather.gov/zones/forecast/CAZ071",
+                    "https://api.weather.gov/zones/forecast/CAZ072",
+                    "https://api.weather.gov/zones/forecast/CAZ073",
+                    "https://api.weather.gov/zones/forecast/NVZ001",
+                    "https://api.weather.gov/zones/forecast/NVZ002",
+                    "https://api.weather.gov/zones/forecast/NVZ003",
+                    "https://api.weather.gov/zones/forecast/NVZ004",
+                    "https://api.weather.gov/zones/forecast/NVZ005"
+                ],
+                "references": [],
+                "sent": "2022-04-29T14:42:00-07:00",
+                "effective": "2022-04-29T14:42:00-07:00",
+                "onset": "2022-04-29T14:42:00-07:00",
+                "expires": "2022-04-30T17:00:00-07:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Reno NV",
+                "headline": "Special Weather Statement issued April 29 at 2:42PM PDT by NWS Reno NV",
+                "description": "-This Weekend-\n\nAnother quick-moving system will sweep through the Sierra and\nwestern Nevada bringing more breezy conditions and potential for\nsome showers. Temperatures will be relatively mild and the breezes\nmay result in choppy lake conditions for a brief period on Lake\nTahoe and Pyramid Lake. There is also a 15% chance for\nthunderstorms, but your best bet for those will be north of\nGerlach on Saturday.\n\n\n-Monday Winds-\n\nYou guessed it. Another round of showers and winds, but this storm\nwill bring more of a wind punch than previous systems. Confidence\nis high for widespread wind gusts 40 to 50 mph with locally higher\nwind gusts for those wind prone areas. There is potential for\ndownslope enhancement of the wind gusts, which would boost the\npeak wind gusts for areas along the Highway 395 and Interstate 580\ncorridor.\n\nPlan on impacts to aviation, recreation, with the\npotential for another round of high profile vehicle restrictions\nas well as areas of blowing dust. There will be very dry\nconditions along with the gusty winds, which may result in\ncritical fire conditions, especially across West Central Nevada.\nTake precautions now to secure outdoor items, check flight/road\nplans, and avoid activities that could ignite a spark.",
+                "instruction": null,
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSREV"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS85 KREV 292142"
+                    ],
+                    "NWSheadline": [
+                        "Weather Outlook: Nothing Big, But Not Quiet Either"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1f292a21d5894111d7c8e383e5170ba18e706f79.001.1",
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1f292a21d5894111d7c8e383e5170ba18e706f79.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.1f292a21d5894111d7c8e383e5170ba18e706f79.001.1",
+                "areaDesc": "Alger; Luce; Delta; Southern Schoolcraft; Northern Schoolcraft; Western Chippewa; Central Chippewa; Southeast Chippewa; Western Mackinac; Eastern Mackinac; Mackinac Island/Bois Blanc Island",
+                "geocode": {
+                    "SAME": [
+                        "026003",
+                        "026095",
+                        "026041",
+                        "026153",
+                        "026033",
+                        "026097"
+                    ],
+                    "UGC": [
+                        "MIZ006",
+                        "MIZ007",
+                        "MIZ013",
+                        "MIZ014",
+                        "MIZ085",
+                        "MIZ086",
+                        "MIZ087",
+                        "MIZ088",
+                        "MIZ095",
+                        "MIZ096",
+                        "MIZ097"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/MIZ006",
+                    "https://api.weather.gov/zones/forecast/MIZ007",
+                    "https://api.weather.gov/zones/forecast/MIZ013",
+                    "https://api.weather.gov/zones/forecast/MIZ014",
+                    "https://api.weather.gov/zones/forecast/MIZ085",
+                    "https://api.weather.gov/zones/forecast/MIZ086",
+                    "https://api.weather.gov/zones/forecast/MIZ087",
+                    "https://api.weather.gov/zones/forecast/MIZ088",
+                    "https://api.weather.gov/zones/forecast/MIZ095",
+                    "https://api.weather.gov/zones/forecast/MIZ096",
+                    "https://api.weather.gov/zones/forecast/MIZ097"
+                ],
+                "references": [],
+                "sent": "2022-04-29T15:48:00-04:00",
+                "effective": "2022-04-29T15:48:00-04:00",
+                "onset": "2022-04-29T15:48:00-04:00",
+                "expires": "2022-04-30T06:00:00-04:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Marquette MI",
+                "headline": "Special Weather Statement issued April 29 at 3:48PM EDT by NWS Marquette MI",
+                "description": "Gusty southeast winds as high as 15 to 30 MPH, combined with dry\nand warm conditions will lead to elevated wildfire potential\nSaturday across the eastern half of Upper Michigan in snow free\nareas. Relative humidities will fall to as low as 15 percent.\n\nAvoid outdoor burning Saturday. Immediately report any wildfires\nto local emergency services by calling 911.\n\nBurn restrictions remain in effect. For complete details, visit\nwww.dnr.state.mi.us/burnpermits, or by calling 866-922-2876.",
+                "instruction": null,
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSMQT"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS83 KMQT 291948"
+                    ],
+                    "NWSheadline": [
+                        "ELEVATED WILDFIRE POTENTIAL FOR MOST OF THE EAST HALF OF UPPER MICHIGAN IN SNOW FREE AREAS DUE TO A COMBINATION OF GUSTY WINDS, DRY AND WARM CONDITIONS ON SATURDAY"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f84bc7446f993060ce9ecbfbd9ac00f6b410644.001.1",
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f84bc7446f993060ce9ecbfbd9ac00f6b410644.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.7f84bc7446f993060ce9ecbfbd9ac00f6b410644.001.1",
+                "areaDesc": "Central Interior; Middle Tanana Valley; Deltana and Tanana Flats; Upper Tanana Valley and the Fortymile Country; Denali; Eastern Alaska Range",
+                "geocode": {
+                    "SAME": [
+                        "002068",
+                        "002090",
+                        "002290",
+                        "002240"
+                    ],
+                    "UGC": [
+                        "AKZ221",
+                        "AKZ222",
+                        "AKZ223",
+                        "AKZ224",
+                        "AKZ225",
+                        "AKZ226"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/AKZ221",
+                    "https://api.weather.gov/zones/forecast/AKZ222",
+                    "https://api.weather.gov/zones/forecast/AKZ223",
+                    "https://api.weather.gov/zones/forecast/AKZ224",
+                    "https://api.weather.gov/zones/forecast/AKZ225",
+                    "https://api.weather.gov/zones/forecast/AKZ226"
+                ],
+                "references": [],
+                "sent": "2022-04-29T05:00:00-08:00",
+                "effective": "2022-04-29T05:00:00-08:00",
+                "onset": "2022-04-29T05:00:00-08:00",
+                "expires": "2022-04-30T06:00:00-08:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Fairbanks AK",
+                "headline": "Special Weather Statement issued April 29 at 5:00AM AKDT by NWS Fairbanks AK",
+                "description": "High temperatures this weekend will be in the 50s to around 60\nwith overnight lows only falling to around freezing for much of\nthe southeast Interior. Rapid melting of the snowpack will\ncontinue. Most of the Southeast Interior still has a significant\namount of water in the saturated snow pack that has not been\nreleased. Overflow can be found on many of the still frozen\nlakes, ponds, streams, and rivers.\n\nWater will continue to pond in low lying areas, and could produce\nminor flooding issue in areas where drainage remains frozen or is\npoor. People in low lying or poorly drained areas should prepare\nfor potential flooding that could develop as the snowmelt\naccelerates. Preparations include clearing ice out of drain pipes,\nculverts and drainage ditches. Preparations also include moving\nvehicles to higher ground, and moving valuables in basements and\ngarages to shelves above the ground.\n\nRiver breakup is expected soon, and the snowmelt runoff crest of\nrivers will generally occur 1 to 2 weeks after breakup occurs.\n\nFor the latest Warning, Advisories and forecasts go to\nwww.weather.gov/fairbanks, and for the latest river forecasts go\nto www.weather.gov/aprfc.",
+                "instruction": null,
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSAFG"
+                    ],
+                    "WMOidentifier": [
+                        "WWAK83 PAFG 291300"
+                    ],
+                    "NWSheadline": [
+                        "Increased Snowmelt Continues Across The Southeast Interior Through The Weekend"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        }
+    ],
+    "title": "current watches, warnings, and advisories",
+    "updated": "2022-04-30T02:37:13+00:00"
+}

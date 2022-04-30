@@ -27,11 +27,11 @@ export class AlertCardComponent implements OnInit {
     }
     console.log('Drawing')
     console.log('Polygon: ' + JSON.stringify(this.alert.polygon))
+    if (this.alert.polygon.length == 0) {
+      return 
+    }
     let adjusted = Point.adjustArray(this.alert.polygon);
     console.log(adjusted)
-    // ctx.fillStyle = 'blue';
-    // ctx.fillRect(0,0,this.polyCanvas.nativeElement.width, this.polyCanvas.nativeElement.height)
-    // ctx.fillStyle = '#f00';
     ctx.strokeStyle = '#000';
     ctx.lineWidth = 1;
     ctx.transform(1, 0, 0, -1, 0, this.polyCanvas.nativeElement.height)
@@ -43,7 +43,6 @@ export class AlertCardComponent implements OnInit {
       ctx.lineTo(current.x, current.y);
     }
     ctx.closePath();
-    // ctx.fill();
     ctx.stroke();
   }
 
