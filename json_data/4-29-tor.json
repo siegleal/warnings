@@ -1,0 +1,3498 @@
+{
+    "@context": [
+        "https://geojson.org/geojson-ld/geojson-context.jsonld",
+        {
+            "@version": "1.1",
+            "wx": "https://api.weather.gov/ontology#",
+            "@vocab": "https://api.weather.gov/ontology#"
+        }
+    ],
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d83d5d1fa2c335c1a28344e3b3da3107a4bd8428.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -99.629999999999995,
+                            39.939999999999998
+                        ],
+                        [
+                            -99.629999999999995,
+                            39.57
+                        ],
+                        [
+                            -99.599999999999994,
+                            39.57
+                        ],
+                        [
+                            -99.599999999999994,
+                            39.460000000000001
+                        ],
+                        [
+                            -99.9599999,
+                            39.5
+                        ],
+                        [
+                            -99.629999999999995,
+                            39.939999999999998
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d83d5d1fa2c335c1a28344e3b3da3107a4bd8428.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.d83d5d1fa2c335c1a28344e3b3da3107a4bd8428.001.1",
+                "areaDesc": "Graham, KS; Norton, KS",
+                "geocode": {
+                    "SAME": [
+                        "020065",
+                        "020137"
+                    ],
+                    "UGC": [
+                        "KSC065",
+                        "KSC137"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/KSC065",
+                    "https://api.weather.gov/zones/county/KSC137"
+                ],
+                "references": [
+                    {
+                        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ab194e02c3919ec6f06eb44e447f162114517e18.001.1",
+                        "identifier": "urn:oid:2.49.0.1.840.0.ab194e02c3919ec6f06eb44e447f162114517e18.001.1",
+                        "sender": "w-nws.webmaster@noaa.gov",
+                        "sent": "2022-04-29T18:20:00-05:00"
+                    }
+                ],
+                "sent": "2022-04-29T18:44:00-05:00",
+                "effective": "2022-04-29T18:44:00-05:00",
+                "onset": "2022-04-29T18:44:00-05:00",
+                "expires": "2022-04-29T19:15:00-05:00",
+                "ends": "2022-04-29T19:15:00-05:00",
+                "status": "Actual",
+                "messageType": "Update",
+                "category": "Met",
+                "severity": "Severe",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Severe Thunderstorm Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Goodland KS",
+                "headline": "Severe Thunderstorm Warning issued April 29 at 6:44PM CDT until April 29 at 7:15PM CDT by NWS Goodland KS",
+                "description": "At 644 PM CDT, severe thunderstorms were located along a line\nextending from 6 miles south of Edmond to 7 miles south of Speed to 3\nmiles west of Woodston, moving northeast at 50 mph.\n\nHAZARD...60 mph wind gusts.\n\nSOURCE...Radar indicated.\n\nIMPACT...Expect damage to roofs, siding, and trees.\n\nLocations impacted include...\nEdmond and Densmore.",
+                "instruction": "A Tornado Watch remains in effect until 900 PM CDT for northwestern\nKansas.\n\nFor your protection move to an interior room on the lowest floor of a\nbuilding.\n\nThese thunderstorms will produce damaging winds resulting in areas of\nnear zero visibility in blowing dirt. Use extreme caution if you must\ntravel and be alert for rapidly changing visibility.\n\nTorrential rainfall is occurring with these storms, and may lead to\nflash flooding. Do not drive your vehicle through flooded roadways.",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVSGLD"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS53 KGLD 292344"
+                    ],
+                    "NWSheadline": [
+                        "A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 715 PM CDT FOR SOUTHEASTERN NORTON AND NORTHEASTERN GRAHAM COUNTIES"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-29T23:44:00-00:00...storm...222DEG...42KT...39.54,-99.78 39.57,-99.4 39.46,-99.17"
+                    ],
+                    "windThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxWindGust": [
+                        "60 MPH"
+                    ],
+                    "hailThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxHailSize": [
+                        "Up to .75"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.CON.KGLD.SV.W.0022.000000T0000Z-220430T0015Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-30T00:15:00+00:00"
+                    ],
+                    "expiredReferences": [
+                        "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b5b50a0ca694c85e276d1e45485fb703589c996d.001.1,2021-05-08T17:17:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.9ad551700ad4f20e734c960e4e55e31213eaaac8.001.1,2021-05-08T17:12:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.a3ec8229b3ef22097b6e9b1798e0d1ab63ba9b5d.001.1,2021-05-08T17:32:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.17b138ce5d6c19fe4330824b8f0fab193d9a9446.001.1,2021-05-08T17:04:00-06:00"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5257539179c07035ec5070de3dd7e0907ba0d3d8.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -96.799999999999997,
+                            39.920000000000002
+                        ],
+                        [
+                            -96.810000000000002,
+                            39.840000000000003
+                        ],
+                        [
+                            -97.069999899999999,
+                            39.720000000000006
+                        ],
+                        [
+                            -97.2099999,
+                            39.830000000000005
+                        ],
+                        [
+                            -97.030000000000001,
+                            40.000000000000007
+                        ],
+                        [
+                            -97,
+                            40.000000000000007
+                        ],
+                        [
+                            -96.799999999999997,
+                            39.920000000000002
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5257539179c07035ec5070de3dd7e0907ba0d3d8.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.5257539179c07035ec5070de3dd7e0907ba0d3d8.001.1",
+                "areaDesc": "Washington, KS",
+                "geocode": {
+                    "SAME": [
+                        "020201"
+                    ],
+                    "UGC": [
+                        "KSC201"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/KSC201"
+                ],
+                "references": [
+                    {
+                        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.05301c032ce1573073c56ecf4049562f9e736907.001.1",
+                        "identifier": "urn:oid:2.49.0.1.840.0.05301c032ce1573073c56ecf4049562f9e736907.001.1",
+                        "sender": "w-nws.webmaster@noaa.gov",
+                        "sent": "2022-04-29T18:39:00-05:00"
+                    }
+                ],
+                "sent": "2022-04-29T18:44:00-05:00",
+                "effective": "2022-04-29T18:44:00-05:00",
+                "onset": "2022-04-29T18:44:00-05:00",
+                "expires": "2022-04-29T19:15:00-05:00",
+                "ends": "2022-04-29T19:15:00-05:00",
+                "status": "Actual",
+                "messageType": "Update",
+                "category": "Met",
+                "severity": "Extreme",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Tornado Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Topeka KS",
+                "headline": "Tornado Warning issued April 29 at 6:44PM CDT until April 29 at 7:15PM CDT by NWS Topeka KS",
+                "description": "At 643 PM CDT, a severe thunderstorm capable of producing a tornado\nwas located near Washington, moving northeast at 25 mph.\n\nHAZARD...Tornado and ping pong ball size hail.\n\nSOURCE...Weather spotters reported a funnel cloud. At 5:40PM, a\nfunnel cloud and rotating wall cloud were observed near\nWashington.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed. Damage\nto roofs, windows, and vehicles will occur.  Tree damage is\nlikely.\n\nLocations impacted include...\nWashington, Hanover, Morrowville and Hollenberg.",
+                "instruction": "TAKE COVER NOW! Move to a basement or an interior room on the lowest\nfloor of a sturdy building. Avoid windows. If you are outdoors, in a\nmobile home, or in a vehicle, move to the closest substantial shelter\nand protect yourself from flying debris.",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVSTOP"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS53 KTOP 292344"
+                    ],
+                    "NWSheadline": [
+                        "A TORNADO WARNING REMAINS IN EFFECT UNTIL 715 PM CDT FOR NORTHEASTERN WASHINGTON COUNTY"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-29T23:43:00-00:00...storm...230DEG...23KT...39.85,-97.03"
+                    ],
+                    "maxHailSize": [
+                        "1.50"
+                    ],
+                    "tornadoDetection": [
+                        "RADAR INDICATED"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.CON.KTOP.TO.W.0004.000000T0000Z-220430T0015Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-30T00:15:00+00:00"
+                    ],
+                    "expiredReferences": [
+                        "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.01a2f9e4ba4f1d4557e378ccdb0662bf493f599b.001.1,2021-05-27T00:31:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.30ffd668a29ef04ec6f8dceb0a59017462d7cdcc.001.1,2021-05-27T00:26:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7dd562d413351db686b70a91354f1d588ddb8a99.001.1,2021-05-27T00:23:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d2ad27070796e634137102f5a8fa1619b4e61a98.001.1,2021-05-27T00:18:00-05:00"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c762d331f8e04989a2a0dc7c75d4380ef0e0b721.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -98.120000000000005,
+                            40.960000000000001
+                        ],
+                        [
+                            -98.2099999,
+                            41.130000000000003
+                        ],
+                        [
+                            -97.7099999,
+                            41.300000000000004
+                        ],
+                        [
+                            -97.609999999999999,
+                            41.050000000000004
+                        ],
+                        [
+                            -98.120000000000005,
+                            40.960000000000001
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c762d331f8e04989a2a0dc7c75d4380ef0e0b721.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.c762d331f8e04989a2a0dc7c75d4380ef0e0b721.001.1",
+                "areaDesc": "Hamilton, NE; Merrick, NE; Polk, NE; York, NE",
+                "geocode": {
+                    "SAME": [
+                        "031081",
+                        "031121",
+                        "031143",
+                        "031185"
+                    ],
+                    "UGC": [
+                        "NEC081",
+                        "NEC121",
+                        "NEC143",
+                        "NEC185"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/NEC081",
+                    "https://api.weather.gov/zones/county/NEC121",
+                    "https://api.weather.gov/zones/county/NEC143",
+                    "https://api.weather.gov/zones/county/NEC185"
+                ],
+                "references": [],
+                "sent": "2022-04-29T18:44:00-05:00",
+                "effective": "2022-04-29T18:44:00-05:00",
+                "onset": "2022-04-29T18:44:00-05:00",
+                "expires": "2022-04-29T19:15:00-05:00",
+                "ends": "2022-04-29T19:15:00-05:00",
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Extreme",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Tornado Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Hastings NE",
+                "headline": "Tornado Warning issued April 29 at 6:44PM CDT until April 29 at 7:15PM CDT by NWS Hastings NE",
+                "description": "The National Weather Service in Hastings has issued a\n\n* Tornado Warning for...\nNorthwestern York County in east central Nebraska...\nNortheastern Hamilton County in south central Nebraska...\nCentral Merrick County in central Nebraska...\nSouthwestern Polk County in east central Nebraska...\n\n* Until 715 PM CDT.\n\n* At 644 PM CDT, severe thunderstorms capable of producing both\ntornadoes and extensive straight line wind damage were located near\nCentral City, or 18 miles northeast of Grand Island, moving east at\n45 mph.\n\nHAZARD...Tornado.\n\nSOURCE...Radar indicated rotation.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed.\nDamage to roofs, windows, and vehicles will occur.  Tree\ndamage is likely.\n\n* These dangerous storms will be near...\nCentral City around 650 PM CDT.\nHordville around 655 PM CDT.\n\nOther locations in the path of this tornadic thunderstorm include\nClarks and Polk.",
+                "instruction": "TAKE COVER NOW! Move to a basement or an interior room on the lowest\nfloor of a sturdy building. Avoid windows. If you are outdoors, in a\nmobile home, or in a vehicle, move to the closest substantial shelter\nand protect yourself from flying debris.\n\nThis cluster of thunderstorms is capable of producing tornadoes and\nwidespread significant wind damage. Do not wait to see or hear the\ntornado. For your protection move to an interior room on the lowest\nfloor of a building.",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "TORGID"
+                    ],
+                    "WMOidentifier": [
+                        "WFUS53 KGID 292344"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-29T23:44:00-00:00...storm...248DEG...37KT...41.08,-98.07"
+                    ],
+                    "maxHailSize": [
+                        "Up to .75"
+                    ],
+                    "tornadoDetection": [
+                        "RADAR INDICATED"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.NEW.KGID.TO.W.0003.220429T2344Z-220430T0015Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-30T00:15:00+00:00"
+                    ],
+                    "WEAHandling": [
+                        "Imminent Threat"
+                    ],
+                    "CMAMtext": [
+                        "NWS: TORNADO WARNING in this area til 7:15 PM CDT. Take shelter now. Check media."
+                    ],
+                    "CMAMlongtext": [
+                        "National Weather Service: TORNADO WARNING in this area until 7:15 PM CDT. Take shelter now in a basement or an interior room on the lowest floor of a sturdy building. If you are outdoors, in a mobile home, or in a vehicle, move to the closest substantial shelter and protect yourself from flying debris. Check media."
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.23e64447c00f6a381aaa06788150013e1d5429ce.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -97.109999999999999,
+                            38.740000000000002
+                        ],
+                        [
+                            -97.310000000000002,
+                            38.800000000000004
+                        ],
+                        [
+                            -97.2099999,
+                            39.040000000000006
+                        ],
+                        [
+                            -96.849999999999994,
+                            38.979999900000003
+                        ],
+                        [
+                            -97.109999999999999,
+                            38.740000000000002
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.23e64447c00f6a381aaa06788150013e1d5429ce.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.23e64447c00f6a381aaa06788150013e1d5429ce.001.1",
+                "areaDesc": "Dickinson, KS; Geary, KS",
+                "geocode": {
+                    "SAME": [
+                        "020041",
+                        "020061"
+                    ],
+                    "UGC": [
+                        "KSC041",
+                        "KSC061"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/KSC041",
+                    "https://api.weather.gov/zones/county/KSC061"
+                ],
+                "references": [],
+                "sent": "2022-04-29T18:43:00-05:00",
+                "effective": "2022-04-29T18:43:00-05:00",
+                "onset": "2022-04-29T18:43:00-05:00",
+                "expires": "2022-04-29T19:15:00-05:00",
+                "ends": "2022-04-29T19:15:00-05:00",
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Extreme",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Tornado Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Topeka KS",
+                "headline": "Tornado Warning issued April 29 at 6:43PM CDT until April 29 at 7:15PM CDT by NWS Topeka KS",
+                "description": "The National Weather Service in Topeka has issued a\n\n* Tornado Warning for...\nCentral Dickinson County in central Kansas...\nWest central Geary County in east central Kansas...\n\n* Until 715 PM CDT.\n\n* At 642 PM CDT, a confirmed tornado was located 5 miles southwest of\nEnterprise, moving northeast at 30 mph.\n\nHAZARD...Damaging tornado and hail up to two inches in diameter.\n\nSOURCE...Weather spotters confirmed tornado. At 631 trained\nspotters reported a tornado north of Carlton.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed.\nDamage to roofs, windows, and vehicles will occur.  Tree\ndamage is likely.\n\n* Locations impacted include...\nAbilene, Chapman, Enterprise and Moonlight.\n\nThis includes Interstate 70 between mile markers 274 and 290.",
+                "instruction": "To repeat, a tornado is on the ground. TAKE COVER NOW! Move to a\nbasement or an interior room on the lowest floor of a sturdy\nbuilding. Avoid windows. If you are outdoors, in a mobile home, or in\na vehicle, move to the closest substantial shelter and protect\nyourself from flying debris.",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "TORTOP"
+                    ],
+                    "WMOidentifier": [
+                        "WFUS53 KTOP 292343"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-29T23:42:00-00:00...storm...210DEG...27KT...38.83,-97.17"
+                    ],
+                    "maxHailSize": [
+                        "2.00"
+                    ],
+                    "tornadoDetection": [
+                        "OBSERVED"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.NEW.KTOP.TO.W.0005.220429T2343Z-220430T0015Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-30T00:15:00+00:00"
+                    ],
+                    "WEAHandling": [
+                        "Imminent Threat"
+                    ],
+                    "CMAMtext": [
+                        "NWS: TORNADO WARNING in this area til 7:15 PM CDT. Take shelter now. Check media."
+                    ],
+                    "CMAMlongtext": [
+                        "National Weather Service: TORNADO WARNING in this area until 7:15 PM CDT. Take shelter now in a basement or an interior room on the lowest floor of a sturdy building. If you are outdoors, in a mobile home, or in a vehicle, move to the closest substantial shelter and protect yourself from flying debris. Check media."
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.178c5373cf3ed51909a9c1cc44d711ff699b626d.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -97.930000000000007,
+                            40
+                        ],
+                        [
+                            -97.940000000000012,
+                            39.840000000000003
+                        ],
+                        [
+                            -98.590000000000018,
+                            39.75
+                        ],
+                        [
+                            -98.730000000000018,
+                            40.259999999999998
+                        ],
+                        [
+                            -98.730000000000018,
+                            40.339999999999996
+                        ],
+                        [
+                            -97.90000000000002,
+                            40.289999999999999
+                        ],
+                        [
+                            -97.700000000000017,
+                            40
+                        ],
+                        [
+                            -97.930000000000007,
+                            40
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.178c5373cf3ed51909a9c1cc44d711ff699b626d.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.178c5373cf3ed51909a9c1cc44d711ff699b626d.001.1",
+                "areaDesc": "Jewell, KS; Smith, KS; Nuckolls, NE; Thayer, NE; Webster, NE",
+                "geocode": {
+                    "SAME": [
+                        "020089",
+                        "020183",
+                        "031129",
+                        "031169",
+                        "031181"
+                    ],
+                    "UGC": [
+                        "KSC089",
+                        "KSC183",
+                        "NEC129",
+                        "NEC169",
+                        "NEC181"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/KSC089",
+                    "https://api.weather.gov/zones/county/KSC183",
+                    "https://api.weather.gov/zones/county/NEC129",
+                    "https://api.weather.gov/zones/county/NEC169",
+                    "https://api.weather.gov/zones/county/NEC181"
+                ],
+                "references": [],
+                "sent": "2022-04-29T18:43:00-05:00",
+                "effective": "2022-04-29T18:43:00-05:00",
+                "onset": "2022-04-29T18:43:00-05:00",
+                "expires": "2022-04-29T19:15:00-05:00",
+                "ends": "2022-04-29T19:15:00-05:00",
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Severe",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Severe Thunderstorm Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Hastings NE",
+                "headline": "Severe Thunderstorm Warning issued April 29 at 6:43PM CDT until April 29 at 7:15PM CDT by NWS Hastings NE",
+                "description": "The National Weather Service in Hastings has issued a\n\n* Severe Thunderstorm Warning for...\nNorthern Jewell County in north central Kansas...\nNortheastern Smith County in north central Kansas...\nNuckolls County in south central Nebraska...\nWebster County in south central Nebraska...\nSouthwestern Thayer County in south central Nebraska...\n\n* Until 715 PM CDT.\n\n* At 642 PM CDT, severe thunderstorms were located along a line\nextending from near Bladen to Esbon, moving northeast at 35 mph.\nThis warning replaces the previous warning for this location.\n\nHAZARD...Ping pong ball size hail and 60 mph wind gusts.\n\nSOURCE...Radar indicated.\n\nIMPACT...People and animals outdoors will be injured. Expect hail\ndamage to roofs, siding, windows, and vehicles. Expect\nwind damage to roofs, siding, and trees.\n\n* Severe thunderstorms will be near...\nBladen around 650 PM CDT.\nBurr Oak around 655 PM CDT.\nRosemont around 700 PM CDT.\n\nOther locations in the path of these severe thunderstorms include\nLawrence, Superior, Webber, Bostwick and Lovewell State Park.",
+                "instruction": "A Tornado Watch remains in effect until 900 PM CDT for north central\nKansas...and south central Nebraska.\n\nFor your protection move to an interior room on the lowest floor of a\nbuilding.\n\nA Tornado Watch remains in effect until 900 PM CDT for north central\nKansas...and south central Nebraska.",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVRGID"
+                    ],
+                    "WMOidentifier": [
+                        "WUUS53 KGID 292343"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-29T23:42:00-00:00...storm...239DEG...30KT...40.25,-98.58 39.83,-98.44"
+                    ],
+                    "windThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxWindGust": [
+                        "60 MPH"
+                    ],
+                    "hailThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxHailSize": [
+                        "1.50"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.NEW.KGID.SV.W.0055.220429T2343Z-220430T0015Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-30T00:15:00+00:00"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ff56888e0b080362badb9798a4f2b82253f32c3d.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -97.700000000000003,
+                            41.399999999999999
+                        ],
+                        [
+                            -97.680000000000007,
+                            41.390000000000001
+                        ],
+                        [
+                            -97.690000000000012,
+                            41.049999999999997
+                        ],
+                        [
+                            -98.280000000000015,
+                            41.039999999999999
+                        ],
+                        [
+                            -98.280000000000015,
+                            41.049999999999997
+                        ],
+                        [
+                            -98.319999900000013,
+                            41.049999999999997
+                        ],
+                        [
+                            -98.240000000000009,
+                            41.399999999999999
+                        ],
+                        [
+                            -97.760000000000005,
+                            41.530000000000001
+                        ],
+                        [
+                            -97.7099999,
+                            41.530000000000001
+                        ],
+                        [
+                            -97.700000000000003,
+                            41.399999999999999
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ff56888e0b080362badb9798a4f2b82253f32c3d.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.ff56888e0b080362badb9798a4f2b82253f32c3d.001.1",
+                "areaDesc": "Hamilton, NE; Howard, NE; Merrick, NE; Nance, NE; Polk, NE",
+                "geocode": {
+                    "SAME": [
+                        "031081",
+                        "031093",
+                        "031121",
+                        "031125",
+                        "031143"
+                    ],
+                    "UGC": [
+                        "NEC081",
+                        "NEC093",
+                        "NEC121",
+                        "NEC125",
+                        "NEC143"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/NEC081",
+                    "https://api.weather.gov/zones/county/NEC093",
+                    "https://api.weather.gov/zones/county/NEC121",
+                    "https://api.weather.gov/zones/county/NEC125",
+                    "https://api.weather.gov/zones/county/NEC143"
+                ],
+                "references": [],
+                "sent": "2022-04-29T18:42:00-05:00",
+                "effective": "2022-04-29T18:42:00-05:00",
+                "onset": "2022-04-29T18:42:00-05:00",
+                "expires": "2022-04-29T19:15:00-05:00",
+                "ends": "2022-04-29T19:15:00-05:00",
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Severe",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Severe Thunderstorm Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Hastings NE",
+                "headline": "Severe Thunderstorm Warning issued April 29 at 6:42PM CDT until April 29 at 7:15PM CDT by NWS Hastings NE",
+                "description": "The National Weather Service in Hastings has issued a\n\n* Severe Thunderstorm Warning for...\nNance County in central Nebraska...\nNortheastern Hamilton County in south central Nebraska...\nMerrick County in central Nebraska...\nSouthwestern Polk County in east central Nebraska...\nSoutheastern Howard County in central Nebraska...\n\n* Until 715 PM CDT.\n\n* At 641 PM CDT, severe thunderstorms were located along a line\nextending from 7 miles west of Fullerton to Chapman, moving east at\n45 mph.\n\nHAZARD...60 mph wind gusts and nickel size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Expect damage to roofs, siding, and trees.\n\n* Severe thunderstorms will be near...\nCentral City and Fullerton around 655 PM CDT.\nHordville around 700 PM CDT.\n\nOther locations in the path of these severe thunderstorms include\nGenoa, Clarks and Polk.",
+                "instruction": "Remain alert for a possible tornado! Tornadoes can develop quickly\nfrom severe thunderstorms. If you spot a tornado go at once into the\nbasement or small central room in a sturdy structure.\n\nFor your protection move to an interior room on the lowest floor of a\nbuilding.\n\nA Tornado Watch remains in effect until 900 PM CDT for south central,\ncentral and east central Nebraska.",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVRGID"
+                    ],
+                    "WMOidentifier": [
+                        "WUUS53 KGID 292342"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-29T23:41:00-00:00...storm...248DEG...37KT...41.34,-98.12 41.05,-98.17"
+                    ],
+                    "windThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxWindGust": [
+                        "60 MPH"
+                    ],
+                    "hailThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxHailSize": [
+                        "0.88"
+                    ],
+                    "tornadoDetection": [
+                        "POSSIBLE"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.NEW.KGID.SV.W.0054.220429T2342Z-220430T0015Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-30T00:15:00+00:00"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9983c6d3f65db3fcb71c5295dd767c81fd6dd168.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -90.340000000000003,
+                            39.640000000000001
+                        ],
+                        [
+                            -90.299999999999997,
+                            39.640000000000001
+                        ],
+                        [
+                            -90.299999999999997,
+                            39.520000000000003
+                        ],
+                        [
+                            -90.579999999999998,
+                            39.520000000000003
+                        ],
+                        [
+                            -90.569999899999999,
+                            39.560000000000002
+                        ],
+                        [
+                            -90.579999999999998,
+                            39.580000000000005
+                        ],
+                        [
+                            -90.340000000000003,
+                            39.640000000000001
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9983c6d3f65db3fcb71c5295dd767c81fd6dd168.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.9983c6d3f65db3fcb71c5295dd767c81fd6dd168.001.1",
+                "areaDesc": "Morgan, IL; Scott, IL",
+                "geocode": {
+                    "SAME": [
+                        "017137",
+                        "017171"
+                    ],
+                    "UGC": [
+                        "ILC137",
+                        "ILC171"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/ILC137",
+                    "https://api.weather.gov/zones/county/ILC171"
+                ],
+                "references": [],
+                "sent": "2022-04-29T18:42:00-05:00",
+                "effective": "2022-04-29T18:42:00-05:00",
+                "onset": "2022-04-29T18:42:00-05:00",
+                "expires": "2022-04-29T19:15:00-05:00",
+                "ends": "2022-04-29T19:15:00-05:00",
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Severe",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Severe Thunderstorm Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Lincoln IL",
+                "headline": "Severe Thunderstorm Warning issued April 29 at 6:42PM CDT until April 29 at 7:15PM CDT by NWS Lincoln IL",
+                "description": "The National Weather Service in Lincoln has issued a\n\n* Severe Thunderstorm Warning for...\nSouthern Scott County in west central Illinois...\nSouthwestern Morgan County in west central Illinois...\n\n* Until 715 PM CDT.\n\n* At 642 PM CDT, a severe thunderstorm was located near Alsey, or 7\nmiles south of Winchester, moving east at 35 mph.\n\nHAZARD...Quarter size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Damage to vehicles is expected.\n\n* This severe thunderstorm will be near...\nAlsey around 650 PM CDT.\nManchester around 700 PM CDT.",
+                "instruction": "For your protection move to an interior room on the lowest floor of a\nbuilding.\n\nTorrential rainfall is occurring with this storm, and may lead to\nflash flooding. Do not drive your vehicle through flooded roadways.",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVRILX"
+                    ],
+                    "WMOidentifier": [
+                        "WUUS53 KILX 292342"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-29T23:42:00-00:00...storm...254DEG...27KT...39.53,-90.49"
+                    ],
+                    "windThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxWindGust": [
+                        "Up to 50 MPH"
+                    ],
+                    "hailThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxHailSize": [
+                        "1.00"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.NEW.KILX.SV.W.0021.220429T2342Z-220430T0015Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-30T00:15:00+00:00"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2c574acf21d6cfe872ee6acda23e1ad967c551a2.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -96.730000000000004,
+                            39.409999900000003
+                        ],
+                        [
+                            -96.939999999999998,
+                            39.020000000000003
+                        ],
+                        [
+                            -97.230000000000004,
+                            39.050000000000004
+                        ],
+                        [
+                            -97.160000000000011,
+                            39.490000000000002
+                        ],
+                        [
+                            -96.730000000000004,
+                            39.409999900000003
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2c574acf21d6cfe872ee6acda23e1ad967c551a2.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.2c574acf21d6cfe872ee6acda23e1ad967c551a2.001.1",
+                "areaDesc": "Clay, KS; Dickinson, KS; Geary, KS; Riley, KS",
+                "geocode": {
+                    "SAME": [
+                        "020027",
+                        "020041",
+                        "020061",
+                        "020161"
+                    ],
+                    "UGC": [
+                        "KSC027",
+                        "KSC041",
+                        "KSC061",
+                        "KSC161"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/KSC027",
+                    "https://api.weather.gov/zones/county/KSC041",
+                    "https://api.weather.gov/zones/county/KSC061",
+                    "https://api.weather.gov/zones/county/KSC161"
+                ],
+                "references": [
+                    {
+                        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.181ec20357ee286d0b3f2a5088982bfec15c4ffb.001.1",
+                        "identifier": "urn:oid:2.49.0.1.840.0.181ec20357ee286d0b3f2a5088982bfec15c4ffb.001.1",
+                        "sender": "w-nws.webmaster@noaa.gov",
+                        "sent": "2022-04-29T18:25:00-05:00"
+                    }
+                ],
+                "sent": "2022-04-29T18:41:00-05:00",
+                "effective": "2022-04-29T18:41:00-05:00",
+                "onset": "2022-04-29T18:41:00-05:00",
+                "expires": "2022-04-29T19:15:00-05:00",
+                "ends": "2022-04-29T19:15:00-05:00",
+                "status": "Actual",
+                "messageType": "Update",
+                "category": "Met",
+                "severity": "Severe",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Severe Thunderstorm Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Topeka KS",
+                "headline": "Severe Thunderstorm Warning issued April 29 at 6:41PM CDT until April 29 at 7:15PM CDT by NWS Topeka KS",
+                "description": "At 640 PM CDT, a severe thunderstorm was located near Wakefield,\nmoving north at 25 mph.\n\nHAZARD...Golf ball size hail and 70 mph wind gusts.\n\nSOURCE...Trained weather spotters. At 623 PM trained spotters\nreported ping pong ball size hail 8 miles NNW of Moonlight.\n\nIMPACT...People and animals outdoors will be injured. Expect hail\ndamage to roofs, siding, windows, and vehicles. Expect\nconsiderable tree damage. Wind damage is also likely to\nmobile homes, roofs, and outbuildings.\n\nLocations impacted include...\nClay Center, Wakefield, Riley, Milford, Leonardville, Green and\nMilford Lake.",
+                "instruction": "A Tornado Watch remains in effect until 1100 PM CDT for central,\nnorth central, northeastern and east central Kansas.\n\nFor your protection move to an interior room on the lowest floor of a\nbuilding.",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVSTOP"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS53 KTOP 292341"
+                    ],
+                    "NWSheadline": [
+                        "A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 715 PM CDT FOR NORTHEASTERN DICKINSON...NORTHWESTERN GEARY...WEST CENTRAL RILEY AND EASTERN CLAY COUNTIES"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-29T23:40:00-00:00...storm...202DEG...23KT...39.22,-97.07"
+                    ],
+                    "windThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxWindGust": [
+                        "70 MPH"
+                    ],
+                    "hailThreat": [
+                        "OBSERVED"
+                    ],
+                    "maxHailSize": [
+                        "1.75"
+                    ],
+                    "thunderstormDamageThreat": [
+                        "CONSIDERABLE"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.CON.KTOP.SV.W.0033.000000T0000Z-220430T0015Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-30T00:15:00+00:00"
+                    ],
+                    "expiredReferences": [
+                        "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.dabe5b210d47d5864b3d993e83d7c174cdc0ec57.001.1,2021-05-27T00:15:00-05:00"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.100e2048db48d37006a7bc2f0d8dc4c78be9cbe5.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -90.569999899999999,
+                            39.539999999999999
+                        ],
+                        [
+                            -90.579999999999998,
+                            39.530000000000001
+                        ],
+                        [
+                            -90.579999999999998,
+                            39.509999999999998
+                        ],
+                        [
+                            -90.590000000000003,
+                            39.489999999999995
+                        ],
+                        [
+                            -90.689999999999998,
+                            39.459999999999994
+                        ],
+                        [
+                            -90.719999999999999,
+                            39.459999999999994
+                        ],
+                        [
+                            -90.7099999,
+                            39.489999999999995
+                        ],
+                        [
+                            -90.579999999999998,
+                            39.559999999999995
+                        ],
+                        [
+                            -90.569999899999999,
+                            39.539999999999999
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.100e2048db48d37006a7bc2f0d8dc4c78be9cbe5.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.100e2048db48d37006a7bc2f0d8dc4c78be9cbe5.001.1",
+                "areaDesc": "Pike, IL",
+                "geocode": {
+                    "SAME": [
+                        "017149"
+                    ],
+                    "UGC": [
+                        "ILC149"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/ILC149"
+                ],
+                "references": [
+                    {
+                        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ada70ccbe95eac1577a3134e5ef081f3e1c48dbf.001.1",
+                        "identifier": "urn:oid:2.49.0.1.840.0.ada70ccbe95eac1577a3134e5ef081f3e1c48dbf.001.1",
+                        "sender": "w-nws.webmaster@noaa.gov",
+                        "sent": "2022-04-29T18:18:00-05:00"
+                    },
+                    {
+                        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1aab2c6a31bc5c8987f6001ab392b668090fe73b.001.1",
+                        "identifier": "urn:oid:2.49.0.1.840.0.1aab2c6a31bc5c8987f6001ab392b668090fe73b.001.1",
+                        "sender": "w-nws.webmaster@noaa.gov",
+                        "sent": "2022-04-29T18:30:00-05:00"
+                    }
+                ],
+                "sent": "2022-04-29T18:41:00-05:00",
+                "effective": "2022-04-29T18:41:00-05:00",
+                "onset": "2022-04-29T18:41:00-05:00",
+                "expires": "2022-04-29T19:00:00-05:00",
+                "ends": "2022-04-29T19:00:00-05:00",
+                "status": "Actual",
+                "messageType": "Update",
+                "category": "Met",
+                "severity": "Severe",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Severe Thunderstorm Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS St Louis MO",
+                "headline": "Severe Thunderstorm Warning issued April 29 at 6:41PM CDT until April 29 at 7:00PM CDT by NWS St Louis MO",
+                "description": "At 641 PM CDT, a severe thunderstorm was located near Alsey, moving\neast at 35 mph.\n\nHAZARD...Quarter size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Damage to vehicles is expected.\n\nLocations impacted include...\nBedford and Montezuma.",
+                "instruction": "For your protection move to an interior room on the lowest floor of a\nbuilding.",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVSLSX"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS53 KLSX 292341"
+                    ],
+                    "NWSheadline": [
+                        "A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 700 PM CDT FOR SOUTHEASTERN PIKE COUNTY IN WEST CENTRAL ILLINOIS"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-29T23:41:00-00:00...storm...253DEG...31KT...39.53,-90.55"
+                    ],
+                    "windThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxWindGust": [
+                        "Up to 50 MPH"
+                    ],
+                    "hailThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxHailSize": [
+                        "1.00"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.CON.KLSX.SV.W.0019.000000T0000Z-220430T0000Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-30T00:00:00+00:00"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.01aa61735cfad6448f952583d0c427a2cc8a814f.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -90.269999999999996,
+                            39.520000000000003
+                        ],
+                        [
+                            -90.409999999999997,
+                            39.409999900000003
+                        ],
+                        [
+                            -90.719999999999999,
+                            39.420000000000002
+                        ],
+                        [
+                            -90.719999999999999,
+                            39.460000000000001
+                        ],
+                        [
+                            -90.579999999999998,
+                            39.520000000000003
+                        ],
+                        [
+                            -90.269999999999996,
+                            39.520000000000003
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.01aa61735cfad6448f952583d0c427a2cc8a814f.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.01aa61735cfad6448f952583d0c427a2cc8a814f.001.1",
+                "areaDesc": "Greene, IL; Pike, IL",
+                "geocode": {
+                    "SAME": [
+                        "017061",
+                        "017149"
+                    ],
+                    "UGC": [
+                        "ILC061",
+                        "ILC149"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/ILC061",
+                    "https://api.weather.gov/zones/county/ILC149"
+                ],
+                "references": [],
+                "sent": "2022-04-29T18:40:00-05:00",
+                "effective": "2022-04-29T18:40:00-05:00",
+                "onset": "2022-04-29T18:40:00-05:00",
+                "expires": "2022-04-29T19:30:00-05:00",
+                "ends": "2022-04-29T19:30:00-05:00",
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Severe",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Severe Thunderstorm Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS St Louis MO",
+                "headline": "Severe Thunderstorm Warning issued April 29 at 6:40PM CDT until April 29 at 7:30PM CDT by NWS St Louis MO",
+                "description": "The National Weather Service in St Louis has issued a\n\n* Severe Thunderstorm Warning for...\nNorthwestern Greene County in southwestern Illinois...\nSoutheastern Pike County in west central Illinois...\n\n* Until 730 PM CDT.\n\n* At 639 PM CDT, a severe thunderstorm was located 10 miles west of\nWhite Hall, moving east at 40 mph.\n\nHAZARD...Quarter size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Damage to vehicles is expected.\n\n* This severe thunderstorm will be near...\nWhite Hall and Roodhouse around 655 PM CDT.",
+                "instruction": "For your protection move to an interior room on the lowest floor of a\nbuilding.",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVRLSX"
+                    ],
+                    "WMOidentifier": [
+                        "WUUS53 KLSX 292340"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-29T23:39:00-00:00...storm...258DEG...36KT...39.47,-90.6"
+                    ],
+                    "windThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxWindGust": [
+                        "Up to 50 MPH"
+                    ],
+                    "hailThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxHailSize": [
+                        "1.00"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.NEW.KLSX.SV.W.0020.220429T2340Z-220430T0030Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-30T00:30:00+00:00"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b6dd22e438a76cbdd75577e594404c7653cc290e.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -98.280000000000001,
+                            41.68
+                        ],
+                        [
+                            -97.640000000000001,
+                            41.839999999999996
+                        ],
+                        [
+                            -97.549999999999997,
+                            41.499999999999993
+                        ],
+                        [
+                            -97.700000000000003,
+                            41.489999999999995
+                        ],
+                        [
+                            -97.7099999,
+                            41.519999999999996
+                        ],
+                        [
+                            -97.879999999999995,
+                            41.529999999999994
+                        ],
+                        [
+                            -97.890000000000001,
+                            41.509999999999991
+                        ],
+                        [
+                            -98.040000000000006,
+                            41.509999999999991
+                        ],
+                        [
+                            -98.040000000000006,
+                            41.499999999999993
+                        ],
+                        [
+                            -98.090000000000003,
+                            41.499999999999993
+                        ],
+                        [
+                            -98.100000000000009,
+                            41.479999899999996
+                        ],
+                        [
+                            -98.290000000000006,
+                            41.479999899999996
+                        ],
+                        [
+                            -98.280000000000001,
+                            41.68
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b6dd22e438a76cbdd75577e594404c7653cc290e.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.b6dd22e438a76cbdd75577e594404c7653cc290e.001.1",
+                "areaDesc": "Boone; Madison; Platte",
+                "geocode": {
+                    "SAME": [
+                        "031011",
+                        "031119",
+                        "031141"
+                    ],
+                    "UGC": [
+                        "NEZ030",
+                        "NEZ031",
+                        "NEZ042"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/NEZ030",
+                    "https://api.weather.gov/zones/forecast/NEZ031",
+                    "https://api.weather.gov/zones/forecast/NEZ042"
+                ],
+                "references": [],
+                "sent": "2022-04-29T18:31:00-05:00",
+                "effective": "2022-04-29T18:31:00-05:00",
+                "onset": "2022-04-29T18:31:00-05:00",
+                "expires": "2022-04-29T19:00:00-05:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Omaha/Valley NE",
+                "headline": "Special Weather Statement issued April 29 at 6:31PM CDT by NWS Omaha/Valley NE",
+                "description": "At 630 PM CDT, Doppler radar was tracking a strong thunderstorm over\nCedar Rapids, or 39 miles east of Ord, moving east at 50 mph.\n\nHAZARD...Wind gusts up to 50 mph.\n\nSOURCE...Radar indicated.\n\nIMPACT...Gusty winds could knock down tree limbs and blow around\nunsecured objects.\n\nThis strong thunderstorm will be near...\nAlbion around 640 PM CDT.\nSt. Edward around 650 PM CDT.\n\nOther locations in the path of this storm include Newman Grove and\nLindsay.",
+                "instruction": "If outdoors, consider seeking shelter inside a building.",
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSOAX"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS83 KOAX 292331"
+                    ],
+                    "NWSheadline": [
+                        "A strong thunderstorm will impact portions of southwestern Madison, northwestern Platte and southern Boone Counties through 700 PM CDT"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-29T23:30:00-00:00...storm...253DEG...42KT...41.59,-98.16"
+                    ],
+                    "maxWindGust": [
+                        "50 MPH"
+                    ],
+                    "maxHailSize": [
+                        "0.00"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1de0b8e04b1523472d4e88b6fad43e8ad530c83.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -99.049999999999997,
+                            38.700000000000003
+                        ],
+                        [
+                            -100.14999999999999,
+                            38.700000000000003
+                        ],
+                        [
+                            -100.14999999999999,
+                            39.130000000000003
+                        ],
+                        [
+                            -99.039999999999992,
+                            39.130000000000003
+                        ],
+                        [
+                            -99.049999999999997,
+                            38.700000000000003
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1de0b8e04b1523472d4e88b6fad43e8ad530c83.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.c1de0b8e04b1523472d4e88b6fad43e8ad530c83.001.1",
+                "areaDesc": "Trego; Ellis",
+                "geocode": {
+                    "SAME": [
+                        "020195",
+                        "020051"
+                    ],
+                    "UGC": [
+                        "KSZ030",
+                        "KSZ031"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/KSZ030",
+                    "https://api.weather.gov/zones/forecast/KSZ031"
+                ],
+                "references": [],
+                "sent": "2022-04-29T18:31:00-05:00",
+                "effective": "2022-04-29T18:31:00-05:00",
+                "onset": "2022-04-29T18:31:00-05:00",
+                "expires": "2022-04-29T19:00:00-05:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Dodge City KS",
+                "headline": "Special Weather Statement issued April 29 at 6:31PM CDT by NWS Dodge City KS",
+                "description": "At 631 PM CDT, Doppler radar was tracking a strong thunderstorm near\nCedar Bluff, moving northeast at 40 mph.\n\nHAZARD...Wind gusts of 50 to 55 mph.\n\nSOURCE...Radar indicated.\n\nIMPACT...Gusty winds could knock down tree limbs and blow around\nunsecured objects.\n\nThis strong thunderstorm will be near...\nOgallah around 635 PM CDT.\nRiga around 640 PM CDT.\nEllis around 645 PM CDT.\nYocemento around 650 PM CDT.",
+                "instruction": "If outdoors, consider seeking shelter inside a building.",
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSDDC"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS83 KDDC 292331"
+                    ],
+                    "NWSheadline": [
+                        "A strong thunderstorm will impact portions of Trego and Ellis Counties through 700 PM CDT"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-29T23:31:00-00:00...storm...238DEG...44KT...38.88,-99.74"
+                    ],
+                    "maxWindGust": [
+                        "55 MPH"
+                    ],
+                    "maxHailSize": [
+                        "0.00"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.356390d6fb25a3f7b0ba193d0190f1a2effa0489.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -99.599999999999994,
+                            39.57
+                        ],
+                        [
+                            -99.629999999999995,
+                            39.57
+                        ],
+                        [
+                            -99.629999999999995,
+                            39.759999999999998
+                        ],
+                        [
+                            -99.4599999,
+                            39.850000000000001
+                        ],
+                        [
+                            -99.340000000000003,
+                            39.960000000000001
+                        ],
+                        [
+                            -99.079999999999998,
+                            39.93
+                        ],
+                        [
+                            -99.069999899999999,
+                            39.600000000000001
+                        ],
+                        [
+                            -99.289999999999992,
+                            39.43
+                        ],
+                        [
+                            -99.609999999999985,
+                            39.25
+                        ],
+                        [
+                            -99.599999999999994,
+                            39.57
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.356390d6fb25a3f7b0ba193d0190f1a2effa0489.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.356390d6fb25a3f7b0ba193d0190f1a2effa0489.001.1",
+                "areaDesc": "Phillips; Rooks",
+                "geocode": {
+                    "SAME": [
+                        "020147",
+                        "020163"
+                    ],
+                    "UGC": [
+                        "KSZ005",
+                        "KSZ017"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/KSZ005",
+                    "https://api.weather.gov/zones/forecast/KSZ017"
+                ],
+                "references": [],
+                "sent": "2022-04-29T18:28:00-05:00",
+                "effective": "2022-04-29T18:28:00-05:00",
+                "onset": "2022-04-29T18:28:00-05:00",
+                "expires": "2022-04-29T19:15:00-05:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Hastings NE",
+                "headline": "Special Weather Statement issued April 29 at 6:28PM CDT by NWS Hastings NE",
+                "description": "At 628 PM CDT, Doppler radar was tracking strong thunderstorms along\na line extending from near Agra to near Stockton to near Damar.\nMovement was north at 20 mph.\n\nHAZARD...Wind gusts up to 50 mph and half inch hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Gusty winds could knock down tree limbs and blow around\nunsecured objects. Minor damage to outdoor objects is\npossible.\n\nStrong thunderstorms will be near...\nKirwin around 635 PM CDT.\nAgra around 640 PM CDT.\n\nOther locations in the path of these storms include Glade, Speed,\nPhillipsburg and Logan.",
+                "instruction": "If outdoors, consider seeking shelter inside a building.\n\nA Tornado Watch remains in effect until 900 PM CDT for north central\nKansas.",
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSGID"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS83 KGID 292328"
+                    ],
+                    "NWSheadline": [
+                        "Strong thunderstorms will impact portions of northwestern Rooks and Phillips Counties through 715 PM CDT"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-29T23:28:00-00:00...storm...162DEG...19KT...39.72,-99.08 39.49,-99.32 39.36,-99.57"
+                    ],
+                    "maxWindGust": [
+                        "50 MPH"
+                    ],
+                    "maxHailSize": [
+                        "0.50"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e85a4169aa4a9e4a6950b7141af8f8538f5e9b2b.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -96.900000000000006,
+                            40
+                        ],
+                        [
+                            -97.140000000000001,
+                            39.759999999999998
+                        ],
+                        [
+                            -97.299999999999997,
+                            39.82
+                        ],
+                        [
+                            -97.230000000000004,
+                            40
+                        ],
+                        [
+                            -96.900000000000006,
+                            40
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e85a4169aa4a9e4a6950b7141af8f8538f5e9b2b.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.e85a4169aa4a9e4a6950b7141af8f8538f5e9b2b.001.1",
+                "areaDesc": "Washington, KS",
+                "geocode": {
+                    "SAME": [
+                        "020201"
+                    ],
+                    "UGC": [
+                        "KSC201"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/KSC201"
+                ],
+                "references": [],
+                "sent": "2022-04-29T18:26:00-05:00",
+                "effective": "2022-04-29T18:26:00-05:00",
+                "onset": "2022-04-29T18:26:00-05:00",
+                "expires": "2022-04-29T19:00:00-05:00",
+                "ends": "2022-04-29T19:00:00-05:00",
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Severe",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Severe Thunderstorm Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Topeka KS",
+                "headline": "Severe Thunderstorm Warning issued April 29 at 6:26PM CDT until April 29 at 7:00PM CDT by NWS Topeka KS",
+                "description": "The National Weather Service in Topeka has issued a\n\n* Severe Thunderstorm Warning for...\nNorthwestern Washington County in north central Kansas...\n\n* Until 700 PM CDT.\n\n* At 625 PM CDT, a severe thunderstorm was located near Morrowville,\nmoving northeast at 25 mph.\n\nHAZARD...Golf ball size hail and 60 mph wind gusts.\n\nSOURCE...Radar indicated.\n\nIMPACT...People and animals outdoors will be injured. Expect hail\ndamage to roofs, siding, windows, and vehicles. Expect\nwind damage to roofs, siding, and trees.\n\n* Locations impacted include...\nMorrowville and Hollenberg.",
+                "instruction": "A Tornado Watch remains in effect until 1100 PM CDT for north central\nKansas.\n\nFor your protection move to an interior room on the lowest floor of a\nbuilding.\n\nA Tornado Watch remains in effect until 1100 PM CDT for north central\nKansas.",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVRTOP"
+                    ],
+                    "WMOidentifier": [
+                        "WUUS53 KTOP 292326"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-29T23:25:00-00:00...storm...203DEG...24KT...39.87,-97.15"
+                    ],
+                    "windThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxWindGust": [
+                        "60 MPH"
+                    ],
+                    "hailThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxHailSize": [
+                        "1.75"
+                    ],
+                    "thunderstormDamageThreat": [
+                        "CONSIDERABLE"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.NEW.KTOP.SV.W.0034.220429T2326Z-220430T0000Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-30T00:00:00+00:00"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7e195bfea18729153a021e144125df75f50063ee.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -97.25,
+                            40
+                        ],
+                        [
+                            -97.159999999999997,
+                            40.520000000000003
+                        ],
+                        [
+                            -96.539999999999992,
+                            40.520000000000003
+                        ],
+                        [
+                            -96.819999899999999,
+                            40
+                        ],
+                        [
+                            -97.25,
+                            40
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7e195bfea18729153a021e144125df75f50063ee.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.7e195bfea18729153a021e144125df75f50063ee.001.1",
+                "areaDesc": "Gage, NE; Jefferson, NE; Saline, NE",
+                "geocode": {
+                    "SAME": [
+                        "031067",
+                        "031095",
+                        "031151"
+                    ],
+                    "UGC": [
+                        "NEC067",
+                        "NEC095",
+                        "NEC151"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/NEC067",
+                    "https://api.weather.gov/zones/county/NEC095",
+                    "https://api.weather.gov/zones/county/NEC151"
+                ],
+                "references": [
+                    {
+                        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.829104e19607fd57b25f92a7aa43134ecafe05f2.001.1",
+                        "identifier": "urn:oid:2.49.0.1.840.0.829104e19607fd57b25f92a7aa43134ecafe05f2.001.1",
+                        "sender": "w-nws.webmaster@noaa.gov",
+                        "sent": "2022-04-29T18:09:00-05:00"
+                    }
+                ],
+                "sent": "2022-04-29T18:21:00-05:00",
+                "effective": "2022-04-29T18:21:00-05:00",
+                "onset": "2022-04-29T18:21:00-05:00",
+                "expires": "2022-04-29T19:15:00-05:00",
+                "ends": "2022-04-29T19:15:00-05:00",
+                "status": "Actual",
+                "messageType": "Update",
+                "category": "Met",
+                "severity": "Severe",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Severe Thunderstorm Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Omaha/Valley NE",
+                "headline": "Severe Thunderstorm Warning issued April 29 at 6:21PM CDT until April 29 at 7:15PM CDT by NWS Omaha/Valley NE",
+                "description": "At 620 PM CDT, a severe thunderstorm was located near Plymouth, or 9\nmiles west of Beatrice, moving northeast at 45 mph.\n\nHAZARD...60 mph wind gusts and half dollar size hail.\n\nSOURCE...Trained weather spotters. At 613 PM, quarter sized hail was\nreported in Diller.\n\nIMPACT...Hail damage to vehicles is expected. Expect wind damage to\nroofs, siding, and trees.\n\nLocations impacted include...\nBeatrice, De Witt, Pickrell, Clatonia and Cortland.",
+                "instruction": "A Tornado Watch remains in effect until 1100 PM CDT for southeastern\nNebraska.\n\nFor your protection move to an interior room on the lowest floor of a\nbuilding.\n\nTorrential rainfall is occurring with this storm, and may lead to\nflash flooding. Do not drive your vehicle through flooded roadways.",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVSOAX"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS53 KOAX 292321"
+                    ],
+                    "NWSheadline": [
+                        "A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 715 PM CDT FOR JEFFERSON...SOUTHEASTERN SALINE AND WESTERN GAGE COUNTIES"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-29T23:20:00-00:00...storm...203DEG...38KT...40.27,-96.92"
+                    ],
+                    "windThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxWindGust": [
+                        "60 MPH"
+                    ],
+                    "hailThreat": [
+                        "OBSERVED"
+                    ],
+                    "maxHailSize": [
+                        "1.25"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.CON.KOAX.SV.W.0055.000000T0000Z-220430T0015Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-30T00:15:00+00:00"
+                    ],
+                    "expiredReferences": [
+                        "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.98a20cc7b4f76ef88fcb08ddaa19f74274153e25.001.1,2021-06-22T19:19:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.4db6f753fdd2d7ca244d90d460be1dc4d9ca4a3a.001.1,2021-06-22T19:03:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.4b5a52fec2a162f425033a6e7c8f87d8832133d7.001.1,2021-06-22T18:58:00-05:00"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.be72c8a25c94011a440b902a0ee2d50a2b3559ad.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -97.760000000000005,
+                            40.630000000000003
+                        ],
+                        [
+                            -97.870000000000005,
+                            40.350000000000001
+                        ],
+                        [
+                            -98.010000000000005,
+                            40.090000000000003
+                        ],
+                        [
+                            -98.63000000000001,
+                            40.32
+                        ],
+                        [
+                            -98.540000000000006,
+                            40.490000000000002
+                        ],
+                        [
+                            -98.440000000000012,
+                            41.050000000000004
+                        ],
+                        [
+                            -97.730000000000018,
+                            41.050000000000004
+                        ],
+                        [
+                            -97.760000000000005,
+                            40.630000000000003
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.be72c8a25c94011a440b902a0ee2d50a2b3559ad.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.be72c8a25c94011a440b902a0ee2d50a2b3559ad.001.1",
+                "areaDesc": "Adams, NE; Clay, NE; Fillmore, NE; Hall, NE; Hamilton, NE; Merrick, NE; Nuckolls, NE; Webster, NE; York, NE",
+                "geocode": {
+                    "SAME": [
+                        "031001",
+                        "031035",
+                        "031059",
+                        "031079",
+                        "031081",
+                        "031121",
+                        "031129",
+                        "031181",
+                        "031185"
+                    ],
+                    "UGC": [
+                        "NEC001",
+                        "NEC035",
+                        "NEC059",
+                        "NEC079",
+                        "NEC081",
+                        "NEC121",
+                        "NEC129",
+                        "NEC181",
+                        "NEC185"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/NEC001",
+                    "https://api.weather.gov/zones/county/NEC035",
+                    "https://api.weather.gov/zones/county/NEC059",
+                    "https://api.weather.gov/zones/county/NEC079",
+                    "https://api.weather.gov/zones/county/NEC081",
+                    "https://api.weather.gov/zones/county/NEC121",
+                    "https://api.weather.gov/zones/county/NEC129",
+                    "https://api.weather.gov/zones/county/NEC181",
+                    "https://api.weather.gov/zones/county/NEC185"
+                ],
+                "references": [],
+                "sent": "2022-04-29T18:21:00-05:00",
+                "effective": "2022-04-29T18:21:00-05:00",
+                "onset": "2022-04-29T18:21:00-05:00",
+                "expires": "2022-04-29T19:15:00-05:00",
+                "ends": "2022-04-29T19:15:00-05:00",
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Severe",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Severe Thunderstorm Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Hastings NE",
+                "headline": "Severe Thunderstorm Warning issued April 29 at 6:21PM CDT until April 29 at 7:15PM CDT by NWS Hastings NE",
+                "description": "The National Weather Service in Hastings has issued a\n\n* Severe Thunderstorm Warning for...\nClay County in south central Nebraska...\nNorthern Nuckolls County in south central Nebraska...\nNortheastern Webster County in south central Nebraska...\nEastern Adams County in south central Nebraska...\nWestern York County in east central Nebraska...\nHamilton County in south central Nebraska...\nNorthwestern Fillmore County in south central Nebraska...\nSouthwestern Merrick County in central Nebraska...\nEastern Hall County in south central Nebraska...\n\n* Until 715 PM CDT.\n\n* At 620 PM CDT, severe thunderstorms were located along a line\nextending from St. Libory to Doniphan to near Ayr to near Bladen,\nmoving east at 35 mph.\n\nHAZARD...70 mph wind gusts and nickel size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Expect considerable tree damage. Damage is likely to\nmobile homes, roofs, and outbuildings.\n\n* Severe thunderstorms will be near...\nTrumbull around 630 PM CDT.\nGlenvil around 635 PM CDT.\nGiltner, Chapman and Rosemont around 640 PM CDT.\n\nOther locations in the path of these severe thunderstorms include\nHarvard, Fairfield, Lawrence, Marquette, Clay Center, Deweese,\nStockham, Edgar, Nelson, Saronville, Sutton and Henderson.\n\nThis includes Interstate 80 between mile markers 307 and 345.",
+                "instruction": "A Tornado Watch remains in effect until 900 PM CDT for south central,\ncentral and east central Nebraska.\n\nThis is a DANGEROUS SITUATION. These storms are producing widespread\nwind damage. SEEK SHELTER NOW inside a sturdy structure and stay\naway from windows!",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVRGID"
+                    ],
+                    "WMOidentifier": [
+                        "WUUS53 KGID 292321"
+                    ],
+                    "eventMotionDescription": [
+                        "2022-04-29T23:20:00-00:00...storm...278DEG...30KT...41.09,-98.34 40.75,-98.38 40.49,-98.44 40.34,-98.54"
+                    ],
+                    "windThreat": [
+                        "OBSERVED"
+                    ],
+                    "maxWindGust": [
+                        "70 MPH"
+                    ],
+                    "hailThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxHailSize": [
+                        "0.88"
+                    ],
+                    "thunderstormDamageThreat": [
+                        "CONSIDERABLE"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.NEW.KGID.SV.W.0053.220429T2321Z-220430T0015Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2022-04-30T00:15:00+00:00"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.386d76852a4c9aca8ac0b0a11f542d6756a4d312.001.1",
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.386d76852a4c9aca8ac0b0a11f542d6756a4d312.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.386d76852a4c9aca8ac0b0a11f542d6756a4d312.001.1",
+                "areaDesc": "Central Laramie Range and Southwest Platte County; East Platte County; Laramie Valley",
+                "geocode": {
+                    "SAME": [
+                        "056001",
+                        "056021",
+                        "056031"
+                    ],
+                    "UGC": [
+                        "WYZ106",
+                        "WYZ107",
+                        "WYZ115"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/WYZ106",
+                    "https://api.weather.gov/zones/forecast/WYZ107",
+                    "https://api.weather.gov/zones/forecast/WYZ115"
+                ],
+                "references": [],
+                "sent": "2022-04-29T16:59:00-06:00",
+                "effective": "2022-04-29T16:59:00-06:00",
+                "onset": "2022-04-29T16:59:00-06:00",
+                "expires": "2022-04-29T19:00:00-06:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Cheyenne WY",
+                "headline": "Special Weather Statement issued April 29 at 4:59PM MDT by NWS Cheyenne WY",
+                "description": "Strong west to northwest winds with gusts up to 57 mph will\ncontinue for the next few hours. These strong winds will impact\ntravel along Interstate 25 from Chugwater to Wheatland, and\nInterstate 80 through the Laramie Valley. Motorists should use\ncaution, especially if driving light, high profile vehicles\nincluding campers and tractor trailers.",
+                "instruction": null,
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSCYS"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS85 KCYS 292259"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.24ab9983fe5f260d26b0a4df55674dc788b4b647.001.1",
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.24ab9983fe5f260d26b0a4df55674dc788b4b647.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.24ab9983fe5f260d26b0a4df55674dc788b4b647.001.1",
+                "areaDesc": "Central Laramie Range and Southwest Platte County; East Platte County",
+                "geocode": {
+                    "SAME": [
+                        "056001",
+                        "056021",
+                        "056031"
+                    ],
+                    "UGC": [
+                        "WYZ106",
+                        "WYZ107"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/WYZ106",
+                    "https://api.weather.gov/zones/forecast/WYZ107"
+                ],
+                "references": [],
+                "sent": "2022-04-29T15:57:00-06:00",
+                "effective": "2022-04-29T15:57:00-06:00",
+                "onset": "2022-04-29T15:57:00-06:00",
+                "expires": "2022-04-29T18:00:00-06:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Cheyenne WY",
+                "headline": "Special Weather Statement issued April 29 at 3:57PM MDT by NWS Cheyenne WY",
+                "description": "Strong gusty winds up to 57 mph will accompany passing showers\nthrough late this afternoon. These strong winds will impact travel\nalong Interstate 25 from Chugwater to Wheatland. Motorists should\nuse caution, especially if driving light, high profile vehicles\nincluding campers and tractor trailers.",
+                "instruction": null,
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSCYS"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS85 KCYS 292157"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d79ba7f35f82698db4e6bd27edf74efc089f886f.001.1",
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d79ba7f35f82698db4e6bd27edf74efc089f886f.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.d79ba7f35f82698db4e6bd27edf74efc089f886f.001.1",
+                "areaDesc": "Surprise Valley California; Lassen-Eastern Plumas-Eastern Sierra Counties; Greater Lake Tahoe Area; Mono; Mineral and Southern Lyon Counties; Greater Lake Tahoe Area; Greater Reno-Carson City-Minden Area; Western Nevada Basin and Range including Pyramid Lake; Northern Washoe County",
+                "geocode": {
+                    "SAME": [
+                        "006049",
+                        "006035",
+                        "006063",
+                        "006091",
+                        "006003",
+                        "006017",
+                        "006057",
+                        "006061",
+                        "006051",
+                        "032019",
+                        "032021",
+                        "032005",
+                        "032031",
+                        "032510",
+                        "032029",
+                        "032001",
+                        "032027"
+                    ],
+                    "UGC": [
+                        "CAZ070",
+                        "CAZ071",
+                        "CAZ072",
+                        "CAZ073",
+                        "NVZ001",
+                        "NVZ002",
+                        "NVZ003",
+                        "NVZ004",
+                        "NVZ005"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/CAZ070",
+                    "https://api.weather.gov/zones/forecast/CAZ071",
+                    "https://api.weather.gov/zones/forecast/CAZ072",
+                    "https://api.weather.gov/zones/forecast/CAZ073",
+                    "https://api.weather.gov/zones/forecast/NVZ001",
+                    "https://api.weather.gov/zones/forecast/NVZ002",
+                    "https://api.weather.gov/zones/forecast/NVZ003",
+                    "https://api.weather.gov/zones/forecast/NVZ004",
+                    "https://api.weather.gov/zones/forecast/NVZ005"
+                ],
+                "references": [],
+                "sent": "2022-04-29T14:42:00-07:00",
+                "effective": "2022-04-29T14:42:00-07:00",
+                "onset": "2022-04-29T14:42:00-07:00",
+                "expires": "2022-04-30T17:00:00-07:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Reno NV",
+                "headline": "Special Weather Statement issued April 29 at 2:42PM PDT by NWS Reno NV",
+                "description": "-This Weekend-\n\nAnother quick-moving system will sweep through the Sierra and\nwestern Nevada bringing more breezy conditions and potential for\nsome showers. Temperatures will be relatively mild and the breezes\nmay result in choppy lake conditions for a brief period on Lake\nTahoe and Pyramid Lake. There is also a 15% chance for\nthunderstorms, but your best bet for those will be north of\nGerlach on Saturday.\n\n\n-Monday Winds-\n\nYou guessed it. Another round of showers and winds, but this storm\nwill bring more of a wind punch than previous systems. Confidence\nis high for widespread wind gusts 40 to 50 mph with locally higher\nwind gusts for those wind prone areas. There is potential for\ndownslope enhancement of the wind gusts, which would boost the\npeak wind gusts for areas along the Highway 395 and Interstate 580\ncorridor.\n\nPlan on impacts to aviation, recreation, with the\npotential for another round of high profile vehicle restrictions\nas well as areas of blowing dust. There will be very dry\nconditions along with the gusty winds, which may result in\ncritical fire conditions, especially across West Central Nevada.\nTake precautions now to secure outdoor items, check flight/road\nplans, and avoid activities that could ignite a spark.",
+                "instruction": null,
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSREV"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS85 KREV 292142"
+                    ],
+                    "NWSheadline": [
+                        "Weather Outlook: Nothing Big, But Not Quiet Either"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1f292a21d5894111d7c8e383e5170ba18e706f79.001.1",
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1f292a21d5894111d7c8e383e5170ba18e706f79.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.1f292a21d5894111d7c8e383e5170ba18e706f79.001.1",
+                "areaDesc": "Alger; Luce; Delta; Southern Schoolcraft; Northern Schoolcraft; Western Chippewa; Central Chippewa; Southeast Chippewa; Western Mackinac; Eastern Mackinac; Mackinac Island/Bois Blanc Island",
+                "geocode": {
+                    "SAME": [
+                        "026003",
+                        "026095",
+                        "026041",
+                        "026153",
+                        "026033",
+                        "026097"
+                    ],
+                    "UGC": [
+                        "MIZ006",
+                        "MIZ007",
+                        "MIZ013",
+                        "MIZ014",
+                        "MIZ085",
+                        "MIZ086",
+                        "MIZ087",
+                        "MIZ088",
+                        "MIZ095",
+                        "MIZ096",
+                        "MIZ097"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/MIZ006",
+                    "https://api.weather.gov/zones/forecast/MIZ007",
+                    "https://api.weather.gov/zones/forecast/MIZ013",
+                    "https://api.weather.gov/zones/forecast/MIZ014",
+                    "https://api.weather.gov/zones/forecast/MIZ085",
+                    "https://api.weather.gov/zones/forecast/MIZ086",
+                    "https://api.weather.gov/zones/forecast/MIZ087",
+                    "https://api.weather.gov/zones/forecast/MIZ088",
+                    "https://api.weather.gov/zones/forecast/MIZ095",
+                    "https://api.weather.gov/zones/forecast/MIZ096",
+                    "https://api.weather.gov/zones/forecast/MIZ097"
+                ],
+                "references": [],
+                "sent": "2022-04-29T15:48:00-04:00",
+                "effective": "2022-04-29T15:48:00-04:00",
+                "onset": "2022-04-29T15:48:00-04:00",
+                "expires": "2022-04-30T06:00:00-04:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Marquette MI",
+                "headline": "Special Weather Statement issued April 29 at 3:48PM EDT by NWS Marquette MI",
+                "description": "Gusty southeast winds as high as 15 to 30 MPH, combined with dry\nand warm conditions will lead to elevated wildfire potential\nSaturday across the eastern half of Upper Michigan in snow free\nareas. Relative humidities will fall to as low as 15 percent.\n\nAvoid outdoor burning Saturday. Immediately report any wildfires\nto local emergency services by calling 911.\n\nBurn restrictions remain in effect. For complete details, visit\nwww.dnr.state.mi.us/burnpermits, or by calling 866-922-2876.",
+                "instruction": null,
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSMQT"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS83 KMQT 291948"
+                    ],
+                    "NWSheadline": [
+                        "ELEVATED WILDFIRE POTENTIAL FOR MOST OF THE EAST HALF OF UPPER MICHIGAN IN SNOW FREE AREAS DUE TO A COMBINATION OF GUSTY WINDS, DRY AND WARM CONDITIONS ON SATURDAY"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f84bc7446f993060ce9ecbfbd9ac00f6b410644.001.1",
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f84bc7446f993060ce9ecbfbd9ac00f6b410644.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.7f84bc7446f993060ce9ecbfbd9ac00f6b410644.001.1",
+                "areaDesc": "Central Interior; Middle Tanana Valley; Deltana and Tanana Flats; Upper Tanana Valley and the Fortymile Country; Denali; Eastern Alaska Range",
+                "geocode": {
+                    "SAME": [
+                        "002068",
+                        "002090",
+                        "002290",
+                        "002240"
+                    ],
+                    "UGC": [
+                        "AKZ221",
+                        "AKZ222",
+                        "AKZ223",
+                        "AKZ224",
+                        "AKZ225",
+                        "AKZ226"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/AKZ221",
+                    "https://api.weather.gov/zones/forecast/AKZ222",
+                    "https://api.weather.gov/zones/forecast/AKZ223",
+                    "https://api.weather.gov/zones/forecast/AKZ224",
+                    "https://api.weather.gov/zones/forecast/AKZ225",
+                    "https://api.weather.gov/zones/forecast/AKZ226"
+                ],
+                "references": [],
+                "sent": "2022-04-29T05:00:00-08:00",
+                "effective": "2022-04-29T05:00:00-08:00",
+                "onset": "2022-04-29T05:00:00-08:00",
+                "expires": "2022-04-30T06:00:00-08:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Fairbanks AK",
+                "headline": "Special Weather Statement issued April 29 at 5:00AM AKDT by NWS Fairbanks AK",
+                "description": "High temperatures this weekend will be in the 50s to around 60\nwith overnight lows only falling to around freezing for much of\nthe southeast Interior. Rapid melting of the snowpack will\ncontinue. Most of the Southeast Interior still has a significant\namount of water in the saturated snow pack that has not been\nreleased. Overflow can be found on many of the still frozen\nlakes, ponds, streams, and rivers.\n\nWater will continue to pond in low lying areas, and could produce\nminor flooding issue in areas where drainage remains frozen or is\npoor. People in low lying or poorly drained areas should prepare\nfor potential flooding that could develop as the snowmelt\naccelerates. Preparations include clearing ice out of drain pipes,\nculverts and drainage ditches. Preparations also include moving\nvehicles to higher ground, and moving valuables in basements and\ngarages to shelves above the ground.\n\nRiver breakup is expected soon, and the snowmelt runoff crest of\nrivers will generally occur 1 to 2 weeks after breakup occurs.\n\nFor the latest Warning, Advisories and forecasts go to\nwww.weather.gov/fairbanks, and for the latest river forecasts go\nto www.weather.gov/aprfc.",
+                "instruction": null,
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSAFG"
+                    ],
+                    "WMOidentifier": [
+                        "WWAK83 PAFG 291300"
+                    ],
+                    "NWSheadline": [
+                        "Increased Snowmelt Continues Across The Southeast Interior Through The Weekend"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.af45b4f4b92c583cb24132ea163bc6e3c16ce85c.001.1",
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.af45b4f4b92c583cb24132ea163bc6e3c16ce85c.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.af45b4f4b92c583cb24132ea163bc6e3c16ce85c.001.1",
+                "areaDesc": "Northern Fairfield; Northern New Haven; Northern Middlesex; Northern New London; Southern Fairfield; Southern New Haven; Southern Middlesex; Southern New London; Orange; Putnam; Rockland; Northern Westchester; Southern Westchester; New York (Manhattan); Bronx; Richmond (Staten Is.); Kings (Brooklyn); Northwest Suffolk; Northeast Suffolk; Southwest Suffolk; Southeast Suffolk; Northern Queens; Northern Nassau; Southern Queens; Southern Nassau",
+                "geocode": {
+                    "SAME": [
+                        "009001",
+                        "009009",
+                        "009007",
+                        "009011",
+                        "036071",
+                        "036079",
+                        "036087",
+                        "036119",
+                        "036061",
+                        "036005",
+                        "036085",
+                        "036047",
+                        "036103",
+                        "036081",
+                        "036059"
+                    ],
+                    "UGC": [
+                        "CTZ005",
+                        "CTZ006",
+                        "CTZ007",
+                        "CTZ008",
+                        "CTZ009",
+                        "CTZ010",
+                        "CTZ011",
+                        "CTZ012",
+                        "NYZ067",
+                        "NYZ068",
+                        "NYZ069",
+                        "NYZ070",
+                        "NYZ071",
+                        "NYZ072",
+                        "NYZ073",
+                        "NYZ074",
+                        "NYZ075",
+                        "NYZ078",
+                        "NYZ079",
+                        "NYZ080",
+                        "NYZ081",
+                        "NYZ176",
+                        "NYZ177",
+                        "NYZ178",
+                        "NYZ179"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/CTZ005",
+                    "https://api.weather.gov/zones/forecast/CTZ006",
+                    "https://api.weather.gov/zones/forecast/CTZ007",
+                    "https://api.weather.gov/zones/forecast/CTZ008",
+                    "https://api.weather.gov/zones/forecast/CTZ009",
+                    "https://api.weather.gov/zones/forecast/CTZ010",
+                    "https://api.weather.gov/zones/forecast/CTZ011",
+                    "https://api.weather.gov/zones/forecast/CTZ012",
+                    "https://api.weather.gov/zones/forecast/NYZ067",
+                    "https://api.weather.gov/zones/forecast/NYZ068",
+                    "https://api.weather.gov/zones/forecast/NYZ069",
+                    "https://api.weather.gov/zones/forecast/NYZ070",
+                    "https://api.weather.gov/zones/forecast/NYZ071",
+                    "https://api.weather.gov/zones/forecast/NYZ072",
+                    "https://api.weather.gov/zones/forecast/NYZ073",
+                    "https://api.weather.gov/zones/forecast/NYZ074",
+                    "https://api.weather.gov/zones/forecast/NYZ075",
+                    "https://api.weather.gov/zones/forecast/NYZ078",
+                    "https://api.weather.gov/zones/forecast/NYZ079",
+                    "https://api.weather.gov/zones/forecast/NYZ080",
+                    "https://api.weather.gov/zones/forecast/NYZ081",
+                    "https://api.weather.gov/zones/forecast/NYZ176",
+                    "https://api.weather.gov/zones/forecast/NYZ177",
+                    "https://api.weather.gov/zones/forecast/NYZ178",
+                    "https://api.weather.gov/zones/forecast/NYZ179"
+                ],
+                "references": [],
+                "sent": "2022-04-29T03:44:00-04:00",
+                "effective": "2022-04-29T03:44:00-04:00",
+                "onset": "2022-04-29T03:44:00-04:00",
+                "expires": "2022-04-29T20:00:00-04:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Upton NY",
+                "headline": "Special Weather Statement issued April 29 at 3:44AM EDT by NWS Upton NY",
+                "description": "Am elevated risk of fire growth and spread continues this morning\nthrough early this evening. Northwest winds sustained at 10 to 20\nmph with gusts 25 to 30 mph are expected, along with minimum relative\nhumidities of 10 to 15 percent.\n\nFor New York residents, the annual statewide burn ban remains in\neffect until May 14. No burn permits are issued.\n\nListen to NOAA All Hazards Weather Radio or visit our web site at\nhttps://weather.gov/nyc for further details or updates.",
+                "instruction": null,
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSOKX"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS81 KOKX 290744"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3c8a213b327a858c01155b1b7914dc5703f5f003.001.1",
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3c8a213b327a858c01155b1b7914dc5703f5f003.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.3c8a213b327a858c01155b1b7914dc5703f5f003.001.1",
+                "areaDesc": "New Castle; Kent; Inland Sussex; Delaware Beaches; Kent; Queen Anne's; Talbot; Caroline",
+                "geocode": {
+                    "SAME": [
+                        "010003",
+                        "010001",
+                        "010005",
+                        "024029",
+                        "024035",
+                        "024041",
+                        "024011"
+                    ],
+                    "UGC": [
+                        "DEZ001",
+                        "DEZ002",
+                        "DEZ003",
+                        "DEZ004",
+                        "MDZ012",
+                        "MDZ015",
+                        "MDZ019",
+                        "MDZ020"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/DEZ001",
+                    "https://api.weather.gov/zones/forecast/DEZ002",
+                    "https://api.weather.gov/zones/forecast/DEZ003",
+                    "https://api.weather.gov/zones/forecast/DEZ004",
+                    "https://api.weather.gov/zones/forecast/MDZ012",
+                    "https://api.weather.gov/zones/forecast/MDZ015",
+                    "https://api.weather.gov/zones/forecast/MDZ019",
+                    "https://api.weather.gov/zones/forecast/MDZ020"
+                ],
+                "references": [],
+                "sent": "2022-04-29T03:33:00-04:00",
+                "effective": "2022-04-29T03:33:00-04:00",
+                "onset": "2022-04-29T03:33:00-04:00",
+                "expires": "2022-04-29T20:00:00-04:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Mount Holly NJ",
+                "headline": "Special Weather Statement issued April 29 at 3:33AM EDT by NWS Mount Holly NJ",
+                "description": "A combination of low relative humidity, breezy conditions, and\ndrying fine fuels will lead to an enhanced threat for fire spread\ntoday across Delaware and the Eastern Shore of Maryland. Relative\nhumidity values are forecast to drop as low as around 20 percent\nthis afternoon, while winds will gust out of the northwest at\naround 20 to 25 mph.\n\nResidents are urged to exercise caution handling any potential\nignition source, including machinery, cigarettes, and matches. Be\nsure to properly discard all smoking materials. Any dry grasses\nand tree litter that ignite will have the potential to spread\nfire quickly.\n\nFor more information about wildfire danger, burn restrictions, and\nwildfire prevention and education, please visit your state\nforestry or environmental protection website.",
+                "instruction": null,
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSPHI"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS81 KPHI 290733"
+                    ],
+                    "NWSheadline": [
+                        "ELEVATED RISK OF WILDFIRE SPREAD TODAY"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7e54f67ad795916c5da3ae6f9f41ef1ff19be26e.001.1",
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7e54f67ad795916c5da3ae6f9f41ef1ff19be26e.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.7e54f67ad795916c5da3ae6f9f41ef1ff19be26e.001.1",
+                "areaDesc": "Northern Berkshire; Southern Berkshire",
+                "geocode": {
+                    "SAME": [
+                        "025003"
+                    ],
+                    "UGC": [
+                        "MAZ001",
+                        "MAZ025"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/MAZ001",
+                    "https://api.weather.gov/zones/forecast/MAZ025"
+                ],
+                "references": [],
+                "sent": "2022-04-29T03:28:00-04:00",
+                "effective": "2022-04-29T03:28:00-04:00",
+                "onset": "2022-04-29T03:28:00-04:00",
+                "expires": "2022-04-29T20:00:00-04:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Albany NY",
+                "headline": "Special Weather Statement issued April 29 at 3:28AM EDT by NWS Albany NY",
+                "description": "A very dry airmass will combine with gusty northwest winds,\nresulting in elevated fire weather concerns today. Specifically,\nnorthwest winds will be sustained between 10 and 20 mph with gusts\nup to 25 to 30 mph. Minimum relative humidities will range between\n15 and 20 percent this afternoon.",
+                "instruction": null,
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSALY"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS81 KALY 290728"
+                    ],
+                    "NWSheadline": [
+                        "ELEVATED FIRE WEATHER CONCERNS CONTINUE TODAY FOR WESTERN MASSACHUSETTS"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7e54f67ad795916c5da3ae6f9f41ef1ff19be26e.002.1",
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7e54f67ad795916c5da3ae6f9f41ef1ff19be26e.002.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.7e54f67ad795916c5da3ae6f9f41ef1ff19be26e.002.1",
+                "areaDesc": "Northern Litchfield; Southern Litchfield",
+                "geocode": {
+                    "SAME": [
+                        "009005"
+                    ],
+                    "UGC": [
+                        "CTZ001",
+                        "CTZ013"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/CTZ001",
+                    "https://api.weather.gov/zones/forecast/CTZ013"
+                ],
+                "references": [],
+                "sent": "2022-04-29T03:28:00-04:00",
+                "effective": "2022-04-29T03:28:00-04:00",
+                "onset": "2022-04-29T03:28:00-04:00",
+                "expires": "2022-04-29T20:00:00-04:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Albany NY",
+                "headline": "Special Weather Statement issued April 29 at 3:28AM EDT by NWS Albany NY",
+                "description": "A very dry airmass will combine with gusty northwest winds,\nresulting in elevated fire weather concerns today. Northwest winds\nsustained between 10 and 20 mph with gusts up to 25 to 30 mph are\nexpected, with minimum relative humidities between 15 and 20 percent\nthis afternoon.",
+                "instruction": null,
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSALY"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS81 KALY 290728"
+                    ],
+                    "NWSheadline": [
+                        "ELEVATED FIRE WEATHER CONCERNS CONTINUE TODAY FOR NORTHWESTERN CONNECTICUT"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae2e2c19d1d454be6fed444f6dc0fa9b9fa73c48.001.1",
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae2e2c19d1d454be6fed444f6dc0fa9b9fa73c48.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.ae2e2c19d1d454be6fed444f6dc0fa9b9fa73c48.001.1",
+                "areaDesc": "Western Franklin; Eastern Franklin; Northern Worcester; Central Middlesex County; Western Essex; Eastern Essex; Western Hampshire; Western Hampden; Eastern Hampshire; Eastern Hampden; Southern Worcester; Western Norfolk; Southeast Middlesex; Suffolk; Eastern Norfolk; Northern Bristol; Western Plymouth; Eastern Plymouth; Southern Bristol; Southern Plymouth; Barnstable; Dukes; Nantucket; Northwest Middlesex County",
+                "geocode": {
+                    "SAME": [
+                        "025011",
+                        "025027",
+                        "025017",
+                        "025009",
+                        "025015",
+                        "025013",
+                        "025021",
+                        "025025",
+                        "025005",
+                        "025023",
+                        "025001",
+                        "025007",
+                        "025019"
+                    ],
+                    "UGC": [
+                        "MAZ002",
+                        "MAZ003",
+                        "MAZ004",
+                        "MAZ005",
+                        "MAZ006",
+                        "MAZ007",
+                        "MAZ008",
+                        "MAZ009",
+                        "MAZ010",
+                        "MAZ011",
+                        "MAZ012",
+                        "MAZ013",
+                        "MAZ014",
+                        "MAZ015",
+                        "MAZ016",
+                        "MAZ017",
+                        "MAZ018",
+                        "MAZ019",
+                        "MAZ020",
+                        "MAZ021",
+                        "MAZ022",
+                        "MAZ023",
+                        "MAZ024",
+                        "MAZ026"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/MAZ002",
+                    "https://api.weather.gov/zones/forecast/MAZ003",
+                    "https://api.weather.gov/zones/forecast/MAZ004",
+                    "https://api.weather.gov/zones/forecast/MAZ005",
+                    "https://api.weather.gov/zones/forecast/MAZ006",
+                    "https://api.weather.gov/zones/forecast/MAZ007",
+                    "https://api.weather.gov/zones/forecast/MAZ008",
+                    "https://api.weather.gov/zones/forecast/MAZ009",
+                    "https://api.weather.gov/zones/forecast/MAZ010",
+                    "https://api.weather.gov/zones/forecast/MAZ011",
+                    "https://api.weather.gov/zones/forecast/MAZ012",
+                    "https://api.weather.gov/zones/forecast/MAZ013",
+                    "https://api.weather.gov/zones/forecast/MAZ014",
+                    "https://api.weather.gov/zones/forecast/MAZ015",
+                    "https://api.weather.gov/zones/forecast/MAZ016",
+                    "https://api.weather.gov/zones/forecast/MAZ017",
+                    "https://api.weather.gov/zones/forecast/MAZ018",
+                    "https://api.weather.gov/zones/forecast/MAZ019",
+                    "https://api.weather.gov/zones/forecast/MAZ020",
+                    "https://api.weather.gov/zones/forecast/MAZ021",
+                    "https://api.weather.gov/zones/forecast/MAZ022",
+                    "https://api.weather.gov/zones/forecast/MAZ023",
+                    "https://api.weather.gov/zones/forecast/MAZ024",
+                    "https://api.weather.gov/zones/forecast/MAZ026"
+                ],
+                "references": [],
+                "sent": "2022-04-29T03:24:00-04:00",
+                "effective": "2022-04-29T03:24:00-04:00",
+                "onset": "2022-04-29T03:24:00-04:00",
+                "expires": "2022-04-29T20:00:00-04:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Boston/Norton MA",
+                "headline": "Special Weather Statement issued April 29 at 3:24AM EDT by NWS Boston/Norton MA",
+                "description": "CCA\n\nA very dry airmass will combine with gusty northwest winds,\nresulting in elevated fire weather concerns today. Specifically,\nnorthwest winds 15 to 20 mph with gusts up to 30 mph, strongest\nwinds across the high terrain and Cape Cod and the Islands.\nMinimum relative humidities will range between 15 to 25 percent\nwith lowest values across western Massachusetts, and around 25 to\n35 percent for Cape Cod and the Islands.",
+                "instruction": null,
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSBOX"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS81 KBOX 290724 CCA"
+                    ],
+                    "NWSheadline": [
+                        "ELEVATED FIRE WEATHER CONCERNS CONTINUE TODAY FOR MASSACHUSETTS"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae2e2c19d1d454be6fed444f6dc0fa9b9fa73c48.002.1",
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae2e2c19d1d454be6fed444f6dc0fa9b9fa73c48.002.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.ae2e2c19d1d454be6fed444f6dc0fa9b9fa73c48.002.1",
+                "areaDesc": "Northwest Providence; Southeast Providence; Western Kent; Eastern Kent; Bristol; Washington; Newport; Block Island",
+                "geocode": {
+                    "SAME": [
+                        "044007",
+                        "044003",
+                        "044001",
+                        "044009",
+                        "044005"
+                    ],
+                    "UGC": [
+                        "RIZ001",
+                        "RIZ002",
+                        "RIZ003",
+                        "RIZ004",
+                        "RIZ005",
+                        "RIZ006",
+                        "RIZ007",
+                        "RIZ008"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/RIZ001",
+                    "https://api.weather.gov/zones/forecast/RIZ002",
+                    "https://api.weather.gov/zones/forecast/RIZ003",
+                    "https://api.weather.gov/zones/forecast/RIZ004",
+                    "https://api.weather.gov/zones/forecast/RIZ005",
+                    "https://api.weather.gov/zones/forecast/RIZ006",
+                    "https://api.weather.gov/zones/forecast/RIZ007",
+                    "https://api.weather.gov/zones/forecast/RIZ008"
+                ],
+                "references": [],
+                "sent": "2022-04-29T03:24:00-04:00",
+                "effective": "2022-04-29T03:24:00-04:00",
+                "onset": "2022-04-29T03:24:00-04:00",
+                "expires": "2022-04-29T20:00:00-04:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Boston/Norton MA",
+                "headline": "Special Weather Statement issued April 29 at 3:24AM EDT by NWS Boston/Norton MA",
+                "description": "CCA\n\nA very dry airmass will combine with gusty northwest winds,\nresulting in elevated fire weather concerns today. Specifically,\nnorthwest winds 15 to 25 mph and minimum relative humidities will\nrange between 20 to 30 percent.",
+                "instruction": null,
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSBOX"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS81 KBOX 290724 CCA"
+                    ],
+                    "NWSheadline": [
+                        "ELEVATED FIRE WEATHER CONCERNS CONTINUE TODAY FOR RHODE ISLAND"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae2e2c19d1d454be6fed444f6dc0fa9b9fa73c48.003.1",
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae2e2c19d1d454be6fed444f6dc0fa9b9fa73c48.003.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.ae2e2c19d1d454be6fed444f6dc0fa9b9fa73c48.003.1",
+                "areaDesc": "Hartford; Tolland; Windham",
+                "geocode": {
+                    "SAME": [
+                        "009003",
+                        "009013",
+                        "009015"
+                    ],
+                    "UGC": [
+                        "CTZ002",
+                        "CTZ003",
+                        "CTZ004"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/CTZ002",
+                    "https://api.weather.gov/zones/forecast/CTZ003",
+                    "https://api.weather.gov/zones/forecast/CTZ004"
+                ],
+                "references": [],
+                "sent": "2022-04-29T03:24:00-04:00",
+                "effective": "2022-04-29T03:24:00-04:00",
+                "onset": "2022-04-29T03:24:00-04:00",
+                "expires": "2022-04-29T20:00:00-04:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Boston/Norton MA",
+                "headline": "Special Weather Statement issued April 29 at 3:24AM EDT by NWS Boston/Norton MA",
+                "description": "CCA\n\nA very dry airmass will combine with gusty northwest winds,\nresulting in elevated fire weather concerns today. Northwest\nwinds 15 to 20 mph with gusts to 30 mph are expected, with\nminimum relative humidities between 15 to 25 percent.",
+                "instruction": null,
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSBOX"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS81 KBOX 290724 CCA"
+                    ],
+                    "NWSheadline": [
+                        "ELEVATED FIRE WEATHER CONCERNS CONTINUE TODAY FOR NORTHERN CONNECTICUT"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.928fce0afdbe019b7956ed6f9b34663c3015214d.001.1",
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.928fce0afdbe019b7956ed6f9b34663c3015214d.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.928fce0afdbe019b7956ed6f9b34663c3015214d.001.1",
+                "areaDesc": "Northern St. Lawrence; Northern Franklin; Eastern Clinton; Southeastern St. Lawrence; Southern Franklin; Western Clinton; Western Essex; Eastern Essex; Southwestern St. Lawrence",
+                "geocode": {
+                    "SAME": [
+                        "036089",
+                        "036033",
+                        "036019",
+                        "036031"
+                    ],
+                    "UGC": [
+                        "NYZ026",
+                        "NYZ027",
+                        "NYZ028",
+                        "NYZ029",
+                        "NYZ030",
+                        "NYZ031",
+                        "NYZ034",
+                        "NYZ035",
+                        "NYZ087"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/NYZ026",
+                    "https://api.weather.gov/zones/forecast/NYZ027",
+                    "https://api.weather.gov/zones/forecast/NYZ028",
+                    "https://api.weather.gov/zones/forecast/NYZ029",
+                    "https://api.weather.gov/zones/forecast/NYZ030",
+                    "https://api.weather.gov/zones/forecast/NYZ031",
+                    "https://api.weather.gov/zones/forecast/NYZ034",
+                    "https://api.weather.gov/zones/forecast/NYZ035",
+                    "https://api.weather.gov/zones/forecast/NYZ087"
+                ],
+                "references": [],
+                "sent": "2022-04-29T03:24:00-04:00",
+                "effective": "2022-04-29T03:24:00-04:00",
+                "onset": "2022-04-29T03:24:00-04:00",
+                "expires": "2022-04-29T20:00:00-04:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Burlington VT",
+                "headline": "Special Weather Statement issued April 29 at 3:24AM EDT by NWS Burlington VT",
+                "description": "A significantly dry air mass will become established across\nnorthern New York today with minimum relative humidity values\ndropping into the 15 to 25 percent range by midday. In addition,\ngusty northwest winds of 20 to 30 mph will be common through the\nmorning and afternoon hours. The combination of dry and windy\nconditions will allow for fine fuels, such as dead grass and leaf\nlitter, to completely dry out. Fires could quickly grow and get\nout of control due to how dry the air will be this afternoon.\nRemember, a burn ban is in effect through May 14th for all of New\nYork state which means no open burning is allowed.",
+                "instruction": null,
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSBTV"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS81 KBTV 290724"
+                    ],
+                    "NWSheadline": [
+                        "Fire Weather Concerns Across northern New York This Afternoon"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9772315affb46ec262171b6df2505a7cd5c9bf68.001.1",
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9772315affb46ec262171b6df2505a7cd5c9bf68.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.9772315affb46ec262171b6df2505a7cd5c9bf68.001.1",
+                "areaDesc": "Northern Oneida; Yates; Seneca; Southern Cayuga; Onondaga; Steuben; Schuyler; Chemung; Tompkins; Madison; Southern Oneida; Cortland; Chenango; Otsego; Tioga; Broome; Delaware; Sullivan",
+                "geocode": {
+                    "SAME": [
+                        "036065",
+                        "036123",
+                        "036099",
+                        "036011",
+                        "036067",
+                        "036101",
+                        "036097",
+                        "036015",
+                        "036109",
+                        "036053",
+                        "036023",
+                        "036017",
+                        "036077",
+                        "036107",
+                        "036007",
+                        "036025",
+                        "036105"
+                    ],
+                    "UGC": [
+                        "NYZ009",
+                        "NYZ015",
+                        "NYZ016",
+                        "NYZ017",
+                        "NYZ018",
+                        "NYZ022",
+                        "NYZ023",
+                        "NYZ024",
+                        "NYZ025",
+                        "NYZ036",
+                        "NYZ037",
+                        "NYZ044",
+                        "NYZ045",
+                        "NYZ046",
+                        "NYZ055",
+                        "NYZ056",
+                        "NYZ057",
+                        "NYZ062"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/NYZ009",
+                    "https://api.weather.gov/zones/forecast/NYZ015",
+                    "https://api.weather.gov/zones/forecast/NYZ016",
+                    "https://api.weather.gov/zones/forecast/NYZ017",
+                    "https://api.weather.gov/zones/forecast/NYZ018",
+                    "https://api.weather.gov/zones/forecast/NYZ022",
+                    "https://api.weather.gov/zones/forecast/NYZ023",
+                    "https://api.weather.gov/zones/forecast/NYZ024",
+                    "https://api.weather.gov/zones/forecast/NYZ025",
+                    "https://api.weather.gov/zones/forecast/NYZ036",
+                    "https://api.weather.gov/zones/forecast/NYZ037",
+                    "https://api.weather.gov/zones/forecast/NYZ044",
+                    "https://api.weather.gov/zones/forecast/NYZ045",
+                    "https://api.weather.gov/zones/forecast/NYZ046",
+                    "https://api.weather.gov/zones/forecast/NYZ055",
+                    "https://api.weather.gov/zones/forecast/NYZ056",
+                    "https://api.weather.gov/zones/forecast/NYZ057",
+                    "https://api.weather.gov/zones/forecast/NYZ062"
+                ],
+                "references": [],
+                "sent": "2022-04-29T03:17:00-04:00",
+                "effective": "2022-04-29T03:17:00-04:00",
+                "onset": "2022-04-29T03:17:00-04:00",
+                "expires": "2022-04-29T20:00:00-04:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Binghamton NY",
+                "headline": "Special Weather Statement issued April 29 at 3:17AM EDT by NWS Binghamton NY",
+                "description": "Relative humidity levels will drop between 15 to 25 percent this\nafternoon. Also, expect northwest winds of 10 to 20 mph gusting up\nto 30 mph at times, highest in the Catskills. These very dry and\nwindy conditions will pose an elevated risk for wildfire spread\ntoday across all of Central NY.\n\nThe annual statewide burn ban is in effect until May 14th. No\nburn permits are issued.",
+                "instruction": null,
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSBGM"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS81 KBGM 290717"
+                    ],
+                    "NWSheadline": [
+                        "ELEVATED RISK OF WILDFIRE SPREAD TODAY ACROSS ALL OF CENTRAL NEW YORK"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a26ad709f06d730fe2413ecea0489da372b322f.001.1",
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a26ad709f06d730fe2413ecea0489da372b322f.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.7a26ad709f06d730fe2413ecea0489da372b322f.001.1",
+                "areaDesc": "Western Franklin; Eastern Franklin; Northern Worcester; Central Middlesex County; Western Essex; Eastern Essex; Western Hampshire; Western Hampden; Eastern Hampshire; Eastern Hampden; Southern Worcester; Western Norfolk; Southeast Middlesex; Suffolk; Eastern Norfolk; Northern Bristol; Western Plymouth; Eastern Plymouth; Southern Bristol; Southern Plymouth; Barnstable; Dukes; Nantucket; Northwest Middlesex County",
+                "geocode": {
+                    "SAME": [
+                        "025011",
+                        "025027",
+                        "025017",
+                        "025009",
+                        "025015",
+                        "025013",
+                        "025021",
+                        "025025",
+                        "025005",
+                        "025023",
+                        "025001",
+                        "025007",
+                        "025019"
+                    ],
+                    "UGC": [
+                        "MAZ002",
+                        "MAZ003",
+                        "MAZ004",
+                        "MAZ005",
+                        "MAZ006",
+                        "MAZ007",
+                        "MAZ008",
+                        "MAZ009",
+                        "MAZ010",
+                        "MAZ011",
+                        "MAZ012",
+                        "MAZ013",
+                        "MAZ014",
+                        "MAZ015",
+                        "MAZ016",
+                        "MAZ017",
+                        "MAZ018",
+                        "MAZ019",
+                        "MAZ020",
+                        "MAZ021",
+                        "MAZ022",
+                        "MAZ023",
+                        "MAZ024",
+                        "MAZ026"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/MAZ002",
+                    "https://api.weather.gov/zones/forecast/MAZ003",
+                    "https://api.weather.gov/zones/forecast/MAZ004",
+                    "https://api.weather.gov/zones/forecast/MAZ005",
+                    "https://api.weather.gov/zones/forecast/MAZ006",
+                    "https://api.weather.gov/zones/forecast/MAZ007",
+                    "https://api.weather.gov/zones/forecast/MAZ008",
+                    "https://api.weather.gov/zones/forecast/MAZ009",
+                    "https://api.weather.gov/zones/forecast/MAZ010",
+                    "https://api.weather.gov/zones/forecast/MAZ011",
+                    "https://api.weather.gov/zones/forecast/MAZ012",
+                    "https://api.weather.gov/zones/forecast/MAZ013",
+                    "https://api.weather.gov/zones/forecast/MAZ014",
+                    "https://api.weather.gov/zones/forecast/MAZ015",
+                    "https://api.weather.gov/zones/forecast/MAZ016",
+                    "https://api.weather.gov/zones/forecast/MAZ017",
+                    "https://api.weather.gov/zones/forecast/MAZ018",
+                    "https://api.weather.gov/zones/forecast/MAZ019",
+                    "https://api.weather.gov/zones/forecast/MAZ020",
+                    "https://api.weather.gov/zones/forecast/MAZ021",
+                    "https://api.weather.gov/zones/forecast/MAZ022",
+                    "https://api.weather.gov/zones/forecast/MAZ023",
+                    "https://api.weather.gov/zones/forecast/MAZ024",
+                    "https://api.weather.gov/zones/forecast/MAZ026"
+                ],
+                "references": [],
+                "sent": "2022-04-29T03:12:00-04:00",
+                "effective": "2022-04-29T03:12:00-04:00",
+                "onset": "2022-04-29T03:12:00-04:00",
+                "expires": "2022-04-29T20:00:00-04:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Boston/Norton MA",
+                "headline": "Special Weather Statement issued April 29 at 3:12AM EDT by NWS Boston/Norton MA",
+                "description": "A very dry airmass will combine with gusty northwest winds,\nresulting in elevated fire weather concerns continuing into\nFriday. Specifically, northwest winds 15 to 20 mph with gusts up\nto 30 mph, strongest winds across the high terrain and Cape Cod\nand the Islands.  Minimum relative humidities will range between\nbetween 15 to 25 percent with lowest values across western\nMassachusetts, and around 25 to 35 percent for Cape Cod and the\nIslands.",
+                "instruction": null,
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSBOX"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS81 KBOX 290712"
+                    ],
+                    "NWSheadline": [
+                        "ELEVATED FIRE WEATHER CONCERNS CONTINUE TODAY FOR MASSACHUSETTS"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a26ad709f06d730fe2413ecea0489da372b322f.002.1",
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a26ad709f06d730fe2413ecea0489da372b322f.002.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.7a26ad709f06d730fe2413ecea0489da372b322f.002.1",
+                "areaDesc": "Northwest Providence; Southeast Providence; Western Kent; Eastern Kent; Bristol; Washington; Newport; Block Island",
+                "geocode": {
+                    "SAME": [
+                        "044007",
+                        "044003",
+                        "044001",
+                        "044009",
+                        "044005"
+                    ],
+                    "UGC": [
+                        "RIZ001",
+                        "RIZ002",
+                        "RIZ003",
+                        "RIZ004",
+                        "RIZ005",
+                        "RIZ006",
+                        "RIZ007",
+                        "RIZ008"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/RIZ001",
+                    "https://api.weather.gov/zones/forecast/RIZ002",
+                    "https://api.weather.gov/zones/forecast/RIZ003",
+                    "https://api.weather.gov/zones/forecast/RIZ004",
+                    "https://api.weather.gov/zones/forecast/RIZ005",
+                    "https://api.weather.gov/zones/forecast/RIZ006",
+                    "https://api.weather.gov/zones/forecast/RIZ007",
+                    "https://api.weather.gov/zones/forecast/RIZ008"
+                ],
+                "references": [],
+                "sent": "2022-04-29T03:12:00-04:00",
+                "effective": "2022-04-29T03:12:00-04:00",
+                "onset": "2022-04-29T03:12:00-04:00",
+                "expires": "2022-04-29T20:00:00-04:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Boston/Norton MA",
+                "headline": "Special Weather Statement issued April 29 at 3:12AM EDT by NWS Boston/Norton MA",
+                "description": "A very dry airmass will combine with gusty northwest winds,\nresulting in elevated fire weather concerns continuing into\nFriday. Specifically, northwest winds 15 to 25 mph and minimum\nrelative humidities will range between between 20 to 30 percent.",
+                "instruction": null,
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSBOX"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS81 KBOX 290712"
+                    ],
+                    "NWSheadline": [
+                        "ELEVATED FIRE WEATHER CONCERNS CONTINUE TODAY FOR RHODE ISLAND"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a26ad709f06d730fe2413ecea0489da372b322f.003.1",
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a26ad709f06d730fe2413ecea0489da372b322f.003.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.7a26ad709f06d730fe2413ecea0489da372b322f.003.1",
+                "areaDesc": "Hartford; Tolland; Windham",
+                "geocode": {
+                    "SAME": [
+                        "009003",
+                        "009013",
+                        "009015"
+                    ],
+                    "UGC": [
+                        "CTZ002",
+                        "CTZ003",
+                        "CTZ004"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/CTZ002",
+                    "https://api.weather.gov/zones/forecast/CTZ003",
+                    "https://api.weather.gov/zones/forecast/CTZ004"
+                ],
+                "references": [],
+                "sent": "2022-04-29T03:12:00-04:00",
+                "effective": "2022-04-29T03:12:00-04:00",
+                "onset": "2022-04-29T03:12:00-04:00",
+                "expires": "2022-04-29T20:00:00-04:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Boston/Norton MA",
+                "headline": "Special Weather Statement issued April 29 at 3:12AM EDT by NWS Boston/Norton MA",
+                "description": "A very dry airmass will combine with gusty northwest winds,\nresulting in elevated fire weather concerns today. Northwest\nwinds 15 to 20 mph with gusts to 30 mph are expected, with\nminimum relative humidities between 15 to 25 percent.",
+                "instruction": null,
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSBOX"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS81 KBOX 290712"
+                    ],
+                    "NWSheadline": [
+                        "ELEVATED FIRE WEATHER CONCERNS CONTINUE TODAY FOR NORTHERN CONNECTICUT"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.865cdf2bab1be9a1637b05bb50b3a0b221457044.001.1",
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.865cdf2bab1be9a1637b05bb50b3a0b221457044.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.865cdf2bab1be9a1637b05bb50b3a0b221457044.001.1",
+                "areaDesc": "Northern Herkimer; Hamilton; Southern Herkimer; Southern Fulton; Montgomery; Northern Saratoga; Northern Warren; Northern Washington; Schoharie; Western Schenectady; Eastern Schenectady; Southern Saratoga; Western Albany; Eastern Albany; Western Rensselaer; Eastern Rensselaer; Western Greene; Eastern Greene; Western Columbia; Eastern Columbia; Western Ulster; Eastern Ulster; Western Dutchess; Eastern Dutchess; Northern Fulton; Southeast Warren; Southern Washington",
+                "geocode": {
+                    "SAME": [
+                        "036043",
+                        "036041",
+                        "036035",
+                        "036057",
+                        "036091",
+                        "036113",
+                        "036115",
+                        "036095",
+                        "036093",
+                        "036001",
+                        "036083",
+                        "036039",
+                        "036021",
+                        "036111",
+                        "036027"
+                    ],
+                    "UGC": [
+                        "NYZ032",
+                        "NYZ033",
+                        "NYZ038",
+                        "NYZ039",
+                        "NYZ040",
+                        "NYZ041",
+                        "NYZ042",
+                        "NYZ043",
+                        "NYZ047",
+                        "NYZ048",
+                        "NYZ049",
+                        "NYZ050",
+                        "NYZ051",
+                        "NYZ052",
+                        "NYZ053",
+                        "NYZ054",
+                        "NYZ058",
+                        "NYZ059",
+                        "NYZ060",
+                        "NYZ061",
+                        "NYZ063",
+                        "NYZ064",
+                        "NYZ065",
+                        "NYZ066",
+                        "NYZ082",
+                        "NYZ083",
+                        "NYZ084"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/NYZ032",
+                    "https://api.weather.gov/zones/forecast/NYZ033",
+                    "https://api.weather.gov/zones/forecast/NYZ038",
+                    "https://api.weather.gov/zones/forecast/NYZ039",
+                    "https://api.weather.gov/zones/forecast/NYZ040",
+                    "https://api.weather.gov/zones/forecast/NYZ041",
+                    "https://api.weather.gov/zones/forecast/NYZ042",
+                    "https://api.weather.gov/zones/forecast/NYZ043",
+                    "https://api.weather.gov/zones/forecast/NYZ047",
+                    "https://api.weather.gov/zones/forecast/NYZ048",
+                    "https://api.weather.gov/zones/forecast/NYZ049",
+                    "https://api.weather.gov/zones/forecast/NYZ050",
+                    "https://api.weather.gov/zones/forecast/NYZ051",
+                    "https://api.weather.gov/zones/forecast/NYZ052",
+                    "https://api.weather.gov/zones/forecast/NYZ053",
+                    "https://api.weather.gov/zones/forecast/NYZ054",
+                    "https://api.weather.gov/zones/forecast/NYZ058",
+                    "https://api.weather.gov/zones/forecast/NYZ059",
+                    "https://api.weather.gov/zones/forecast/NYZ060",
+                    "https://api.weather.gov/zones/forecast/NYZ061",
+                    "https://api.weather.gov/zones/forecast/NYZ063",
+                    "https://api.weather.gov/zones/forecast/NYZ064",
+                    "https://api.weather.gov/zones/forecast/NYZ065",
+                    "https://api.weather.gov/zones/forecast/NYZ066",
+                    "https://api.weather.gov/zones/forecast/NYZ082",
+                    "https://api.weather.gov/zones/forecast/NYZ083",
+                    "https://api.weather.gov/zones/forecast/NYZ084"
+                ],
+                "references": [],
+                "sent": "2022-04-29T02:53:00-04:00",
+                "effective": "2022-04-29T02:53:00-04:00",
+                "onset": "2022-04-29T02:53:00-04:00",
+                "expires": "2022-04-29T20:00:00-04:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Albany NY",
+                "headline": "Special Weather Statement issued April 29 at 2:53AM EDT by NWS Albany NY",
+                "description": "The combination of relative humidity values dropping to 15 to 20\npercent and frequent wind gust to 25 to 30 miles per hour with\noccasional gusts up to 35 miles per hour will contribute to an\nelevated risk of fire spread today. The annual statewide burn ban\nis in effect until May 14. No burn permits are issued.",
+                "instruction": null,
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSALY"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS81 KALY 290653"
+                    ],
+                    "NWSheadline": [
+                        "ELEVATED RISK OF FIRE SPREAD TODAY FOR EASTERN NEW YORK"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        }
+    ],
+    "title": "current watches, warnings, and advisories",
+    "updated": "2022-04-29T23:45:00+00:00"
+}

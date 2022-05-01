@@ -60,7 +60,6 @@ export class AppComponent {
 
   ngOnInit(): void {
     this.capService.getAlerts()
-      .pipe(map(alerts => alerts.sort((a,b) => b.priority() - a.priority())))
-      .subscribe(alerts => this.alerts = alerts)
+      .then((alerts: Alert[]) => this.alerts = alerts)
   }
 }

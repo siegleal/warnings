@@ -3,7 +3,12 @@
   "description": "Latest warnings",
   "version": "1.0",
   "manifest_version": 3,
+  "permissions": ["storage"],
   "action": {
     "default_popup": "index.html"
-  }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html"
 }

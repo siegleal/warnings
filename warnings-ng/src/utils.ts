@@ -94,7 +94,7 @@ export class Alert {
   eventType: EventType
   polygon: Point[]
 
-  constructor(feature: any) {
+  constructor(feature: Feature) {
     let props = feature.properties;
     this.event = props.event;
     this.eventType = EventType.fromCaps(feature)
@@ -140,7 +140,12 @@ export class Alert {
             return "svr"
         }
       case EventType.TOR:
-        //PDS and emergency TBD
+        if ( this.description && this.description.toLowerCase().includes('tornado emergency')){
+          return "tor-emergency";
+        }
+        if (this.description && this.description.toLowerCase().includes('particularly dangerous situation')){
+          return "tor-pds";
+        }
         if (this.tornadoDamageThreat === "CATASTROPHIC") {
           return "tor-catastrophic";
         }
