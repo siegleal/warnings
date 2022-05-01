@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head><title>Select Source</title></head>
+<head>
+  <title> Options - Warnings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
 <body>
+  <div class="container" >
+    <div class="row">
+      <span>Select source:</span>
+      <select id="source" >
+        <option value="active">Active</option>
+        <option value="tornadoes">Historic Tornadoes</option>
+        <option value="file" >File</option>
+      </select>
+    </div>
+    <div class="row">
+      <div id="radioContainer">
+        Files:<br/>
 
-Select source:
-<select id="source">
- <option value="active">Active</option>
- <option value="tornadoes">Historic Tornadoes</option>
-</select>
+      </div>
+    </div>
+    <div class="row">
+      <button id="save">Save</button>
+    </div>
+    <div class="row">
+      <span id="output"></span>
+    </div>
 
-<button id="save">Save</button>
+  </div>
 
 <script src="jquery-3.6.0.js"></script>
 <script src="options.js"></script>

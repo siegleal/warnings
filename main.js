@@ -402,7 +402,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "CapService": () => (/* binding */ CapService)
 /* harmony export */ });
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils */ 6748);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 3184);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ 5139);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 3184);
+
 
 
 class CapService {
@@ -412,36 +415,49 @@ class CapService {
             "tornadoes": "http://api.weather.gov/alerts?event=Tornado%20Warning"
         };
     }
+    processJson(data, resolve, reject) {
+        let features = data.features;
+        resolve(features
+            .filter(elem => {
+            if (elem.properties.event === 'Special Weather Statement') {
+                return elem.properties.description.includes('thunderstorm');
+            }
+            return true;
+        })
+            .map(f => new _utils__WEBPACK_IMPORTED_MODULE_0__.Alert(f))
+            .sort((a, b) => b.priority() - a.priority()));
+    }
     getAlerts() {
         console.log('loading...');
         return new Promise((resolve, reject) => {
-            chrome.storage.local.get(['source'])
+            console.time('local-storage-get');
+            chrome.storage.local.get(['source', 'file'])
                 .then((result) => {
-                console.log("Current source is: " + result['source']);
-                const url = this.URLS[result['source']];
-                const headers = { 'method': 'GET', 'headers': { 'Accept': 'application/geo+json' } };
-                console.log('URL: ', url);
-                console.log('HEADERS: ', headers);
-                fetch(url, headers)
-                    .then(response => response.json())
-                    .then((data) => {
-                    let features = data.features;
-                    resolve(features
-                        .filter(elem => {
-                        if (elem.properties.event === 'Special Weather Statement') {
-                            return elem.properties.description.includes('thunderstorm');
-                        }
-                        return true;
-                    })
-                        .map(f => new _utils__WEBPACK_IMPORTED_MODULE_0__.Alert(f))
-                        .sort((a, b) => b.priority() - a.priority()));
-                });
+                const source = result['source'];
+                console.timeEnd('local-storage-get');
+                console.log("Current source is: " + source);
+                if (source === 'file') {
+                    const filename = result['file'];
+                    console.log('Filename is ', filename);
+                    jquery__WEBPACK_IMPORTED_MODULE_1__.getJSON(filename).done((data) => {
+                        this.processJson(data, resolve, reject);
+                    });
+                }
+                else {
+                    const url = this.URLS[source];
+                    const headers = { 'method': 'GET', 'headers': { 'Accept': 'application/geo+json' } };
+                    console.log('URL: ', url);
+                    console.log('HEADERS: ', headers);
+                    fetch(url, headers)
+                        .then(response => response.json())
+                        .then((json) => this.processJson(json, resolve, reject));
+                }
             });
         });
     }
 }
 CapService.ɵfac = function CapService_Factory(t) { return new (t || CapService)(); };
-CapService.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: CapService, factory: CapService.ɵfac, providedIn: 'root' });
+CapService.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({ token: CapService, factory: CapService.ɵfac, providedIn: 'root' });
 
 
 /***/ }),

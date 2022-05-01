@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Observable, from, of } from 'rxjs';
-import { map } from 'rxjs/operators'
 import { Alert, AlertsApi, EventType, Feature } from '../utils';
+import * as $ from 'jquery';
 
 @Injectable({
   providedIn: 'root'
@@ -14,38 +13,55 @@ export class CapService {
 
   constructor() { }
 
+  private processJson(data: AlertsApi, resolve: Function, reject: Function): void {
+    let features: Feature[] = data.features;
+    resolve(
+      features
+        .filter(elem => {
+          if (elem.properties.event === 'Special Weather Statement') {
+            return elem.properties.description.includes('thunderstorm');
+          }
+          return true;
+        })
+        .map(f => new Alert(f))
+        .sort((a, b) => b.priority() - a.priority())
+    )
+  }
+
   getAlerts(): Promise<Alert[]> {
 
-      console.log('loading...')
-      return new Promise<Alert[]>((resolve, reject) => {
-        chrome.storage.local.get(['source'])
+    console.log('loading...')
+    return new Promise<Alert[]>((resolve, reject) => {
+      console.time('local-storage-get')
+        chrome.storage.local.get(['source', 'file'])
           .then((result: { [key: string]: string }) => {
-            console.log("Current source is: " + result['source'])
-            const url = this.URLS[result['source']];
-            const headers = { 'method': 'GET', 'headers': { 'Accept': 'application/geo+json' } }
+            const source = result['source'];
+            console.timeEnd('local-storage-get')
+            console.log("Current source is: " + source)
 
-            console.log('URL: ', url);
-            console.log('HEADERS: ', headers);
+            if (source === 'file') {
+              const filename = result['file']
+              console.log('Filename is ', filename)
+              $.getJSON(filename).done(
+                (data: AlertsApi) => {
+                  this.processJson(data, resolve, reject);
+                }
+              )
 
-            fetch(url, headers)
-              .then(response => response.json())
-              .then((data: AlertsApi) => {
-                let features: Feature[] = data.features;
-                resolve(
-                  features
-                  .filter(elem => {
-                    if (elem.properties.event === 'Special Weather Statement') {
-                      return elem.properties.description.includes('thunderstorm');
-                    }
-                    return true;
-                  })
-                  .map(f => new Alert(f))
-                  .sort((a,b) => b.priority() - a.priority())
-                )
+            } else {
 
-              })
+              const url = this.URLS[source];
+              const headers = { 'method': 'GET', 'headers': { 'Accept': 'application/geo+json' } }
+
+              console.log('URL: ', url);
+              console.log('HEADERS: ', headers);
+
+              fetch(url, headers)
+                .then(response => response.json())
+                .then((json: AlertsApi) => this.processJson(json, resolve, reject))
+            }
           })
-      })
+    })
 
   }
 
