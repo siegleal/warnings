@@ -1,6 +1,8 @@
 <div id="container">
-  <div class="counts-container">
-  <div class="counts-header" (click)="showCounts()">
+  <div class="loading" *ngIf="!loaded">Loading...</div>
+  <div class="loading" *ngIf="loaded && alerts.length == 0">No Results</div>
+  <div class="counts-container" *ngIf="loaded && alerts.length > 0" >
+  <div class="counts-header"  (click)="showCounts()">
     <div >Counts</div>
     <div #plus class="icon">+</div>
     <div #minus class="icon hidden">-</div>
@@ -9,6 +11,5 @@
     <app-count-card *ngFor="let e of getCounts()" [entry]="e"></app-count-card>
   </div>
   </div>
-  <div class="loading" *ngIf="alerts.length == 0">Loading...</div>
 <app-alert-card *ngFor="let alert of alerts" [alert]="alert" ></app-alert-card>
 </div>

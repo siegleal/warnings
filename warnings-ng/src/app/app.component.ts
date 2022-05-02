@@ -1,7 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { CapService } from './cap.service';
 import { Alert, Entry } from '../utils';
-import { map } from "rxjs/operators"
 
 @Component({
   selector: 'app-root',
@@ -11,6 +10,7 @@ import { map } from "rxjs/operators"
 export class AppComponent {
   title = 'warnings-ng';
   alerts: Alert[]
+  loaded: boolean = false;
   @ViewChild('counts') counts!: ElementRef<HTMLDivElement>;
   @ViewChild('plus') plus!: ElementRef<HTMLDivElement>;
   @ViewChild('minus') minus!: ElementRef<HTMLDivElement>;
@@ -48,18 +48,22 @@ export class AppComponent {
   getCounts(){
     let arr: Entry[] = [];
     this.classes.forEach(x => {
-      arr.push(new Entry(x, this.alerts.filter(y => y.getClass() === x).length))
+      arr.push(new Entry(x, this.alerts.filter(y => y.getClassification().css_class === x).length))
     })
     return arr;
   }
 
   getCount(c: string) {
-    return this.alerts.filter(x => x.getClass() === c).length
+    return this.alerts.filter(x => x.getClassification().css_class === c).length
   }
 
 
   ngOnInit(): void {
     this.capService.getAlerts()
-      .then((alerts: Alert[]) => this.alerts = alerts)
+      .then((alerts: Alert[]) => {
+        this.alerts = alerts;
+        console.log('Setting loaded to true')
+        this.loaded = true;
+      })
   }
 }

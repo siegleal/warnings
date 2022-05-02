@@ -132,7 +132,7 @@ function AlertCardComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassMapInterpolate1"]("", ctx_r0.getClass(), " alert-card-container");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx_r0.alert.event);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx_r0.getTitle());
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("From: ", ctx_r0.alert.sender, "");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
@@ -155,6 +155,9 @@ class AlertCardComponent {
         this.drawCanvas();
     }
     ngOnInit() {
+    }
+    getTitle() {
+        return this.alert.getClassification().title;
     }
     drawCanvas() {
         let ctx = this.polyCanvas.nativeElement.getContext('2d');
@@ -203,7 +206,7 @@ class AlertCardComponent {
         }
     }
     getClass() {
-        return this.alert.getClass();
+        return this.alert.getClassification().css_class;
     }
     getTorDetectionClass() {
         if (this.alert.eventType === _utils__WEBPACK_IMPORTED_MODULE_0__.EventType.SVR) {
@@ -254,27 +257,54 @@ __webpack_require__.r(__webpack_exports__);
 const _c0 = ["counts"];
 const _c1 = ["plus"];
 const _c2 = ["minus"];
-function AppComponent_app_count_card_13_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](0, "app-count-card", 12);
-} if (rf & 2) {
-    const e_r6 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("entry", e_r6);
-} }
-function AppComponent_div_14_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 13);
+function AppComponent_div_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 4);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](1, "Loading...");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
 } }
-function AppComponent_app_alert_card_15_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](0, "app-alert-card", 14);
+function AppComponent_div_2_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](1, "No Results");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
+} }
+function AppComponent_div_3_app_count_card_12_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](0, "app-count-card", 14);
 } if (rf & 2) {
-    const alert_r7 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("alert", alert_r7);
+    const e_r8 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("entry", e_r8);
+} }
+function AppComponent_div_3_Template(rf, ctx) { if (rf & 1) {
+    const _r10 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 5)(1, "div", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("click", function AppComponent_div_3_Template_div_click_1_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r10); const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"](); return ctx_r9.showCounts(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](2, "div");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](3, "Counts");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](4, "div", 7, 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](6, "+");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](7, "div", 9, 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](9, "-");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](10, "div", 11, 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](12, AppComponent_div_3_app_count_card_12_Template, 1, 1, "app-count-card", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
+} if (rf & 2) {
+    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngForOf", ctx_r2.getCounts());
+} }
+function AppComponent_app_alert_card_4_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](0, "app-alert-card", 15);
+} if (rf & 2) {
+    const alert_r11 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("alert", alert_r11);
 } }
 class AppComponent {
     constructor(capService) {
         this.capService = capService;
         this.title = 'warnings-ng';
+        this.loaded = false;
         this.classes = [
             'sws',
             'svr',
@@ -305,16 +335,20 @@ class AppComponent {
     getCounts() {
         let arr = [];
         this.classes.forEach(x => {
-            arr.push(new _utils__WEBPACK_IMPORTED_MODULE_0__.Entry(x, this.alerts.filter(y => y.getClass() === x).length));
+            arr.push(new _utils__WEBPACK_IMPORTED_MODULE_0__.Entry(x, this.alerts.filter(y => y.getClassification().css_class === x).length));
         });
         return arr;
     }
     getCount(c) {
-        return this.alerts.filter(x => x.getClass() === c).length;
+        return this.alerts.filter(x => x.getClassification().css_class === c).length;
     }
     ngOnInit() {
         this.capService.getAlerts()
-            .then((alerts) => this.alerts = alerts);
+            .then((alerts) => {
+            this.alerts = alerts;
+            console.log('Setting loaded to true');
+            this.loaded = true;
+        });
     }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_cap_service__WEBPACK_IMPORTED_MODULE_1__.CapService)); };
@@ -327,32 +361,23 @@ AppComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_4__["�
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵloadQuery"]()) && (ctx.counts = _t.first);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵloadQuery"]()) && (ctx.plus = _t.first);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵloadQuery"]()) && (ctx.minus = _t.first);
-    } }, decls: 16, vars: 3, consts: [["id", "container"], [1, "counts-container"], [1, "counts-header", 3, "click"], [1, "icon"], ["plus", ""], [1, "icon", "hidden"], ["minus", ""], [1, "counts", "hidden"], ["counts", ""], [3, "entry", 4, "ngFor", "ngForOf"], ["class", "loading", 4, "ngIf"], [3, "alert", 4, "ngFor", "ngForOf"], [3, "entry"], [1, "loading"], [3, "alert"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("click", function AppComponent_Template_div_click_2_listener() { return ctx.showCounts(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](3, "div");
-        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](4, "Counts");
-        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](5, "div", 3, 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](7, "+");
-        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](8, "div", 5, 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](10, "-");
-        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](11, "div", 7, 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](13, AppComponent_app_count_card_13_Template, 1, 1, "app-count-card", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](14, AppComponent_div_14_Template, 2, 0, "div", 10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](15, AppComponent_app_alert_card_15_Template, 1, 1, "app-alert-card", 11);
+    } }, decls: 5, vars: 4, consts: [["id", "container"], ["class", "loading", 4, "ngIf"], ["class", "counts-container", 4, "ngIf"], [3, "alert", 4, "ngFor", "ngForOf"], [1, "loading"], [1, "counts-container"], [1, "counts-header", 3, "click"], [1, "icon"], ["plus", ""], [1, "icon", "hidden"], ["minus", ""], [1, "counts", "hidden"], ["counts", ""], [3, "entry", 4, "ngFor", "ngForOf"], [3, "entry"], [3, "alert"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](1, AppComponent_div_1_Template, 2, 0, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](2, AppComponent_div_2_Template, 2, 0, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](3, AppComponent_div_3_Template, 13, 1, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](4, AppComponent_app_alert_card_4_Template, 1, 1, "app-alert-card", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](13);
-        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngForOf", ctx.getCounts());
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", ctx.alerts.length == 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", !ctx.loaded);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", ctx.loaded && ctx.alerts.length == 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", ctx.loaded && ctx.alerts.length > 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngForOf", ctx.alerts);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_5__.NgForOf, _count_card_count_card_component__WEBPACK_IMPORTED_MODULE_2__.CountCardComponent, _angular_common__WEBPACK_IMPORTED_MODULE_5__.NgIf, _alert_card_alert_card_component__WEBPACK_IMPORTED_MODULE_3__.AlertCardComponent], styles: ["#container[_ngcontent-%COMP%] {\n  width: 400px;\n}\n\n.loading[_ngcontent-%COMP%] {\n  text-align: center;\n  font-size: larger;\n}\n\n.counts-header[_ngcontent-%COMP%] {\n  font-size: large;\n  text-align: center;\n  display: inline-flex;\n  width: 100%;\n  justify-content: center;\n}\n\n.counts-container[_ngcontent-%COMP%] {\n  border: 1px solid black;\n  margin-bottom: 5px;\n  border-radius: 10px;\n  overflow: hidden;\n}\n\n.icon[_ngcontent-%COMP%] {\n  font-size: medium;\n  position:absolute;\n  right: 20px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsWUFBWTtBQUNkOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLFdBQVc7RUFDWCx1QkFBdUI7QUFDekI7O0FBRUE7RUFDRSx1QkFBdUI7RUFDdkIsa0JBQWtCO0VBQ2xCLG1CQUFtQjtFQUNuQixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxpQkFBaUI7RUFDakIsaUJBQWlCO0VBQ2pCLFdBQVc7QUFDYiIsImZpbGUiOiJhcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiNjb250YWluZXIge1xuICB3aWR0aDogNDAwcHg7XG59XG5cbi5sb2FkaW5nIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LXNpemU6IGxhcmdlcjtcbn1cblxuLmNvdW50cy1oZWFkZXIge1xuICBmb250LXNpemU6IGxhcmdlO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGRpc3BsYXk6IGlubGluZS1mbGV4O1xuICB3aWR0aDogMTAwJTtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbi5jb3VudHMtY29udGFpbmVyIHtcbiAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7XG4gIG1hcmdpbi1ib3R0b206IDVweDtcbiAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbn1cblxuLmljb24ge1xuICBmb250LXNpemU6IG1lZGl1bTtcbiAgcG9zaXRpb246YWJzb2x1dGU7XG4gIHJpZ2h0OiAyMHB4O1xufVxuIl19 */"] });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_5__.NgIf, _angular_common__WEBPACK_IMPORTED_MODULE_5__.NgForOf, _count_card_count_card_component__WEBPACK_IMPORTED_MODULE_2__.CountCardComponent, _alert_card_alert_card_component__WEBPACK_IMPORTED_MODULE_3__.AlertCardComponent], styles: ["#container[_ngcontent-%COMP%] {\n  width: 400px;\n}\n\n.loading[_ngcontent-%COMP%] {\n  text-align: center;\n  font-size: larger;\n}\n\n.counts-header[_ngcontent-%COMP%] {\n  font-size: large;\n  text-align: center;\n  display: inline-flex;\n  width: 100%;\n  justify-content: center;\n}\n\n.counts-container[_ngcontent-%COMP%] {\n  border: 1px solid black;\n  margin-bottom: 5px;\n  border-radius: 10px;\n  overflow: hidden;\n}\n\n.icon[_ngcontent-%COMP%] {\n  font-size: medium;\n  position:absolute;\n  right: 20px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsWUFBWTtBQUNkOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLFdBQVc7RUFDWCx1QkFBdUI7QUFDekI7O0FBRUE7RUFDRSx1QkFBdUI7RUFDdkIsa0JBQWtCO0VBQ2xCLG1CQUFtQjtFQUNuQixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxpQkFBaUI7RUFDakIsaUJBQWlCO0VBQ2pCLFdBQVc7QUFDYiIsImZpbGUiOiJhcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiNjb250YWluZXIge1xuICB3aWR0aDogNDAwcHg7XG59XG5cbi5sb2FkaW5nIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LXNpemU6IGxhcmdlcjtcbn1cblxuLmNvdW50cy1oZWFkZXIge1xuICBmb250LXNpemU6IGxhcmdlO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGRpc3BsYXk6IGlubGluZS1mbGV4O1xuICB3aWR0aDogMTAwJTtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbi5jb3VudHMtY29udGFpbmVyIHtcbiAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7XG4gIG1hcmdpbi1ib3R0b206IDVweDtcbiAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbn1cblxuLmljb24ge1xuICBmb250LXNpemU6IG1lZGl1bTtcbiAgcG9zaXRpb246YWJzb2x1dGU7XG4gIHJpZ2h0OiAyMHB4O1xufVxuIl19 */"] });
 
 
 /***/ }),
@@ -562,6 +587,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "BoundingRectangle": () => (/* binding */ BoundingRectangle),
 /* harmony export */   "Point": () => (/* binding */ Point),
 /* harmony export */   "Alert": () => (/* binding */ Alert),
+/* harmony export */   "Classification": () => (/* binding */ Classification),
 /* harmony export */   "Entry": () => (/* binding */ Entry)
 /* harmony export */ });
 class EventType {
@@ -657,39 +683,39 @@ class Alert {
             this.tornadoDamageThreat = props.parameters.tornadoDamageThreat[0];
         }
     }
-    getClass() {
+    getClassification() {
         switch (this.eventType) {
             case EventType.SWS:
-                return "sws";
+                return Classification.SWS;
             case EventType.SVR:
                 switch (this.thunderstormDamageThreat) {
                     case "CONSIDERABLE":
-                        return "svr-considerable";
+                        return Classification.SVRCON;
                     case "DESTRUCTIVE":
-                        return "svr-destructive";
+                        return Classification.SVRDES;
                     default:
-                        return "svr";
+                        return Classification.SVR;
                 }
             case EventType.TOR:
                 if (this.description && this.description.toLowerCase().includes('tornado emergency')) {
-                    return "tor-emergency";
+                    return Classification.TORE;
                 }
                 if (this.description && this.description.toLowerCase().includes('particularly dangerous situation')) {
-                    return "tor-pds";
+                    return Classification.TORPDS;
                 }
                 if (this.tornadoDamageThreat === "CATASTROPHIC") {
-                    return "tor-catastrophic";
+                    return Classification.TORCAT;
                 }
                 if (this.tornadoDamageThreat === "CONSIDERABLE") {
-                    return "tor-considerable";
+                    return Classification.TORCON;
                 }
                 if (this.tornadoDetection === "OBSERVED") {
-                    return "tor-observed";
+                    return Classification.TOROBS;
                 }
-                return "tor-radar";
+                return Classification.TORRDR;
             default:
                 console.log("Could not classify alert: " + this);
-                return "";
+                return Classification.UNKNOWN;
         }
     }
     timeUntilExpiration() {
@@ -744,6 +770,23 @@ class Alert {
         return current;
     }
 }
+class Classification {
+    constructor(css, title) {
+        this.css_class = css;
+        this.title = title;
+    }
+}
+Classification.TORE = new Classification('tor-emergency', 'TORNADO EMERGENCY');
+Classification.TORPDS = new Classification('tor-pds', 'PDS TORNADO WARNING');
+Classification.TORCAT = new Classification('tor-catastrophic', 'Catastrophic Tornado Warning');
+Classification.TORCON = new Classification('tor-considerable', 'Considerable Tornado Warning');
+Classification.TOROBS = new Classification('tor-observed', 'Observed Tornado Warning');
+Classification.TORRDR = new Classification('tor-radar', 'Radar Indicated Tornado Warning');
+Classification.SVRDES = new Classification('svr-destructive', 'Destructive Severe T-Storm Warning');
+Classification.SVRCON = new Classification('svr-considerable', 'Considerable Severe T-Storm Warning');
+Classification.SVR = new Classification('svr', 'Severe Thunderstorm Warning');
+Classification.SWS = new Classification('sws', 'Special Weather Statement');
+Classification.UNKNOWN = new Classification('', 'Unknown Event');
 class Entry {
     constructor(cls, count) {
         this.cls = cls;

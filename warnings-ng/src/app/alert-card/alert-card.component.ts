@@ -20,6 +20,10 @@ export class AlertCardComponent implements OnInit {
     
   }
 
+  getTitle(): string {
+    return this.alert.getClassification().title;
+  }
+
   drawCanvas(): void {
     let ctx: CanvasRenderingContext2D | null = this.polyCanvas.nativeElement.getContext('2d');
     if (ctx === null){
@@ -71,7 +75,7 @@ export class AlertCardComponent implements OnInit {
   }
 
   getClass(): string {
-    return this.alert.getClass()
+    return this.alert.getClassification().css_class;
   }
 
   getTorDetectionClass(): string {

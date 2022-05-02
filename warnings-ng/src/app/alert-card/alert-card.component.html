@@ -1,6 +1,6 @@
 <div *ngIf="alert" class="{{ getClass() }} alert-card-container" (click)="toggleDescription()" >
   <div class="header">
-  <div class="title">{{ alert.event }}</div>
+  <div class="title">{{ getTitle() }}</div>
   <div class="subtitle">
   <div>From: {{alert.sender}}</div>
   <div>{{alert.areaDesc}}</div>
