@@ -69,5 +69,6 @@ $('#save').click(function(event) {
     console.log('Source is set to: ' + source);
     console.log('file is set to: ' + file);
     $('#output').text('Saved!');
+    setTimeout(() => $('#output').text(''), 2000);
   })
 })

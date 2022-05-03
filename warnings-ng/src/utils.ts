@@ -219,25 +219,20 @@ export class Alert {
 
 
 export class Classification {
-  static readonly TORE =   new Classification('tor-emergency', 'TORNADO EMERGENCY');
-  static readonly TORPDS = new Classification('tor-pds', 'PDS TORNADO WARNING');
-  static readonly TORCAT = new Classification('tor-catastrophic', 'Catastrophic Tornado Warning');
-  static readonly TORCON = new Classification('tor-considerable', 'Considerable Tornado Warning');
-  static readonly TOROBS = new Classification('tor-observed', 'Observed Tornado Warning');
-  static readonly TORRDR = new Classification('tor-radar', 'Radar Indicated Tornado Warning');
-  static readonly SVRDES = new Classification('svr-destructive', 'Destructive Severe T-Storm Warning');
-  static readonly SVRCON = new Classification('svr-considerable', 'Considerable Severe T-Storm Warning');
+  static readonly TORE =   new Classification('tor-emergency', 'Tornado Warning','TORNADO EMERGENCY');
+  static readonly TORPDS = new Classification('tor-pds','Tornado Warning', 'PDS');
+  static readonly TORCAT = new Classification('tor-catastrophic','Tornado Warning', 'Catastrophic');
+  static readonly TORCON = new Classification('tor-considerable','Tornado Warning', 'Considerable');
+  static readonly TOROBS = new Classification('tor-observed','Tornado Warning', 'Observed');
+  static readonly TORRDR = new Classification('tor-radar', 'Tornado Warning','Radar Indicated');
+  static readonly SVRDES = new Classification('svr-destructive', 'Severe Thunderstorm Warning','Destructive');
+  static readonly SVRCON = new Classification('svr-considerable', 'Severe Thunderstorm Warning','Considerable');
   static readonly SVR =    new Classification('svr', 'Severe Thunderstorm Warning');
   static readonly SWS =    new Classification('sws', 'Special Weather Statement');
   static readonly UNKNOWN =    new Classification('', 'Unknown Event');
 
-  css_class: string;
-  title: string;
 
-  constructor(css: string, title: string) {
-    this.css_class = css;
-    this.title = title;
-  }
+  constructor(readonly css_class: string, readonly title: string, readonly modifier: string = '') {}
 
 }
 
@@ -289,10 +284,10 @@ interface Properties {
 }
 
 export class Entry {
-  cls: string;
+  cls: Classification;
   count: number;
 
-  constructor(cls: string, count: number) {
+  constructor(cls: Classification, count: number) {
     this.cls = cls;
     this.count = count;
   }

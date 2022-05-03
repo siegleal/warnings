@@ -1,6 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { CapService } from './cap.service';
-import { Alert, Entry } from '../utils';
+import { Alert, Classification, Entry } from '../utils';
 
 @Component({
   selector: 'app-root',
@@ -14,17 +14,17 @@ export class AppComponent {
   @ViewChild('counts') counts!: ElementRef<HTMLDivElement>;
   @ViewChild('plus') plus!: ElementRef<HTMLDivElement>;
   @ViewChild('minus') minus!: ElementRef<HTMLDivElement>;
-  classes: string[] = [
-    'sws',
-    'svr',
-    'svr-considerable',
-    'svr-destructive',
-    'tor-radar',
-    'tor-observed',
-    'tor-considerable',
-    'tor-catastrophic',
-    'tor-pds',
-    'tor-emergency',
+  classes: Classification[] = [
+    Classification.SWS,
+    Classification.SVR,
+    Classification.SVRCON,
+    Classification.SVRDES,
+    Classification.TORRDR,
+    Classification.TOROBS,
+    Classification.TORCON,
+    Classification.TORCAT,
+    Classification.TORPDS,
+    Classification.TORE
   ]
 
   constructor(private capService: CapService) {
@@ -48,13 +48,13 @@ export class AppComponent {
   getCounts(){
     let arr: Entry[] = [];
     this.classes.forEach(x => {
-      arr.push(new Entry(x, this.alerts.filter(y => y.getClassification().css_class === x).length))
+      arr.push(new Entry(x, this.alerts.filter(y => y.getClassification() === x).length))
     })
     return arr;
   }
 
-  getCount(c: string) {
-    return this.alerts.filter(x => x.getClassification().css_class === c).length
+  getCount(c: Classification) {
+    return this.alerts.filter(x => x.getClassification() === c).length
   }
 
 
