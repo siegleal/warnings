@@ -21,8 +21,13 @@
   padding: 2px;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 2px 2px lightslategray;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
   position:relative;
+  transition: .3s;
+}
+
+.alert-card-container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 div.alert-card-container>div {
