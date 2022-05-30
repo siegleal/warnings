@@ -1,5 +1,3 @@
-import { BoundElementProperty } from "@angular/compiler";
-
 export class EventType {
   text: string
   cssClass: string

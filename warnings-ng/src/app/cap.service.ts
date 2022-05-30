@@ -10,10 +10,21 @@ export class CapService {
     "active":"http://api.weather.gov/alerts/active?status=actual&event=Tornado%20Warning,Severe%20Thunderstorm%20Warning,Special%20Weather%20Statement", 
     "tornadoes":"http://api.weather.gov/alerts?event=Tornado%20Warning"
   }
+  lastJson: AlertsApi|null = null
 
   constructor() { }
 
+  getLastJson(): Promise<AlertsApi> {
+    return new Promise<AlertsApi>((resolve, reject) => {
+      if (this.lastJson !== null) {
+        resolve(this.lastJson)
+      }
+      reject('lastJson is not set')
+    })
+  }
+
   private processJson(data: AlertsApi, resolve: Function, reject: Function): void {
+    this.lastJson = data
     let features: Feature[] = data.features;
     resolve(
       features
@@ -28,41 +39,33 @@ export class CapService {
     )
   }
 
-  getAlerts(): Promise<Alert[]> {
+  getAlerts(source: string = 'active', filename: string | null = null): Promise<Alert[]> {
 
     console.log('loading...')
     return new Promise<Alert[]>((resolve, reject) => {
-      console.time('local-storage-get')
-        chrome.storage.local.get(['source', 'file'])
-          .then((result: { [key: string]: string }) => {
-            const source = result['source'];
-            console.timeEnd('local-storage-get')
-            console.log("Current source is: " + source)
+      console.log("Current source is: " + source)
 
-            if (source === 'file') {
-              const filename = result['file']
-              console.log('Filename is ', filename)
-              $.getJSON(filename).done(
-                (data: AlertsApi) => {
-                  this.processJson(data, resolve, reject);
-                }
-              )
+      if (source === 'file') {
+        console.log('Filename is ', filename)
+        $.getJSON(filename!).done(
+          (data: AlertsApi) => {
+            this.processJson(data, resolve, reject);
+          }
+        )
 
-            } else {
+      } else {
 
-              const url = this.URLS[source];
-              const headers = { 'method': 'GET', 'headers': { 'Accept': 'application/geo+json' } }
+        const url = this.URLS[source];
+        const headers = { 'method': 'GET', 'headers': { 'Accept': 'application/geo+json' } }
 
-              console.log('URL: ', url);
-              console.log('HEADERS: ', headers);
+        console.log('URL: ', url);
+        console.log('HEADERS: ', headers);
 
-              fetch(url, headers)
-                .then(response => response.json())
-                .then((json: AlertsApi) => this.processJson(json, resolve, reject))
-            }
-          })
+        fetch(url, headers)
+          .then(response => response.json())
+          .then((json: AlertsApi) => this.processJson(json, resolve, reject))
+      }
     })
-
   }
 
 }

@@ -27,3 +27,25 @@
   position:absolute;
   right: 20px;
 }
+
+.save-button {
+  outline:none;
+  display: block;
+  width: 100%;
+}
+
+.live-container {
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.live {
+  color: RED;
+  font-size: larger;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}

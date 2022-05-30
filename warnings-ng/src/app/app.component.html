@@ -1,7 +1,12 @@
 <div id="container">
   <div class="loading" *ngIf="!loaded">Loading...</div>
   <div class="loading" *ngIf="loaded && alerts.length == 0">No Results</div>
-  <div class="counts-container" *ngIf="loaded && alerts.length > 0" >
+  <div *ngIf="loaded">
+    <div class="live-container" *ngIf="!isLive">
+      <div class="live">NOT LIVE</div>
+      <div *ngIf="source">Source: {{ source.name }}</div>
+    </div>
+  <div class="counts-container" *ngIf="alerts.length > 0" >
   <div class="counts-header"  (click)="showCounts()">
     <div >Counts</div>
     <div #plus class="icon">+</div>
@@ -12,4 +17,6 @@
   </div>
   </div>
 <app-alert-card *ngFor="let alert of alerts" [alert]="alert" ></app-alert-card>
+<button class="save-button" (click)="saveButton()">Save JSON</button>
+</div>
 </div>

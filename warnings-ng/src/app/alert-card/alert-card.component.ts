@@ -29,13 +29,10 @@ export class AlertCardComponent implements OnInit {
     if (ctx === null){
       return
     }
-    console.log('Drawing')
-    console.log('Polygon: ' + JSON.stringify(this.alert.polygon))
     if (this.alert.polygon.length == 0) {
       return 
     }
     let adjusted = Point.adjustArray(this.alert.polygon);
-    console.log(adjusted)
     ctx.strokeStyle = '#000';
     ctx.lineWidth = 1;
     ctx.transform(1, 0, 0, -1, 0, this.polyCanvas.nativeElement.height)

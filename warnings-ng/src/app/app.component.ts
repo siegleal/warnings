@@ -1,6 +1,8 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { CapService } from './cap.service';
-import { Alert, Classification, Entry } from '../utils';
+import { Alert, Classification, Entry, AlertsApi } from '../utils';
+import * as saveAs from 'file-saver';
+import { Source } from '../source';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +13,8 @@ export class AppComponent {
   title = 'warnings-ng';
   alerts: Alert[]
   loaded: boolean = false;
+  isLive: boolean = true;
+  source: Source | null = null;
   @ViewChild('counts') counts!: ElementRef<HTMLDivElement>;
   @ViewChild('plus') plus!: ElementRef<HTMLDivElement>;
   @ViewChild('minus') minus!: ElementRef<HTMLDivElement>;
@@ -39,6 +43,17 @@ export class AppComponent {
     }
   }
 
+  saveButton(): void {
+    this.capService.getLastJson()
+      .catch((reason) => console.log(reason))
+      .then((json: void | AlertsApi) => {
+        let jsonString = JSON.stringify(json)
+        let blob = new Blob([jsonString], {type:"application/json;charset=utf-8"})
+        let now = new Date()
+        saveAs(blob, `${now.getFullYear()}-${now.getMonth()}-${now.getDay()}_${now.getHours()}-${now.getMinutes()}-${now.getSeconds()}.json`)
+      })
+  }
+
   showCounts(): void {
     this.toggleHidden(this.counts)
     this.toggleHidden(this.plus)
@@ -59,11 +74,18 @@ export class AppComponent {
 
 
   ngOnInit(): void {
-    this.capService.getAlerts()
-      .then((alerts: Alert[]) => {
-        this.alerts = alerts;
-        console.log('Setting loaded to true')
-        this.loaded = true;
+    chrome.storage.local.get(['source', 'file'])
+      .then((result: { [key: string]: string }) => {
+        let source = result['source']
+        this.source = Source.findSource(source)
+        let file = result['file']
+        this.isLive = source === Source.ACTIVE.value;
+        this.capService.getAlerts(source, file)
+          .then((alerts: Alert[]) => {
+            this.alerts = alerts;
+            console.log('Setting loaded to true')
+            this.loaded = true;
+          })
       })
   }
 }
