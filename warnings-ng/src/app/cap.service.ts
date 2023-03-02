@@ -30,7 +30,7 @@ export class CapService {
       features
         .filter(elem => {
           if (elem.properties.event === 'Special Weather Statement') {
-            return elem.properties.description.includes('thunderstorm');
+            return elem.properties.description ? elem.properties.description.includes('thunderstorm') : false;
           }
           return true;
         })
