@@ -20,8 +20,8 @@ __webpack_require__.r(__webpack_exports__);
 const _c0 = ["hiddencontainer"];
 const _c1 = ["poly"];
 const _c2 = ["alert", ""];
-function AlertCardComponent_div_0_div_13_div_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 16);
+function AlertCardComponent_div_0_div_11_div_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 15);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } if (rf & 2) {
@@ -29,8 +29,8 @@ function AlertCardComponent_div_0_div_13_div_1_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("Hail: ", ctx_r6.alert.hailSize, " in");
 } }
-function AlertCardComponent_div_0_div_13_div_2_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 17);
+function AlertCardComponent_div_0_div_11_div_2_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 16);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } if (rf & 2) {
@@ -38,10 +38,10 @@ function AlertCardComponent_div_0_div_13_div_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("Wind gusts: ", ctx_r7.alert.windGust, " MPH");
 } }
-function AlertCardComponent_div_0_div_13_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 13);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, AlertCardComponent_div_0_div_13_div_1_Template, 2, 1, "div", 14);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, AlertCardComponent_div_0_div_13_div_2_Template, 2, 1, "div", 15);
+function AlertCardComponent_div_0_div_11_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, AlertCardComponent_div_0_div_11_div_1_Template, 2, 1, "div", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, AlertCardComponent_div_0_div_11_div_2_Template, 2, 1, "div", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
@@ -50,25 +50,25 @@ function AlertCardComponent_div_0_div_13_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r1.alert.windGust > 0);
 } }
-function AlertCardComponent_div_0_div_14_div_1_Template(rf, ctx) { if (rf & 1) {
+function AlertCardComponent_div_0_div_12_div_1_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("T-Storm Damage: ", ctx_r8.alert.thunderstormDamageThreat, "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("T-Storm Damage: ", ctx_r8.alert.thunderstormDamage, "");
 } }
-function AlertCardComponent_div_0_div_14_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 18);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, AlertCardComponent_div_0_div_14_div_1_Template, 2, 1, "div", 19);
+function AlertCardComponent_div_0_div_12_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, AlertCardComponent_div_0_div_12_div_1_Template, 2, 1, "div", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r2.alert.thunderstormDamageThreat);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r2.alert.thunderstormDamage);
 } }
-function AlertCardComponent_div_0_div_15_div_1_Template(rf, ctx) { if (rf & 1) {
+function AlertCardComponent_div_0_div_13_div_1_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div")(1, "span");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
@@ -79,30 +79,30 @@ function AlertCardComponent_div_0_div_15_div_1_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" Tornado: ", ctx_r9.alert.tornadoDetection, " ");
 } }
-function AlertCardComponent_div_0_div_15_div_2_Template(rf, ctx) { if (rf & 1) {
+function AlertCardComponent_div_0_div_13_div_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("Tornado damage: ", ctx_r10.alert.tornadoDamageThreat, "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("Tornado damage: ", ctx_r10.alert.tornadoDamage, "");
 } }
-function AlertCardComponent_div_0_div_15_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 20);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, AlertCardComponent_div_0_div_15_div_1_Template, 3, 4, "div", 19);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, AlertCardComponent_div_0_div_15_div_2_Template, 2, 1, "div", 19);
+function AlertCardComponent_div_0_div_13_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 19);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, AlertCardComponent_div_0_div_13_div_1_Template, 3, 4, "div", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, AlertCardComponent_div_0_div_13_div_2_Template, 2, 1, "div", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r3.alert.tornadoDetection);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r3.alert.tornadoDamageThreat);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r3.alert.tornadoDamage);
 } }
-function AlertCardComponent_div_0_div_16_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 21);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](1, "canvas", 22, 23);
+function AlertCardComponent_div_0_div_14_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](1, "canvas", 21, 22);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } }
 function AlertCardComponent_div_0_Template(rf, ctx) { if (rf & 1) {
@@ -112,38 +112,33 @@ function AlertCardComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 2)(2, "div", 3);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "div", 4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "div", 4)(5, "div");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](6);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](6, "div", 5)(7, "div");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "div");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](8);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](9, "div");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](11, "div");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](12);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](13, AlertCardComponent_div_0_div_13_Template, 3, 2, "div", 6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](14, AlertCardComponent_div_0_div_14_Template, 2, 1, "div", 7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](15, AlertCardComponent_div_0_div_15_Template, 3, 2, "div", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](16, AlertCardComponent_div_0_div_16_Template, 3, 0, "div", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](17, "div", 10, 11)(19, "div", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](11, AlertCardComponent_div_0_div_11_Template, 3, 2, "div", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](12, AlertCardComponent_div_0_div_12_Template, 2, 1, "div", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](13, AlertCardComponent_div_0_div_13_Template, 3, 2, "div", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](14, AlertCardComponent_div_0_div_14_Template, 3, 0, "div", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](15, "div", 9, 10)(17, "div", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](18);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
 } if (rf & 2) {
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassMapInterpolate1"]("", ctx_r0.getClass(), " alert-card-container");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx_r0.getTitle());
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx_r0.alert.getClassification().modifier);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("From: ", ctx_r0.alert.sender, "");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx_r0.alert.areaDesc);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("Expires in: ", ctx_r0.alert.timeUntilExpiration(), " minutes");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("Expires in: ", ctx_r0.timeUntilExpiration(), " minutes");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r0.shouldDisplayHazards());
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
@@ -162,9 +157,18 @@ class AlertCardComponent {
     ngOnInit() {
     }
     getTitle() {
-        return this.alert.getClassification().title;
+        return this.alert.event;
+    }
+    timeUntilExpiration() {
+        const now = (new Date).getTime();
+        const diff = new Date(this.alert.expires).getTime() - now;
+        return Math.round(diff / 1000 / 60);
     }
     drawCanvas() {
+        if (this.polyCanvas === undefined) {
+            console.warn("Polygon canvas was undefined");
+            return;
+        }
         let ctx = this.polyCanvas.nativeElement.getContext('2d');
         if (ctx === null) {
             return;
@@ -193,7 +197,7 @@ class AlertCardComponent {
     }
     shouldDisplaySvrHazards() {
         return (this.alert !== undefined &&
-            (this.alert.thunderstormDamageThreat.length > 0));
+            (this.alert.thunderstormDamage.length > 0));
     }
     shouldDisplayTorHazards() {
         return (this.alert !== undefined &&
@@ -208,7 +212,7 @@ class AlertCardComponent {
         }
     }
     getClass() {
-        return this.alert.getClassification().css_class;
+        return this.alert.alertClass.name.toLowerCase();
     }
     getTorDetectionClass() {
         if (this.alert.eventType === _utils__WEBPACK_IMPORTED_MODULE_0__.EventType.SVR) {
@@ -225,8 +229,8 @@ AlertCardComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_
         let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.hiddenContainer = _t.first);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.polyCanvas = _t.first);
-    } }, inputs: { alert: "alert" }, attrs: _c2, decls: 1, vars: 1, consts: [[3, "class", "click", 4, "ngIf"], [3, "click"], [1, "header"], [1, "title"], [1, "modifier"], [1, "subtitle"], ["class", "hazards", 4, "ngIf"], ["class", "svrHazards", 4, "ngIf"], ["class", "torHazards", 4, "ngIf"], ["class", "polygon", 4, "ngIf"], [1, "hidden"], ["hiddencontainer", ""], [1, "desc"], [1, "hazards"], ["class", "left hazard-item", 4, "ngIf"], ["class", "right hazard-item", 4, "ngIf"], [1, "left", "hazard-item"], [1, "right", "hazard-item"], [1, "svrHazards"], [4, "ngIf"], [1, "torHazards"], [1, "polygon"], ["width", "50px", "height", "50px", "id", "polygon"], ["poly", ""]], template: function AlertCardComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, AlertCardComponent_div_0_Template, 21, 13, "div", 0);
+    } }, inputs: { alert: "alert" }, attrs: _c2, decls: 1, vars: 1, consts: [[3, "class", "click", 4, "ngIf"], [3, "click"], [1, "header"], [1, "title"], [1, "subtitle"], ["class", "hazards", 4, "ngIf"], ["class", "svrHazards", 4, "ngIf"], ["class", "torHazards", 4, "ngIf"], ["class", "polygon", 4, "ngIf"], [1, "hidden"], ["hiddencontainer", ""], [1, "desc"], [1, "hazards"], ["class", "left hazard-item", 4, "ngIf"], ["class", "right hazard-item", 4, "ngIf"], [1, "left", "hazard-item"], [1, "right", "hazard-item"], [1, "svrHazards"], [4, "ngIf"], [1, "torHazards"], [1, "polygon"], ["width", "50px", "height", "50px", "id", "polygon"], ["poly", ""]], template: function AlertCardComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, AlertCardComponent_div_0_Template, 19, 12, "div", 0);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.alert);
     } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__.NgIf], styles: [".polygon[_ngcontent-%COMP%] {\n  position: absolute;\n  top: 0px;\n}\n\n.header[_ngcontent-%COMP%] {\n  min-height: 50px;\n  padding-bottom: 5px;\n  width: 300px;\n  margin: 0 auto\n}\n\n.desc[_ngcontent-%COMP%] {\n  white-space: pre-line;\n  margin-top: 5px;\n  padding:0 5px 0 5px;\n}\n\n.alert-card-container[_ngcontent-%COMP%] {\n  margin-bottom: 5px;\n  padding: 2px;\n  border-radius: 10px;\n  overflow: hidden;\n  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);\n  position:relative;\n  transition: .3s;\n}\n\n.alert-card-container[_ngcontent-%COMP%]:hover {\n  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);\n}\n\ndiv.alert-card-container[_ngcontent-%COMP%] > div[_ngcontent-%COMP%] {\n  margin-bottom: 4px;\n}\n\n.title[_ngcontent-%COMP%] {\n  font-size: larger;\n  font-weight: bold;\n  text-align: center;\n  padding-top: 3px;\n  margin-bottom: 3px;;\n}\n\n.modifier[_ngcontent-%COMP%] {\n  font-weight: bold;\n  text-align: center;\n  margin-bottom: 5px;;\n}\n\n.subtitle[_ngcontent-%COMP%] {\n  text-align: center;\n}\n\n.subtitle[_ngcontent-%COMP%] > div[_ngcontent-%COMP%]:not(:last-child) {\n   margin-bottom: 2px;\n }\n\n.hazards[_ngcontent-%COMP%] {\n  font-weight: bold;\n  display: flex;\n  justify-content: space-evenly;\n  width: 100%;\n}\n\n.svrHazards[_ngcontent-%COMP%] {\n  font-weight: bold;\n  text-align: center;\n}\n\n.torHazards[_ngcontent-%COMP%] {\n  font-weight: bold;\n  text-align: center;\n}\n\n.red[_ngcontent-%COMP%] {\n  color: rgb(167, 0, 0);\n  padding: 0 3px 0 3px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFsZXJ0LWNhcmQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtCQUFrQjtFQUNsQixRQUFRO0FBQ1Y7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsbUJBQW1CO0VBQ25CLFlBQVk7RUFDWjtBQUNGOztBQUVBO0VBQ0UscUJBQXFCO0VBQ3JCLGVBQWU7RUFDZixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsWUFBWTtFQUNaLG1CQUFtQjtFQUNuQixnQkFBZ0I7RUFDaEIsd0NBQXdDO0VBQ3hDLGlCQUFpQjtFQUNqQixlQUFlO0FBQ2pCOztBQUVBO0VBQ0Usd0NBQXdDO0FBQzFDOztBQUVBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLGlCQUFpQjtFQUNqQixrQkFBa0I7RUFDbEIsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixrQkFBa0I7RUFDbEIsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVDO0dBQ0Usa0JBQWtCO0NBQ3BCOztBQUVEO0VBQ0UsaUJBQWlCO0VBQ2pCLGFBQWE7RUFDYiw2QkFBNkI7RUFDN0IsV0FBVztBQUNiOztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsb0JBQW9CO0FBQ3RCIiwiZmlsZSI6ImFsZXJ0LWNhcmQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wb2x5Z29uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDBweDtcbn1cblxuLmhlYWRlciB7XG4gIG1pbi1oZWlnaHQ6IDUwcHg7XG4gIHBhZGRpbmctYm90dG9tOiA1cHg7XG4gIHdpZHRoOiAzMDBweDtcbiAgbWFyZ2luOiAwIGF1dG9cbn1cblxuLmRlc2Mge1xuICB3aGl0ZS1zcGFjZTogcHJlLWxpbmU7XG4gIG1hcmdpbi10b3A6IDVweDtcbiAgcGFkZGluZzowIDVweCAwIDVweDtcbn1cblxuLmFsZXJ0LWNhcmQtY29udGFpbmVyIHtcbiAgbWFyZ2luLWJvdHRvbTogNXB4O1xuICBwYWRkaW5nOiAycHg7XG4gIGJvcmRlci1yYWRpdXM6IDEwcHg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYigwIDAgMCAvIDIwJSk7XG4gIHBvc2l0aW9uOnJlbGF0aXZlO1xuICB0cmFuc2l0aW9uOiAuM3M7XG59XG5cbi5hbGVydC1jYXJkLWNvbnRhaW5lcjpob3ZlciB7XG4gIGJveC1zaGFkb3c6IDAgOHB4IDE2cHggMCByZ2JhKDAsMCwwLDAuMik7XG59XG5cbmRpdi5hbGVydC1jYXJkLWNvbnRhaW5lcj5kaXYge1xuICBtYXJnaW4tYm90dG9tOiA0cHg7XG59XG5cbi50aXRsZSB7XG4gIGZvbnQtc2l6ZTogbGFyZ2VyO1xuICBmb250LXdlaWdodDogYm9sZDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBwYWRkaW5nLXRvcDogM3B4O1xuICBtYXJnaW4tYm90dG9tOiAzcHg7O1xufVxuXG4ubW9kaWZpZXIge1xuICBmb250LXdlaWdodDogYm9sZDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBtYXJnaW4tYm90dG9tOiA1cHg7O1xufVxuXG4uc3VidGl0bGUge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbiAuc3VidGl0bGU+ZGl2Om5vdCg6bGFzdC1jaGlsZCkge1xuICAgbWFyZ2luLWJvdHRvbTogMnB4O1xuIH1cblxuLmhhemFyZHMge1xuICBmb250LXdlaWdodDogYm9sZDtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XG4gIHdpZHRoOiAxMDAlO1xufVxuXG4uc3ZySGF6YXJkcyB7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi50b3JIYXphcmRzIHtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLnJlZCB7XG4gIGNvbG9yOiByZ2IoMTY3LCAwLCAwKTtcbiAgcGFkZGluZzogMCAzcHggMCAzcHg7XG59XG5cbiJdfQ== */"] });
@@ -347,23 +351,23 @@ function AppComponent_div_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("ngForOf", ctx_r2.alerts);
 } }
 class AppComponent {
-    constructor(capService) {
+    constructor(capService /*LocalgoService*/) {
         this.capService = capService;
         this.title = 'warnings-ng';
         this.loaded = false;
         this.isLive = true;
         this.source = null;
         this.classes = [
-            _utils__WEBPACK_IMPORTED_MODULE_0__.Classification.SWS,
-            _utils__WEBPACK_IMPORTED_MODULE_0__.Classification.SVR,
-            _utils__WEBPACK_IMPORTED_MODULE_0__.Classification.SVRCON,
-            _utils__WEBPACK_IMPORTED_MODULE_0__.Classification.SVRDES,
-            _utils__WEBPACK_IMPORTED_MODULE_0__.Classification.TORRDR,
-            _utils__WEBPACK_IMPORTED_MODULE_0__.Classification.TOROBS,
-            _utils__WEBPACK_IMPORTED_MODULE_0__.Classification.TORCON,
-            _utils__WEBPACK_IMPORTED_MODULE_0__.Classification.TORCAT,
-            _utils__WEBPACK_IMPORTED_MODULE_0__.Classification.TORPDS,
-            _utils__WEBPACK_IMPORTED_MODULE_0__.Classification.TORE
+            _utils__WEBPACK_IMPORTED_MODULE_0__.AlertClass.SWS,
+            _utils__WEBPACK_IMPORTED_MODULE_0__.AlertClass.SVR,
+            _utils__WEBPACK_IMPORTED_MODULE_0__.AlertClass.SVRCON,
+            _utils__WEBPACK_IMPORTED_MODULE_0__.AlertClass.SVRDES,
+            _utils__WEBPACK_IMPORTED_MODULE_0__.AlertClass.TORRDR,
+            _utils__WEBPACK_IMPORTED_MODULE_0__.AlertClass.TOROBS,
+            // AlertClass.TORCON,
+            // AlertClass.TORCAT,
+            _utils__WEBPACK_IMPORTED_MODULE_0__.AlertClass.TORPDS,
+            _utils__WEBPACK_IMPORTED_MODULE_0__.AlertClass.TORE
         ];
         this.alerts = [];
     }
@@ -393,13 +397,14 @@ class AppComponent {
     getCounts() {
         let arr = [];
         this.classes.forEach(x => {
-            arr.push(new _utils__WEBPACK_IMPORTED_MODULE_0__.Entry(x, this.alerts.filter(y => y.getClassification() === x).length));
+            // arr.push(new Entry(x, this.alerts.filter(y => y.getClassification() === x).length))
+            arr.push(new _utils__WEBPACK_IMPORTED_MODULE_0__.Entry(x, this.alerts.filter(y => y.alertClass === x).length));
         });
         return arr;
     }
-    getCount(c) {
-        return this.alerts.filter(x => x.getClassification() === c).length;
-    }
+    // getCount(c: Classification) {
+    //   return this.alerts.filter(x => x.getClassification() === c).length
+    // }
     ngOnInit() {
         chrome.storage.local.get(['source', 'file'])
             .then((result) => {
@@ -488,67 +493,94 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "CapService": () => (/* binding */ CapService)
 /* harmony export */ });
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils */ 6748);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ 5139);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 3184);
+/* harmony import */ var _Users_andrew_dev_warnings_warnings_ng_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils */ 6748);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ 5139);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 3184);
+
 
 
 
 class CapService {
-    constructor() {
-        this.URLS = {
-            "active": "http://api.weather.gov/alerts/active?status=actual&event=Tornado%20Warning,Severe%20Thunderstorm%20Warning,Special%20Weather%20Statement",
-            "tornadoes": "http://api.weather.gov/alerts?event=Tornado%20Warning"
-        };
-        this.lastJson = null;
-    }
-    getLastJson() {
-        return new Promise((resolve, reject) => {
-            if (this.lastJson !== null) {
-                resolve(this.lastJson);
-            }
-            reject('lastJson is not set');
-        });
-    }
-    processJson(data, resolve, reject) {
-        this.lastJson = data;
-        let features = data.features;
-        resolve(features
-            .filter(elem => {
-            if (elem.properties.event === 'Special Weather Statement') {
-                return elem.properties.description ? elem.properties.description.includes('thunderstorm') : false;
-            }
-            return true;
-        })
-            .map(f => new _utils__WEBPACK_IMPORTED_MODULE_0__.Alert(f))
-            .sort((a, b) => b.priority() - a.priority()));
-    }
-    getAlerts(source = 'active', filename = null) {
-        console.log('loading...');
-        return new Promise((resolve, reject) => {
-            console.log("Current source is: " + source);
-            if (source === 'file') {
-                console.log('Filename is ', filename);
-                jquery__WEBPACK_IMPORTED_MODULE_1__.getJSON(filename).done((data) => {
-                    this.processJson(data, resolve, reject);
-                });
-            }
-            else {
-                const url = this.URLS[source];
-                const headers = { 'method': 'GET', 'headers': { 'Accept': 'application/geo+json' } };
-                console.log('URL: ', url);
-                console.log('HEADERS: ', headers);
-                fetch(url, headers)
-                    .then(response => response.json())
-                    .then((json) => this.processJson(json, resolve, reject));
-            }
-        });
-    }
-}
-CapService.ɵfac = function CapService_Factory(t) { return new (t || CapService)(); };
-CapService.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({ token: CapService, factory: CapService.ɵfac, providedIn: 'root' });
+  constructor() {
+    this.URLS = {
+      "active": "http://api.weather.gov/alerts/active?status=actual&event=Tornado%20Warning,Severe%20Thunderstorm%20Warning,Special%20Weather%20Statement",
+      "tornadoes": "http://api.weather.gov/alerts?event=Tornado%20Warning"
+    };
+    this.lastJson = null;
+  }
 
+  getLastJson() {
+    return new Promise((resolve, reject) => {
+      if (this.lastJson !== null) {
+        resolve(this.lastJson);
+      }
+
+      reject('lastJson is not set');
+    });
+  }
+
+  processJson(data) {
+    this.lastJson = data;
+    let features = data.features;
+    return features.filter(elem => {
+      if (elem.properties.event === 'Special Weather Statement') {
+        return elem.properties.description ? elem.properties.description.includes('thunderstorm') : false;
+      }
+
+      return true;
+    }).map(f => new _utils__WEBPACK_IMPORTED_MODULE_1__.Alert(f)).sort((a, b) => a.alertClass.priority - b.alertClass.priority);
+  }
+
+  getAlerts(source = 'active', filename = null) {
+    console.log('loading...');
+    return new Promise((resolve, reject) => {
+      console.log("Current source is: " + source);
+
+      if (source === 'file') {
+        console.log('Filename is ', filename);
+        jquery__WEBPACK_IMPORTED_MODULE_2__.getJSON(filename).done(data => {
+          let alerts = this.processJson(data);
+          resolve(alerts);
+        });
+      } else {
+        const url = this.URLS[source];
+        const headers = {
+          'method': 'GET',
+          'headers': {
+            'Accept': 'application/geo+json'
+          }
+        };
+        console.log('URL: ', url);
+        console.log('HEADERS: ', headers);
+        fetch(url, headers).then(response => response.json()).then(json => this.processJson(json)).then( /*#__PURE__*/function () {
+          var _ref = (0,_Users_andrew_dev_warnings_warnings_ng_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (alerts) {
+            yield chrome.storage.local.set({
+              'alerts': alerts.map(a => a.id)
+            });
+            resolve(alerts);
+          });
+
+          return function (_x) {
+            return _ref.apply(this, arguments);
+          };
+        }());
+      }
+    });
+  }
+
+}
+
+CapService.ɵfac = function CapService_Factory(t) {
+  return new (t || CapService)();
+};
+
+CapService.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjectable"]({
+  token: CapService,
+  factory: CapService.ɵfac,
+  providedIn: 'root'
+});
 
 /***/ }),
 
@@ -578,9 +610,9 @@ CountCardComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMapInterpolate1"]("", ctx.entry.cls.css_class, " line");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMapInterpolate1"]("", ctx.entry.cls.name, " line");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx.entry.cls.modifier + " " + ctx.entry.cls.title, " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx.entry.cls.name, " ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx.entry.count, " ");
     } }, styles: [".line[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: space-between;\n  padding: 5px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvdW50LWNhcmQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGFBQWE7RUFDYiw4QkFBOEI7RUFDOUIsWUFBWTtBQUNkIiwiZmlsZSI6ImNvdW50LWNhcmQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5saW5lIHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICBwYWRkaW5nOiA1cHg7XG59Il19 */"] });
@@ -686,8 +718,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "EventType": () => (/* binding */ EventType),
 /* harmony export */   "BoundingRectangle": () => (/* binding */ BoundingRectangle),
 /* harmony export */   "Point": () => (/* binding */ Point),
+/* harmony export */   "AlertClass": () => (/* binding */ AlertClass),
 /* harmony export */   "Alert": () => (/* binding */ Alert),
-/* harmony export */   "Classification": () => (/* binding */ Classification),
 /* harmony export */   "Entry": () => (/* binding */ Entry)
 /* harmony export */ });
 class EventType {
@@ -751,9 +783,28 @@ class Point {
         return arr.map(p => new Point([Math.floor((p.x - boundingRect.minX) * 100.0 / factor), Math.floor((p.y - boundingRect.minY) * 100.0 / factor)]));
     }
 }
+class AlertClass {
+    constructor(name, priority) {
+        this.name = name;
+        this.priority = priority;
+    }
+}
+AlertClass.TORE = new AlertClass('TOR-E', 0);
+AlertClass.TORPDS = new AlertClass('TOR-PDS', 1);
+// static readonly TORCAT = new AlertClass('tor-catastrophic','Tornado Warning', 'Catastrophic');
+// static readonly TORCON = new AlertClass('tor-considerable','Tornado Warning', 'Considerable');
+AlertClass.TOROBS = new AlertClass('TOR-OBS', 2);
+AlertClass.TORRDR = new AlertClass('TOR-RI', 3);
+AlertClass.TOR = new AlertClass('TOR', 4);
+AlertClass.SVRDES = new AlertClass('SVR-DES', 5);
+AlertClass.SVRCON = new AlertClass('SVR-CON', 6);
+AlertClass.SVR = new AlertClass('SVR', 7);
+AlertClass.SWS = new AlertClass('SWS', 8);
+AlertClass.UNKNOWN = new AlertClass('OTHER', 9);
 class Alert {
     constructor(feature) {
         let props = feature.properties;
+        this.id = feature.id;
         this.event = props.event;
         this.eventType = EventType.fromCaps(feature);
         this.description = props.description || "";
@@ -774,48 +825,53 @@ class Alert {
         if ('tornadoDetection' in props.parameters) {
             this.tornadoDetection = props.parameters.tornadoDetection[0];
         }
-        this.thunderstormDamageThreat = '';
+        this.thunderstormDamage = '';
         if ('thunderstormDamageThreat' in props.parameters) {
-            this.thunderstormDamageThreat = props.parameters.thunderstormDamageThreat[0];
+            this.thunderstormDamage = props.parameters.thunderstormDamageThreat[0];
         }
-        this.tornadoDamageThreat = '';
+        this.tornadoDamage = '';
         if ('tornadoDamageThreat' in props.parameters) {
-            this.tornadoDamageThreat = props.parameters.tornadoDamageThreat[0];
+            this.tornadoDamage = props.parameters.tornadoDamageThreat[0];
         }
-    }
-    getClassification() {
-        switch (this.eventType) {
-            case EventType.SWS:
-                return Classification.SWS;
-            case EventType.SVR:
-                switch (this.thunderstormDamageThreat) {
-                    case "CONSIDERABLE":
-                        return Classification.SVRCON;
-                    case "DESTRUCTIVE":
-                        return Classification.SVRDES;
+        switch (this.event.toLowerCase()) {
+            case "tornado warning":
+                if (this.description.toLowerCase().includes('tornado emergency')) {
+                    this.alertClass = AlertClass.TORE;
+                    break;
+                }
+                if (this.description.toLowerCase().includes('particularly dangerous situation')) {
+                    this.alertClass = AlertClass.TORPDS;
+                    break;
+                }
+                if (this.tornadoDetection.toLowerCase() === "observed") {
+                    this.alertClass = AlertClass.TOROBS;
+                    break;
+                }
+                if (this.tornadoDetection.toLowerCase() === "radar indicated") {
+                    this.alertClass = AlertClass.TORRDR;
+                    break;
+                }
+                this.alertClass = AlertClass.TOR;
+                break;
+            case "severe thunderstorm warning":
+                switch (this.thunderstormDamage.toLowerCase()) {
+                    case "considerable":
+                        this.alertClass = AlertClass.SVRCON;
+                        break;
+                    case "destructive":
+                        this.alertClass = AlertClass.SVRDES;
+                        break;
                     default:
-                        return Classification.SVR;
+                        this.alertClass = AlertClass.SVR;
+                        break;
                 }
-            case EventType.TOR:
-                if (this.description && this.description.toLowerCase().includes('tornado emergency')) {
-                    return Classification.TORE;
-                }
-                if (this.description && this.description.toLowerCase().includes('particularly dangerous situation')) {
-                    return Classification.TORPDS;
-                }
-                if (this.tornadoDamageThreat === "CATASTROPHIC") {
-                    return Classification.TORCAT;
-                }
-                if (this.tornadoDamageThreat === "CONSIDERABLE") {
-                    return Classification.TORCON;
-                }
-                if (this.tornadoDetection === "OBSERVED") {
-                    return Classification.TOROBS;
-                }
-                return Classification.TORRDR;
+                break;
+            case "special weather statement":
+                this.alertClass = AlertClass.SWS;
+                break;
             default:
-                console.log("Could not classify alert: " + this);
-                return Classification.UNKNOWN;
+                this.alertClass = AlertClass.UNKNOWN;
+                break;
         }
     }
     timeUntilExpiration() {
@@ -823,73 +879,11 @@ class Alert {
         const diff = this.expires.getTime() - now;
         return Math.round(diff / 1000 / 60);
     }
-    priority() {
-        //https://www.weather.gov/media/alert/CAP_v12_guide_05-16-2017.pdf
-        let current = this.eventType.priority;
-        if (this.thunderstormDamageThreat.length > 0) {
-            switch (this.thunderstormDamageThreat) {
-                case "CONSIDERABLE":
-                    current += .1;
-                    break;
-                case "DESTRUCTIVE":
-                    current += .2;
-                    break;
-                default:
-                    break;
-            }
-        }
-        //TOR only
-        if (this.tornadoDamageThreat.length > 0) {
-            switch (this.tornadoDamageThreat) {
-                case "CONSIDERABLE":
-                    current += .1;
-                    break;
-                case "CATASTRPHIC":
-                    current += .2;
-                    break;
-                default:
-                    break;
-            }
-        }
-        // possible on SVR
-        if (this.tornadoDetection.length > 0) {
-            switch (this.tornadoDetection) {
-                case "POSSIBLE":
-                    current += .05;
-                    break;
-                case "RADAR INDICATED":
-                    current += .2;
-                    break;
-                case "OBSERVED":
-                    current += .3;
-                    break;
-                default:
-                    break;
-            }
-        }
-        return current;
-    }
 }
-class Classification {
-    constructor(css_class, title, modifier = '') {
-        this.css_class = css_class;
-        this.title = title;
-        this.modifier = modifier;
-    }
-}
-Classification.TORE = new Classification('tor-emergency', 'Tornado Warning', 'TORNADO EMERGENCY');
-Classification.TORPDS = new Classification('tor-pds', 'Tornado Warning', 'PDS');
-Classification.TORCAT = new Classification('tor-catastrophic', 'Tornado Warning', 'Catastrophic');
-Classification.TORCON = new Classification('tor-considerable', 'Tornado Warning', 'Considerable');
-Classification.TOROBS = new Classification('tor-observed', 'Tornado Warning', 'Observed');
-Classification.TORRDR = new Classification('tor-radar', 'Tornado Warning', 'Radar Indicated');
-Classification.SVRDES = new Classification('svr-destructive', 'Severe Thunderstorm Warning', 'Destructive');
-Classification.SVRCON = new Classification('svr-considerable', 'Severe Thunderstorm Warning', 'Considerable');
-Classification.SVR = new Classification('svr', 'Severe Thunderstorm Warning');
-Classification.SWS = new Classification('sws', 'Special Weather Statement');
-Classification.UNKNOWN = new Classification('', 'Unknown Event');
 class Entry {
     constructor(cls, count) {
+        this.cls = cls;
+        this.count = count;
         this.cls = cls;
         this.count = count;
     }

@@ -1,8 +1,9 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { CapService } from './cap.service';
-import { Alert, Classification, Entry, AlertsApi } from '../utils';
+import { Alert, Entry, AlertsApi, AlertClass } from '../utils';
 import * as saveAs from 'file-saver';
 import { Source } from '../source';
+import { LocalgoService } from './localgo.service';
 
 @Component({
   selector: 'app-root',
@@ -18,20 +19,20 @@ export class AppComponent {
   @ViewChild('counts') counts!: ElementRef<HTMLDivElement>;
   @ViewChild('plus') plus!: ElementRef<HTMLDivElement>;
   @ViewChild('minus') minus!: ElementRef<HTMLDivElement>;
-  classes: Classification[] = [
-    Classification.SWS,
-    Classification.SVR,
-    Classification.SVRCON,
-    Classification.SVRDES,
-    Classification.TORRDR,
-    Classification.TOROBS,
-    Classification.TORCON,
-    Classification.TORCAT,
-    Classification.TORPDS,
-    Classification.TORE
+  classes: AlertClass[] = [
+    AlertClass.SWS,
+    AlertClass.SVR,
+    AlertClass.SVRCON,
+    AlertClass.SVRDES,
+    AlertClass.TORRDR,
+    AlertClass.TOROBS,
+    // AlertClass.TORCON,
+    // AlertClass.TORCAT,
+    AlertClass.TORPDS,
+    AlertClass.TORE
   ]
 
-  constructor(private capService: CapService) {
+  constructor(private capService: CapService /*LocalgoService*/) {
     this.alerts = []
   }
 
@@ -63,14 +64,15 @@ export class AppComponent {
   getCounts(){
     let arr: Entry[] = [];
     this.classes.forEach(x => {
-      arr.push(new Entry(x, this.alerts.filter(y => y.getClassification() === x).length))
+      // arr.push(new Entry(x, this.alerts.filter(y => y.getClassification() === x).length))
+      arr.push(new Entry(x, this.alerts.filter(y => y.alertClass === x).length))
     })
     return arr;
   }
 
-  getCount(c: Classification) {
-    return this.alerts.filter(x => x.getClassification() === c).length
-  }
+  // getCount(c: Classification) {
+  //   return this.alerts.filter(x => x.getClassification() === c).length
+  // }
 
 
   ngOnInit(): void {

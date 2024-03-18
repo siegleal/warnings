@@ -1,11 +1,11 @@
 <div *ngIf="alert" class="{{ getClass() }} alert-card-container" (click)="toggleDescription()" >
   <div class="header">
     <div class="title">{{ getTitle() }}</div>
-    <div class="modifier">{{ alert.getClassification().modifier }}</div>
+    <!-- <div class="modifier">{{ alert.getClassification().modifier }}</div> -->
     <div class="subtitle">
       <div>From: {{alert.sender}}</div>
       <div>{{alert.areaDesc}}</div>
-      <div>Expires in: {{alert.timeUntilExpiration()}} minutes</div>
+      <div>Expires in: {{timeUntilExpiration()}} minutes</div>
     </div>
   </div>
   <div class="hazards" *ngIf="shouldDisplayHazards()">
@@ -13,14 +13,14 @@
   <div class="right hazard-item" *ngIf="alert.windGust > 0">Wind gusts: {{alert.windGust}} MPH</div>
   </div>
   <div class="svrHazards" *ngIf="shouldDisplaySvrHazards()">
-    <div *ngIf="alert.thunderstormDamageThreat">T-Storm Damage: {{alert.thunderstormDamageThreat}}</div>
+    <div *ngIf="alert.thunderstormDamage">T-Storm Damage: {{alert.thunderstormDamage}}</div>
   </div>
   <div class="torHazards" *ngIf="shouldDisplayTorHazards()">
     <div *ngIf="alert.tornadoDetection">
       <span  class="{{ getTorDetectionClass() }}" >
         Tornado: {{alert.tornadoDetection}}
       </span></div>
-    <div *ngIf="alert.tornadoDamageThreat">Tornado damage: {{alert.tornadoDamageThreat}}</div>
+    <div *ngIf="alert.tornadoDamage">Tornado damage: {{alert.tornadoDamage}}</div>
   </div>
     <div *ngIf="alert.polygon" class="polygon">
       <canvas #poly width="50px" height="50px" id="polygon"></canvas>

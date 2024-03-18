@@ -21,10 +21,20 @@ export class AlertCardComponent implements OnInit {
   }
 
   getTitle(): string {
-    return this.alert.getClassification().title;
+    return this.alert.event;
+  }
+
+  timeUntilExpiration(): number {
+    const now: number = (new Date).getTime();
+    const diff = new Date(this.alert.expires).getTime() - now;
+    return Math.round(diff / 1000 / 60);
   }
 
   drawCanvas(): void {
+    if (this.polyCanvas === undefined) {
+      console.warn("Polygon canvas was undefined")
+      return 
+    }
     let ctx: CanvasRenderingContext2D | null = this.polyCanvas.nativeElement.getContext('2d');
     if (ctx === null){
       return
@@ -55,7 +65,7 @@ export class AlertCardComponent implements OnInit {
 
   shouldDisplaySvrHazards(): boolean {
     return (this.alert !== undefined &&
-      (this.alert.thunderstormDamageThreat.length > 0))
+      (this.alert.thunderstormDamage.length > 0))
   }
 
   shouldDisplayTorHazards(): boolean {
@@ -72,7 +82,7 @@ export class AlertCardComponent implements OnInit {
   }
 
   getClass(): string {
-    return this.alert.getClassification().css_class;
+    return this.alert.alertClass.name.toLowerCase();
   }
 
   getTorDetectionClass(): string {

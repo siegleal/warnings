@@ -23,11 +23,10 @@ export class CapService {
     })
   }
 
-  private processJson(data: AlertsApi, resolve: Function, reject: Function): void {
+  private processJson(data: AlertsApi): Alert[] {
     this.lastJson = data
     let features: Feature[] = data.features;
-    resolve(
-      features
+      return features
         .filter(elem => {
           if (elem.properties.event === 'Special Weather Statement') {
             return elem.properties.description ? elem.properties.description.includes('thunderstorm') : false;
@@ -35,8 +34,7 @@ export class CapService {
           return true;
         })
         .map(f => new Alert(f))
-        .sort((a, b) => b.priority() - a.priority())
-    )
+        .sort((a, b) => a.alertClass.priority - b.alertClass.priority)
   }
 
   getAlerts(source: string = 'active', filename: string | null = null): Promise<Alert[]> {
@@ -49,7 +47,8 @@ export class CapService {
         console.log('Filename is ', filename)
         $.getJSON(filename!).done(
           (data: AlertsApi) => {
-            this.processJson(data, resolve, reject);
+            let alerts = this.processJson(data);
+            resolve(alerts);
           }
         )
 
@@ -63,7 +62,11 @@ export class CapService {
 
         fetch(url, headers)
           .then(response => response.json())
-          .then((json: AlertsApi) => this.processJson(json, resolve, reject))
+          .then((json: AlertsApi) => this.processJson(json))
+          .then(async (alerts: Alert[]) => {
+            await chrome.storage.local.set({'alerts': alerts.map((a: Alert) => a.id)});
+            resolve(alerts);
+          })
       }
     })
   }

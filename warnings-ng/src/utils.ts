@@ -77,7 +77,26 @@ export class Point {
   }
 }
 
+export class AlertClass {
+  static readonly TORE =       new AlertClass('TOR-E', 0);
+  static readonly TORPDS =     new AlertClass('TOR-PDS',1);
+  // static readonly TORCAT = new AlertClass('tor-catastrophic','Tornado Warning', 'Catastrophic');
+  // static readonly TORCON = new AlertClass('tor-considerable','Tornado Warning', 'Considerable');
+  static readonly TOROBS =     new AlertClass('TOR-OBS',2);
+  static readonly TORRDR =     new AlertClass('TOR-RI', 3);
+  static readonly TOR =        new AlertClass('TOR', 4);
+  static readonly SVRDES =     new AlertClass('SVR-DES', 5);
+  static readonly SVRCON =     new AlertClass('SVR-CON', 6);
+  static readonly SVR =        new AlertClass('SVR', 7);
+  static readonly SWS =        new AlertClass('SWS', 8);
+  static readonly UNKNOWN =    new AlertClass('OTHER', 9);
+
+
+  constructor(readonly name: string, readonly priority: number){}
+}
+
 export class Alert {
+  id: string
   event: string
   description: string
   areaDesc: string
@@ -87,13 +106,15 @@ export class Alert {
   windGust: number
   hailSize: number
   tornadoDetection: string
-  tornadoDamageThreat: string
-  thunderstormDamageThreat: string
+  tornadoDamage: string
+  thunderstormDamage: string
   eventType: EventType
+  alertClass: AlertClass
   polygon: Point[]
 
   constructor(feature: Feature) {
     let props = feature.properties;
+    this.id = feature.id;
     this.event = props.event;
     this.eventType = EventType.fromCaps(feature)
     this.description = props.description || "";
@@ -115,48 +136,54 @@ export class Alert {
     if ('tornadoDetection' in props.parameters) {
       this.tornadoDetection = props.parameters.tornadoDetection[0]
     }
-    this.thunderstormDamageThreat = ''
+    this.thunderstormDamage= ''
     if ('thunderstormDamageThreat' in props.parameters) {
-      this.thunderstormDamageThreat = props.parameters.thunderstormDamageThreat[0]
+      this.thunderstormDamage= props.parameters.thunderstormDamageThreat[0]
     }
-    this.tornadoDamageThreat = ''
+    this.tornadoDamage= ''
     if ('tornadoDamageThreat' in props.parameters) {
-      this.tornadoDamageThreat = props.parameters.tornadoDamageThreat[0]
+      this.tornadoDamage= props.parameters.tornadoDamageThreat[0]
     }
-  }
-  getClassification(): Classification {
-    switch (this.eventType) {
-      case EventType.SWS:
-        return Classification.SWS;
-      case EventType.SVR:
-        switch (this.thunderstormDamageThreat) {
-          case "CONSIDERABLE":
-            return Classification.SVRCON;
-          case "DESTRUCTIVE":
-            return Classification.SVRDES;
+
+    switch (this.event.toLowerCase()) {
+      case "tornado warning":
+        if (this.description.toLowerCase().includes('tornado emergency')){
+          this.alertClass = AlertClass.TORE
+          break;
+        }
+        if (this.description.toLowerCase().includes('particularly dangerous situation')) {
+          this.alertClass = AlertClass.TORPDS
+          break;
+        }
+        if (this.tornadoDetection.toLowerCase() === "observed"){
+          this.alertClass = AlertClass.TOROBS
+          break;
+        }
+        if (this.tornadoDetection.toLowerCase() === "radar indicated") {
+          this.alertClass = AlertClass.TORRDR
+          break;
+        }
+        this.alertClass = AlertClass.TOR
+        break;
+      case "severe thunderstorm warning":
+        switch (this.thunderstormDamage.toLowerCase()){
+          case "considerable":
+            this.alertClass = AlertClass.SVRCON
+            break;
+          case "destructive":
+            this.alertClass = AlertClass.SVRDES
+            break;
           default:
-            return Classification.SVR;
+            this.alertClass = AlertClass.SVR
+            break;
         }
-      case EventType.TOR:
-        if ( this.description && this.description.toLowerCase().includes('tornado emergency')){
-            return Classification.TORE;
-        }
-        if (this.description && this.description.toLowerCase().includes('particularly dangerous situation')){
-            return Classification.TORPDS;
-        }
-        if (this.tornadoDamageThreat === "CATASTROPHIC") {
-            return Classification.TORCAT;
-        }
-        if (this.tornadoDamageThreat === "CONSIDERABLE") {
-            return Classification.TORCON;
-        }
-        if (this.tornadoDetection === "OBSERVED") {
-            return Classification.TOROBS;
-        }
-            return Classification.TORRDR;
+        break;
+      case "special weather statement":
+        this.alertClass = AlertClass.SWS
+        break;
       default:
-        console.log("Could not classify alert: " + this)
-        return Classification.UNKNOWN;
+        this.alertClass = AlertClass.UNKNOWN
+        break;
     }
   }
 
@@ -165,74 +192,74 @@ export class Alert {
     const diff = this.expires.getTime() - now;
     return Math.round(diff / 1000 / 60);
   }
-
-  priority(): number {
-    //https://www.weather.gov/media/alert/CAP_v12_guide_05-16-2017.pdf
-    let current = this.eventType.priority
-    if (this.thunderstormDamageThreat.length > 0) {
-      switch (this.thunderstormDamageThreat) {
-        case "CONSIDERABLE":
-          current += .1
-          break;
-        case "DESTRUCTIVE":
-          current += .2
-          break;
-        default:
-          break;
-      }
-    }
-    //TOR only
-    if (this.tornadoDamageThreat.length > 0){
-      switch (this.tornadoDamageThreat){
-        case "CONSIDERABLE":
-          current += .1
-          break;
-        case "CATASTRPHIC":
-          current += .2
-          break;
-        default:
-          break;
-      }
-    }
-    // possible on SVR
-    if (this.tornadoDetection.length > 0){
-      switch (this.tornadoDetection){
-        case "POSSIBLE":
-          current += .05
-          break;
-        case "RADAR INDICATED":
-          current += .2
-          break;
-        case "OBSERVED":
-          current += .3
-          break;
-        default:
-          break;
-      }
-    }
-
-    return current
-  }
 }
 
+  // priority(): number {
+  //   //https://www.weather.gov/media/alert/CAP_v12_guide_05-16-2017.pdf
+  //   let current = this.eventType.priority
+  //   if (this.thunderstormDamage.length > 0) {
+  //     switch (this.thunderstormDamage) {
+  //       case "CONSIDERABLE":
+  //         current += .1
+  //         break;
+  //       case "DESTRUCTIVE":
+  //         current += .2
+  //         break;
+  //       default:
+  //         break;
+  //     }
+  //   }
+  //   //TOR only
+  //   if (this.tornadoDamage.length > 0){
+  //     switch (this.tornadoDamage){
+  //       case "CONSIDERABLE":
+  //         current += .1
+  //         break;
+  //       case "CATASTRPHIC":
+  //         current += .2
+  //         break;
+  //       default:
+  //         break;
+  //     }
+  //   }
+  //   // possible on SVR
+  //   if (this.tornadoDetection.length > 0){
+  //     switch (this.tornadoDetection){
+  //       case "POSSIBLE":
+  //         current += .05
+  //         break;
+  //       case "RADAR INDICATED":
+  //         current += .2
+  //         break;
+  //       case "OBSERVED":
+  //         current += .3
+  //         break;
+  //       default:
+  //         break;
+  //     }
+  //   }
 
-export class Classification {
-  static readonly TORE =   new Classification('tor-emergency', 'Tornado Warning','TORNADO EMERGENCY');
-  static readonly TORPDS = new Classification('tor-pds','Tornado Warning', 'PDS');
-  static readonly TORCAT = new Classification('tor-catastrophic','Tornado Warning', 'Catastrophic');
-  static readonly TORCON = new Classification('tor-considerable','Tornado Warning', 'Considerable');
-  static readonly TOROBS = new Classification('tor-observed','Tornado Warning', 'Observed');
-  static readonly TORRDR = new Classification('tor-radar', 'Tornado Warning','Radar Indicated');
-  static readonly SVRDES = new Classification('svr-destructive', 'Severe Thunderstorm Warning','Destructive');
-  static readonly SVRCON = new Classification('svr-considerable', 'Severe Thunderstorm Warning','Considerable');
-  static readonly SVR =    new Classification('svr', 'Severe Thunderstorm Warning');
-  static readonly SWS =    new Classification('sws', 'Special Weather Statement');
-  static readonly UNKNOWN =    new Classification('', 'Unknown Event');
+  //   return current
+  // }
 
 
-  constructor(readonly css_class: string, readonly title: string, readonly modifier: string = '') {}
+// export class Classification {
+//   static readonly TORE =   new Classification('tor-emergency', 'Tornado Warning','TORNADO EMERGENCY');
+//   static readonly TORPDS = new Classification('tor-pds','Tornado Warning', 'PDS');
+//   static readonly TORCAT = new Classification('tor-catastrophic','Tornado Warning', 'Catastrophic');
+//   static readonly TORCON = new Classification('tor-considerable','Tornado Warning', 'Considerable');
+//   static readonly TOROBS = new Classification('tor-observed','Tornado Warning', 'Observed');
+//   static readonly TORRDR = new Classification('tor-radar', 'Tornado Warning','Radar Indicated');
+//   static readonly SVRDES = new Classification('svr-destructive', 'Severe Thunderstorm Warning','Destructive');
+//   static readonly SVRCON = new Classification('svr-considerable', 'Severe Thunderstorm Warning','Considerable');
+//   static readonly SVR =    new Classification('svr', 'Severe Thunderstorm Warning');
+//   static readonly SWS =    new Classification('sws', 'Special Weather Statement');
+//   static readonly UNKNOWN =    new Classification('', 'Unknown Event');
 
-}
+
+//   constructor(readonly css_class: string, readonly title: string, readonly modifier: string = '') {}
+
+// }
 
 export interface Feature {
   id: string
@@ -282,10 +309,7 @@ interface Properties {
 }
 
 export class Entry {
-  cls: Classification;
-  count: number;
-
-  constructor(cls: Classification, count: number) {
+  constructor(public cls: AlertClass, public count: number) {
     this.cls = cls;
     this.count = count;
   }
