@@ -1,11 +1,16 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-  chrome.storage.local.get(['source', 'file'])
+  chrome.storage.local.get(['file', 'notifications', 'types', 'active'])
     .then(result => {
-      const source = result['source']
       const file = result['file'];
-      console.log('File: ', file)
-      $('#source').val(source)
-      showFiles(source === 'file')
+      const notifications = result['notifications'];
+      const checkedTypesArr = result['types'] === undefined ? [] : result['types'].split(',')
+      const active = result['active'] === undefined ? true : result['active']
+      checkedTypesArr.forEach((val, index, arr) => {
+        $(`input[value="${val}"]`).prop('checked', true);
+      })
+
+      $('#notificationsOn').prop("checked", notifications)
+      $('#active').prop("checked", active)
       chrome.runtime.getPackageDirectoryEntry((dirEntry) => {
         dirEntry.getDirectory('json_data', {}, (jsonDir) => {
 
@@ -20,21 +25,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
     })
 })
 
-function showFiles(shouldShow) {
-  if (shouldShow) {
-    $('#radioContainer').removeClass('hidden')
-  } else {
-    $('#radioContainer').addClass('hidden')
-  }
-}
 
-$('#source').on('change', (event) => {
-  if ($('#source').val() === 'file') {
-    console.log('show files')
-    showFiles(true)
+$('#notificationsOn').on('change', () => {
+
+  let isOn = $('#notificationsOn').prop("checked");
+  if (isOn) {
+    console.log('Notifications are on')
   } else {
-    console.log('hide files')
-    showFiles(false)
+    console.log('Notifications are off')
   }
 })
 
@@ -57,17 +55,39 @@ function addInput(filename, selectedFile) {
 
 }
 
+function getCheckedTypes() {
+  const checkedTypes = []
+  $("input.typeCheck:checked").each((index, el) => {
+    checkedTypes.push(el.value)
+  })
+  return checkedTypes.join(',')
+}
+
+$('#sendNotification').click( function(event) {
+  chrome.notifications.create({
+    type: "basic",
+    iconUrl: "exclamation.png",
+    title: "New Tornado Warning",
+    message: "- TEST - A new Tornado Warning has been issued"
+  }) 
+})
+
 $('#save').click(function(event) {
   $('#output').text('').removeClass('error')
-  let source = $('#source').val();
   let file = $('input[name=file_select]:checked').val();
-  if ( source === 'file' && file === undefined){
-    $('#output').addClass('error').text('Error: file is not set')
-    return
-  }
-  chrome.storage.local.set({ 'source': source, 'file': file}, () => {
-    console.log('Source is set to: ' + source);
+  let checkedTypes = getCheckedTypes()
+  let active = $('input#active').prop('checked')
+  let notifications = $('#notificationsOn').prop("checked");
+  chrome.storage.local.set({ 
+    'file': file,
+    'notifications': notifications,
+    'types': checkedTypes,
+    'active': active
+  }, () => {
     console.log('file is set to: ' + file);
+    console.log('notifications is set to: ' + notifications);
+    console.log('types is set to: ' + checkedTypes);
+    console.log('active is set to: ' + active);
     $('#output').text('Saved!');
     setTimeout(() => $('#output').text(''), 2000);
   })

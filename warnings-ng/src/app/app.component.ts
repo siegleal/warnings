@@ -2,8 +2,6 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 import { CapService } from './cap.service';
 import { Alert, Entry, AlertsApi, AlertClass } from '../utils';
 import * as saveAs from 'file-saver';
-import { Source } from '../source';
-import { LocalgoService } from './localgo.service';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +13,6 @@ export class AppComponent {
   alerts: Alert[]
   loaded: boolean = false;
   isLive: boolean = true;
-  source: Source | null = null;
   @ViewChild('counts') counts!: ElementRef<HTMLDivElement>;
   @ViewChild('plus') plus!: ElementRef<HTMLDivElement>;
   @ViewChild('minus') minus!: ElementRef<HTMLDivElement>;
@@ -26,8 +23,6 @@ export class AppComponent {
     AlertClass.SVRDES,
     AlertClass.TORRDR,
     AlertClass.TOROBS,
-    // AlertClass.TORCON,
-    // AlertClass.TORCAT,
     AlertClass.TORPDS,
     AlertClass.TORE
   ]
@@ -70,23 +65,15 @@ export class AppComponent {
     return arr;
   }
 
-  // getCount(c: Classification) {
-  //   return this.alerts.filter(x => x.getClassification() === c).length
-  // }
-
-
   ngOnInit(): void {
-    chrome.storage.local.get(['source', 'file'])
+    chrome.storage.local.get(['active'])
       .then((result: { [key: string]: string }) => {
-        let source = result['source']
-        this.source = Source.findSource(source)
-        let file = result['file']
-        this.isLive = source === Source.ACTIVE.value;
-        this.capService.getAlerts(source, file)
+        this.isLive = result['active'] === undefined ? true : Boolean(result['active']);
+        this.capService.getAlerts()
           .then((alerts: Alert[]) => {
             this.alerts = alerts;
-            console.log('Setting loaded to true')
             this.loaded = true;
+            return this.capService.storeAlerts(alerts);
           })
       })
   }

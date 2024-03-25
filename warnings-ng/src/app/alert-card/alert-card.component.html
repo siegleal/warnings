@@ -3,6 +3,7 @@
     <div class="title">{{ getTitle() }}</div>
     <!-- <div class="modifier">{{ alert.getClassification().modifier }}</div> -->
     <div class="subtitle">
+      <div>Status: {{getStatusString()}}</div>
       <div>From: {{alert.sender}}</div>
       <div>{{alert.areaDesc}}</div>
       <div>Expires in: {{timeUntilExpiration()}} minutes</div>

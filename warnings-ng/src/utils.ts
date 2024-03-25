@@ -53,8 +53,6 @@ export class Point {
     if (feature.geometry === null || feature.geometry.coordinates === null){
       return [];
     }
-    console.log('Coordinates: ' + JSON.stringify(feature.geometry.coordinates))
-    console.log('Coordinates inner: ' + JSON.stringify(feature.geometry.coordinates[0]))
     return feature.geometry.coordinates[0].map((coord: any) => new Point(coord))
   }
 
@@ -70,9 +68,7 @@ export class Point {
   static adjustArray(arr: Point[]): Point[]{
     let boundingRect: BoundingRectangle = Point.getBoundingRectangle(arr);
     let longestDiff = Math.max(boundingRect.maxX-boundingRect.minX, boundingRect.maxY - boundingRect.minY)
-    console.log('Longest diff: ' + longestDiff);
     let factor = longestDiff / 50.0 * 100.0;
-    console.log('Factor: ' + factor);
     return arr.map(p => new Point([Math.floor((p.x - boundingRect.minX) * 100.0 / factor), Math.floor((p.y - boundingRect.minY) * 100.0 / factor)]));
   }
 }
@@ -95,6 +91,13 @@ export class AlertClass {
   constructor(readonly name: string, readonly priority: number){}
 }
 
+export enum AlertStatus {
+  UPGRADED,
+  NEW,
+  EXISTING,
+  UNKNOWN,
+}
+
 export class Alert {
   id: string
   event: string
@@ -111,6 +114,7 @@ export class Alert {
   eventType: EventType
   alertClass: AlertClass
   polygon: Point[]
+  status: AlertStatus = AlertStatus.UNKNOWN
 
   constructor(feature: Feature) {
     let props = feature.properties;
@@ -313,4 +317,9 @@ export class Entry {
     this.cls = cls;
     this.count = count;
   }
+}
+
+export interface AlertStorage {
+  id: string
+  alertClass: AlertClass
 }

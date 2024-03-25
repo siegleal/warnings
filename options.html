@@ -1,35 +1,78 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title> Options - Warnings</title>
-  <link rel="stylesheet" href="options.css">
-</head>
-<body>
-  <div class="container" >
-    <div class="row">
-      <span>Select source:</span>
-      <select id="source" >
-        <option value="active">Active</option>
-        <option value="tornadoes">Past Tornadoes</option>
-        <option value="file" >File</option>
-      </select>
-    </div>
-    <div class="row">
-      <div id="radioContainer">
-        Files:<br/>
+  <head>
+    <title>Options - Warnings</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div id="radioContainer">Files:<br /></div>
+      </div>
+      <div class="row"><h2>Notifications</h2></div>
+      <div class="row">
+        <input type="checkbox" id="notificationsOn" />
+        <label for="notificationsOn">Turn on Notifications</label>
+      </div>
+      <div class="row"><h2>Warning Types</h2></div>
+      <div class="row">
+        <div class="types-container">
+          <div class="types-row">
+            <input type="checkbox" id="active" />
+            <label for="active"><i style="font-size: large;">Active</i></label>
+          </div>
 
+          <div class="types-row"><h3>Severe</h3></div>
+          <div class="types-row">
+            <input class="typeCheck" type="checkbox" id="tornadoWarning" value="Tornado%20Warning"/>
+            <label for="tornadoWarning">Tornado Warning</label>
+          </div>
+          <div class="types-row">
+            <input class="typeCheck" type="checkbox" id="svrWarning" value="Severe%20Thunderstorm%20Warning"/>
+            <label for="svrWarning">Severe Thunderstorm Warning</label>
+          </div>
+          <div class="types-row">
+            <input class="typeCheck" type="checkbox" id="specStatement" value="Special%20Weather%20Statement"/>
+            <label for="specStatement">Special Weather Statement</label>
+          </div>
+
+          <div class="types-row"><h3>Marine Weather</h3></div>
+          <div class="types-row">
+            <input class="typeCheck" type="checkbox" id="galeWarning" value="Gale%20Warning" />
+            <label for="galeWarning">Gale Warning</label>
+          </div>
+          <div class="types-row">
+            <input class="typeCheck" type="checkbox" id="smallCraftAdvisory" value="Small%20Craft%20Advisory"/>
+            <label for="smallCraftAdvisory">Small Craft Advisory</label>
+          </div>
+          <div class="types-row">
+            <input class="typeCheck" type="checkbox" id="marineWeatherStatement" value="Marine%20Weather%20Statement"/>
+            <label for="marineWeatherStatement">Marine Weather Statement</label>
+          </div>
+
+          <div class="types-row"><h3>Winter Weather</h3></div>
+          <div class="types-row">
+            <input class="typeCheck" type="checkbox" id="blizzardWarning" value="Blizzard%20Warning"/>
+            <label for="blizzardWarning">Blizzard Warning</label>
+          </div>
+          <div class="types-row">
+            <input class="typeCheck" type="checkbox" id="winterStormWarning" value="Winter%20Storm%20Warning"/>
+            <label for="winterStormWarning">Winter Storm Warning</label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <button id="save">Save</button>
+      </div>
+      <div class="row">
+        <button id="sendNotification">Send Notification</button>
+      </div>
+      <div class="row">
+        <span id="output"></span>
       </div>
     </div>
-    <div class="row">
-      <button id="save">Save</button>
-    </div>
-    <div class="row">
-      <span id="output"></span>
-    </div>
 
-  </div>
-
-<script src="jquery-3.6.0.js"></script>
-<script src="options.js"></script>
-</body>
+    <script src="jquery-3.6.0.js"></script>
+    <script src="options.js"></script>
+  </body>
 </html>

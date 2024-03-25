@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { Alert, EventType, Point } from '../../utils';
+import { Alert, AlertStatus, EventType, Point } from '../../utils';
 import { Input, ElementRef } from '@angular/core';
 
 @Component({
@@ -28,6 +28,18 @@ export class AlertCardComponent implements OnInit {
     const now: number = (new Date).getTime();
     const diff = new Date(this.alert.expires).getTime() - now;
     return Math.round(diff / 1000 / 60);
+  }
+
+  getStatusString(): string {
+    switch (this.alert.status) {
+      case AlertStatus.NEW:
+        return "New";
+      case AlertStatus.EXISTING:
+        return "Existing";
+      case AlertStatus.UPGRADED:
+        return "Upgraded";
+
+    }
   }
 
   drawCanvas(): void {

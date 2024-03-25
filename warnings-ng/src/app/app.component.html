@@ -4,7 +4,6 @@
   <div *ngIf="loaded">
     <div class="live-container" *ngIf="!isLive">
       <div class="live">NOT LIVE</div>
-      <div *ngIf="source">Source: {{ source.name }}</div>
     </div>
   <div class="counts-container" *ngIf="alerts.length > 0" >
   <div class="counts-header"  (click)="showCounts()">
