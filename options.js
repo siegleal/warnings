@@ -11,17 +11,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
       $('#notificationsOn').prop("checked", notifications)
       $('#active').prop("checked", active)
-      chrome.runtime.getPackageDirectoryEntry((dirEntry) => {
-        dirEntry.getDirectory('json_data', {}, (jsonDir) => {
-
-          const reader = jsonDir.createReader();
-          reader.readEntries((entries) => {
-            entries.forEach(element => {
-              addInput(element.name, file)
-            });
-          })
-      })
-    })
     })
 })
 
@@ -35,25 +24,6 @@ $('#notificationsOn').on('change', () => {
     console.log('Notifications are off')
   }
 })
-
-function addInput(filename, selectedFile) {
-  const container = $('#radioContainer')
-  const input = $('<input>').prop({
-    name: 'file_select',
-    id: filename,
-    value: 'json_data/' + filename,
-    type: 'radio',
-    checked: selectedFile === 'json_data/'+filename
-  })
-  container.append(input)
-
-  const label = $('<label></label>')
-  label.for = filename
-  label.text(filename)
-  container.append(label)
-  container.append($('</br>'))
-
-}
 
 function getCheckedTypes() {
   const checkedTypes = []

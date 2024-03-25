@@ -38,7 +38,8 @@ export class AlertCardComponent implements OnInit {
         return "Existing";
       case AlertStatus.UPGRADED:
         return "Upgraded";
-
+      case AlertStatus.UNKNOWN:
+        return "";
     }
   }
 
