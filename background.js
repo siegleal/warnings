@@ -9,6 +9,9 @@ chrome.runtime.onInstalled.addListener(async () => {
   chrome.storage.local.set({"types": "Tornado%20Warning,Severe%20Thunderstorm%20Warning,Special%20Weather%20Statement"}, () => {
       console.log("Set default types")
     })
+  chrome.storage.local.set({"update": {source: "onLoad", period: 5}}, () => {
+      console.log("Set default update")
+    })
   chrome.alarms.onAlarm.addListener(onAlarm)
   // await chrome.alarms.create('updateWarnings', {when: Date.now(), periodInMinutes: 0.5})
 })

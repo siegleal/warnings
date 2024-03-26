@@ -319,7 +319,7 @@ export class Entry {
   }
 }
 
-export interface AlertStorage {
-  id: string
-  alertClass: AlertClass
+export interface Update {
+  source: string
+  period: number
 }

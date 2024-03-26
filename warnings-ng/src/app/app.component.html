@@ -5,17 +5,11 @@
     <div class="live-container" *ngIf="!isLive">
       <div class="live">NOT LIVE</div>
     </div>
-  <div class="counts-container" *ngIf="alerts.length > 0" >
-  <div class="counts-header"  (click)="showCounts()">
-    <div >Counts</div>
-    <div #plus class="icon">+</div>
-    <div #minus class="icon hidden">-</div>
+    <app-alert-card *ngFor="let alert of alerts" [alert]="alert"></app-alert-card>
   </div>
-  <div #counts class="counts hidden">
-    <app-count-card *ngFor="let e of getCounts()" [entry]="e"></app-count-card>
+  <div class="storage-container">
+    <button class="save-button" (click)="clearStorage()">Clear Alert Storage</button>
+    <button class="save-button" (click)="fetchToStorage()">Force Fetch to Storage</button>
+    <button class="save-button" (click)="updateFromStorage()">Update Alerts from Storage</button>
   </div>
-  </div>
-<app-alert-card *ngFor="let alert of alerts" [alert]="alert" ></app-alert-card>
-<button class="save-button" (click)="saveButton()">Save JSON</button>
-</div>
 </div>

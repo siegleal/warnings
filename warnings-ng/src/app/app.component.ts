@@ -1,6 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { CapService } from './cap.service';
-import { Alert, Entry, AlertsApi, AlertClass } from '../utils';
+import { Alert, Entry, AlertsApi, AlertClass, Update, AlertStatus } from '../utils';
 import * as saveAs from 'file-saver';
 
 @Component({
@@ -13,9 +13,6 @@ export class AppComponent {
   alerts: Alert[]
   loaded: boolean = false;
   isLive: boolean = true;
-  @ViewChild('counts') counts!: ElementRef<HTMLDivElement>;
-  @ViewChild('plus') plus!: ElementRef<HTMLDivElement>;
-  @ViewChild('minus') minus!: ElementRef<HTMLDivElement>;
   classes: AlertClass[] = [
     AlertClass.SWS,
     AlertClass.SVR,
@@ -39,42 +36,47 @@ export class AppComponent {
     }
   }
 
-  saveButton(): void {
-    this.capService.getLastJson()
-      .catch((reason) => console.log(reason))
-      .then((json: void | AlertsApi) => {
-        let jsonString = JSON.stringify(json)
-        let blob = new Blob([jsonString], {type:"application/json;charset=utf-8"})
-        let now = new Date()
-        saveAs(blob, `${now.getFullYear()}-${now.getMonth()}-${now.getDay()}_${now.getHours()}-${now.getMinutes()}-${now.getSeconds()}.json`)
-      })
-  }
-
-  showCounts(): void {
-    this.toggleHidden(this.counts)
-    this.toggleHidden(this.plus)
-    this.toggleHidden(this.minus)
-  }
-
-  getCounts(){
-    let arr: Entry[] = [];
-    this.classes.forEach(x => {
-      // arr.push(new Entry(x, this.alerts.filter(y => y.getClassification() === x).length))
-      arr.push(new Entry(x, this.alerts.filter(y => y.alertClass === x).length))
-    })
-    return arr;
-  }
-
   ngOnInit(): void {
-    chrome.storage.local.get(['active'])
-      .then((result: { [key: string]: string }) => {
-        this.isLive = result['active'] === undefined ? true : Boolean(result['active']);
-        this.capService.getAlerts()
-          .then((alerts: Alert[]) => {
-            this.alerts = alerts;
-            this.loaded = true;
-            return this.capService.storeAlerts(alerts);
-          })
+    chrome.storage.local.get({'update': <Update> {source: "onLoad", period: 5}})
+      .then((updateResult: {[key: string]: any}) => {
+        let update = <Update>updateResult['update']
+        console.log('Update data: %s', JSON.stringify(update))
       })
+    chrome.storage.local.get({'active': true})
+      .then((result: { [key: string]: any }) => {
+        this.isLive = result['active'];
+      })
+      .then(() => this.fetchToStorage())
+      .then(() => this.updateFromStorage())
+      .then(() => this.loaded = true)
+  }
+
+  clearStorage(): void {
+    chrome.storage.local.remove('alerts').then(() => console.log('Removed alerts'))
+  }
+
+  fetchToStorage(): Promise<void> {
+    return this.capService.getAlerts()
+      .then(this.capService.storeAlerts)
+  }
+
+  updateFromStorage(): Promise<void> {
+    this.alerts = [];
+    return chrome.storage.local.get({'alerts': []})
+      .then((result: { [key: string]: any }) => {
+        this.alerts = <Alert[]>result['alerts'];
+        const newAlerts = this.alerts.filter((a: Alert) => a.status === AlertStatus.NEW)
+        console.log('New Alerts: %s', JSON.stringify(newAlerts))
+        if (newAlerts.length > 0) {
+          chrome.storage.local.get({ "notifications": false })
+            .then((result) => {
+            if (result['notifications']) {
+              chrome.notifications.create({
+                type: "basic",
+                iconUrl: "exclamation.png",
+                title: "New Alert",
+                message: "- TEST -"
+              })
+            }})}})
   }
 }

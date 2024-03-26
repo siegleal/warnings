@@ -11,6 +11,18 @@
         <input type="checkbox" id="notificationsOn" />
         <label for="notificationsOn">Turn on Notifications</label>
       </div>
+      <div class="row"><h2>Reload</h2></div>
+      <div class="row">
+        <label for="updateSelect">Fetch option:</label>
+        <select id="updateSelect">
+          <option value="onLoad">On Load</option>
+          <option value="periodical">Periodical</option>
+        </select>
+      </div>
+      <div class="row">
+        <label for="updatePeriod">Update period:</label>
+        <input type="number" id="updatePeriod" style="width:50px"/> minutes
+      </div>
       <div class="row"><h2>Warning Types</h2></div>
       <div class="row">
         <div class="types-container">
@@ -60,6 +72,9 @@
       </div>
       <div class="row">
         <button id="save">Save</button>
+      </div>
+      <div class="row">
+        <button id="aux">Aux</button>
       </div>
       <div class="row">
         <button id="sendNotification">Send Notification</button>

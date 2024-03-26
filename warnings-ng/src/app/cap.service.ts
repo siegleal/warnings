@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Alert, AlertsApi, EventType, Feature, AlertStorage, AlertStatus } from '../utils';
+import { Alert, AlertsApi, EventType, Feature, AlertStatus } from '../utils';
 import * as $ from 'jquery';
 
 @Injectable({
@@ -79,9 +79,7 @@ export class CapService {
     const currentStorage = await chrome.storage.local.get('alerts');
     let currentStorageValue = currentStorage['alerts'] === undefined ? [] : currentStorage['alerts'];
     let currentStorageMap = new Map<string, Alert>(currentStorageValue.map((a: Alert) => [a.id, a]));
-    let events = new Set<string>();
     alerts.forEach((a: Alert) => {
-      events.add(a.event);
       let isNew = !currentStorageMap.has(a.id);
       if (!isNew) {
         let oldClass = currentStorageMap.get(a.id)!.alertClass;
@@ -90,12 +88,10 @@ export class CapService {
         } else {
           a.status = AlertStatus.EXISTING
         }
+      } else {
+        a.status = AlertStatus.NEW
       }
     });
-    console.log('Set of events');
-    Array.from(events).sort().forEach((val: string, index: Number, array: Array<string>) => {
-      console.log(val);
-    })
     chrome.storage.local.set({ 'alerts': alerts });
   }
 
